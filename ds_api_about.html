@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Weebly APIs are provided using REST over HTTPS and utilize the HTTP verbs GET, POST, PUT, PATCH and DELETE. We provide a number of client libraries to help g...">
+<meta name="keywords" content="apisgetting_started,  endpoint, list view, detail view, http verbs, pagination, authentication, authorization, errors">
+<title>About the Weebly Cloud for Designer REST APIs | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="active NavLinkLi isActive">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the About the Weebly Cloud for Designer REST APIs page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Use the REST APIs</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_api_about.html" class="NavLink  isSecondary">How to Use the REST APIs</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_account.html" class="NavLink isSecondary">Account API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_blog.html" class="NavLink isSecondary">Blog API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_blog_post.html" class="NavLink isSecondary">Blog Post API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_category.html" class="NavLink isSecondary">Category API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_category_image.html" class="NavLink isSecondary">Category Image API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_client.html" class="NavLink isSecondary">Client API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_client_site.html" class="NavLink isSecondary">Client Site API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_coupon.html" class="NavLink isSecondary">Coupon API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_form.html" class="NavLink isSecondary">Form API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_form_entry.html" class="NavLink isSecondary">Form Entry API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_group.html" class="NavLink isSecondary">Group API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_member.html" class="NavLink isSecondary">Member API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order.html" class="NavLink isSecondary">Order API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_billing.html" class="NavLink isSecondary">Order Billing API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_billing_transaction.html" class="NavLink isSecondary">Order Billing Transaction API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_item.html" class="NavLink isSecondary">Order Item API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_shipment.html" class="NavLink isSecondary">Order Shipment API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_shipment_transaction.html" class="NavLink isSecondary">Order Shipment Transaction API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_page.html" class="NavLink isSecondary">Page API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_plan.html" class="NavLink isSecondary">Plan API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product.html" class="NavLink isSecondary">Product API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_image.html" class="NavLink isSecondary">Product Image API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_option.html" class="NavLink isSecondary">Product Option API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_sku.html" class="NavLink isSecondary">Product SKU API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_sku_option_choice.html" class="NavLink isSecondary">Product SKU Option Choice API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_site.html" class="NavLink isSecondary">Site API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_store.html" class="NavLink isSecondary">Store API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_team_member.html" class="NavLink isSecondary">Team Member API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_themes_cloud.html" class="NavLink isSecondary">Themes (Custom Cloud) API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_themes_user.html" class="NavLink isSecondary">Themes (User) API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_user.html" class="NavLink isSecondary">User API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Webhooks</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_webhooks.html" class="NavLink isSecondary">How to Use Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_blog.html" class="NavLink isSecondary">Blog Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_form.html" class="NavLink isSecondary">Form Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_member.html" class="NavLink isSecondary">Member Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_site.html" class="NavLink isSecondary">Site Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_store.html" class="NavLink isSecondary">Store Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_user.html" class="NavLink isSecondary">User Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">About the Weebly Cloud for Designer REST APIs</h1>
+    </div>
+    <div class="page-type">  concepts  procedure </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Weebly APIs are provided using REST over HTTPS and utilize the HTTP verbs GET, POST, PUT, PATCH and DELETE. We provide a number of client libraries to help get you started. See the following sections for more general information about using our APIs.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  
+<h2 id="client-libraries">Client Libraries</h2>
+
+<p>Looking for an easy way to get started with our API rather than having to piece it all together yourself? Install one of our client libraries! These libraries make it easy to interact with our API:</p>
+
+<ul>
+  <li>Language-specific calls that process the HTTP for you so you can work directly with resources in your code. For example, our PHP library has a <code class="highlighter-rouge">createUser</code> method that you can use without having to provide HTTP header info. The returned new user is a resource you can work with directly, instead of having to process an HTTP response.</li>
+  <li>Easier authorization.</li>
+  <li>Fully documented, with robust examples.</li>
+</ul>
+
+<p>​Download our libraries on GitHub here:</p>
+
+<ul>
+  <li><a href="https://github.com/Weebly/cloud-client-php">PHP</a></li>
+  <li><a href="https://github.com/Weebly/cloud-client-ruby">Ruby</a></li>
+  <li><a href="https://github.com/Weebly/cloud-client-python">Python</a></li>
+  <li><a href="https://github.com/Weebly/cloud-client-java">Java</a></li>
+</ul>
+
+<h2 id="endpoint">Endpoint</h2>
+<p>The endpoint is: <code class="highlighter-rouge">https://api.weeblycloud.com</code></p>
+
+<h2 id="schema">Schema</h2>
+<p>All API access is over HTTPS, and accessed from the <code class="highlighter-rouge">api.weeblycloud.com</code> domain. All data is sent and received as JSON. Blank fields are included as null instead of being omitted. Dates and times are Unix Epoch timestamps.</p>
+
+<h3 id="list-view">List View</h3>
+<p>When retrieving a list of resources, a summary list view of each resource is returned. In some cases, this is akin to a compound primary key. In most root resource cases, like product, the list view contains enough information to make a workable list view in an application without making calls for each resource.</p>
+
+<h3 id="detail-view">Detail View</h3>
+<p>When retrieving a single resource, you will receive a detailed view typically resulting in all the attributes of the resource. In addition, sub resources (like a product’s skus) that are owned by this resource are inlined to the result. Other resources (like categories) which are associated but not owned by this resource provide the ids needed to look them up separately.</p>
+
+<h2 id="http-redirects">HTTP Redirects</h2>
+<p>We may issue redirects. Any call may result in a redirect, at which point you should make an identical call but to the newly provided resource URL.</p>
+
+<h2 id="http-verbs">HTTP Verbs</h2>
+<p>You can use the following:</p>
+
+<ul>
+  <li><strong>GET</strong>
+  Used for retrieving resources.</li>
+  <li><strong>POST</strong>
+​    Used for creating resources.</li>
+  <li><strong>PATCH</strong>
+​    Used for updating resources with partial JSON data.</li>
+  <li><strong>PUT</strong>
+  Used for replacing resources or entire collections. Fields will be replaced with given values and any fields without given values will be reset to their default. Any fields without defaults, for example ID fields, will remain unchanged.</li>
+  <li><strong>DELETE</strong>
+​    Used for deleting resources.</li>
+</ul>
+
+<h2 id="search-parameters">Search Parameters</h2>
+<p>Some endpoints allow you to use search parameters in order to filter your results. When using parameters, do not add that query string to your HMAC Hash.</p>
+
+<h2 id="pagination">Pagination</h2>
+<p>Pagination of certain resources in list view happens automatically. Information about the total number of resources, like the total count, are provided in headers.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">X-Resultset-Total</code> shows the total number of records for the request.</li>
+  <li><code class="highlighter-rouge">X-Resultset-Page</code> shows the page for the call.</li>
+  <li><code class="highlighter-rouge">X-Resultset-Limit</code> shows the record limit for the page (i.e. each call). The default is <code class="highlighter-rouge">25</code>, the max is<code class="highlighter-rouge">200</code>.</li>
+</ul>
+
+<p>If there are additional pages to be returned, a <code class="highlighter-rouge">Link</code> header will be included that has links to the first, previous, next and last pages.</p>
+
+<p>For example, a response from the Site API might return the following in the header, showing that there are a total of 44 records to be returned, this is the first page, and that 25 is the record limit:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"http_code"</span><span class="err">:</span><span class="w"> </span><span class="mi">200</span><span class="err">,</span><span class="w">
+    </span><span class="s2">"result"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"headers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"HTTP\/1.1 200 OK"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Date: Sat, 25 Jun 2016 00:21:34 GMT"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Server: Apache"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"X-REPOSITORY: repos\/myrepos"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"X-Resultset-Total: 44"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"X-Resultset-Page: 1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"X-Resultset-Limit: 25"</span><span class="p">,</span></code></pre></figure>
+
+<p>When you expect the result set to be greater than 25, use these parameters to determine the pages to return and to increase the limit:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">page</code> (int)
+ Which page of results to return. Starts at <code class="highlighter-rouge">1</code>.</li>
+  <li><code class="highlighter-rouge">limit</code> (int)
+ Number of results per page. Default <code class="highlighter-rouge">25</code>, Max <code class="highlighter-rouge">200</code>. Don’t forget that raising the limit may affect performance.</li>
+</ul>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Only the first 25 results are returned by default. If the result set is expected to be over 25, you <strong>must</strong> implement pagination.
+</div>
+
+<p>For example, this CURL request to the Site API returns the second page of result sets.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/USER_ID/site?page<span class="o">=</span>2&amp;limit<span class="o">=</span>25  <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<h2 id="signing-and-authenticating-requests">Signing and Authenticating Requests</h2>
+<p>The API is validated using both a public key and a private HMAC Hash of the request contents. These values must be passed in the request header as <code class="highlighter-rouge">X-Public-Key</code> and <code class="highlighter-rouge">X-Signed-Request-Hash</code>. To get started making requests, you will need YOURAPIKEY and YOURAPISECRET which can be generated and obtained on the <a href="ds_gs_configure.html#view-and-create-api-keys-and-secrets">Settings</a> tab in the Weebly Cloud Admin provided for your account.  YOURAPISECRET is a shared secret known only to you and Weebly Cloud. Do not share YOURAPISECRET.</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>POST /hosts/user/39793399/site HTTP/1.1
+User-Agent: curl/7.30.0
+Host: api.weeblycloud.com
+Accept: <span class="k">*</span>/<span class="k">*</span>
+Content-type: application/json
+X-Public-Key: YOURAPIKEY
+X-Signed-Request-Hash: YOURSECRETHASH
+</code></pre>
+</div>
+
+<p>In the example above, <code class="highlighter-rouge">YOURAPIKEY</code> refers to your API Key. This API Key is used by our system to identify your account. <code class="highlighter-rouge">YOURSECRETHASH</code> refers to the base-64 encoded HMAC-SHA256 signature. The signature will need to be computed for each request.  You can generate <code class="highlighter-rouge">YOURSECRETHASH</code> using an HMAC-SHA256 hash of the request TYPE (Ex. POST), URL (ex. user/234256/loginLink) and any REQUEST DATA (ex. <code class="highlighter-rouge"><span class="p">{</span><span class="w"> </span><span class="err">'plan_id':</span><span class="w"> </span><span class="err">34</span><span class="w"> </span><span class="p">}</span></code>) using <code class="highlighter-rouge">YOURAPISECRET</code> as the key, and base-64 encoding the result. Any requests that do not contain a valid signature will be rejected. Since <code class="highlighter-rouge">YOURAPISECRET</code>  is shared only by you and Weebly Cloud, we are able to validate your request by generating the same HMAC-SHA256 signature and match it against <code class="highlighter-rouge">YOURSECRETHASH</code>.</p>
+
+<div class="language-php highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nv">$base_api</span> <span class="o">=</span> <span class="s2">"https://api.weeblycloud.com/"</span><span class="p">;</span>
+<span class="nv">$api_key</span> <span class="o">=</span> <span class="nx">YOURAPIKEY</span><span class="p">;</span>
+<span class="nv">$api_secret</span> <span class="o">=</span> <span class="nx">YOURAPISECRET</span><span class="p">;</span>
+
+<span class="nv">$request_type</span> <span class="o">=</span> <span class="s2">"POST"</span><span class="p">;</span>
+<span class="nv">$url</span> <span class="o">=</span> <span class="s2">"user/39793399/site"</span><span class="p">;</span>
+<span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s2">"domain"</span> <span class="o">=&gt;</span> <span class="s2">"test-site.com"</span>
+<span class="p">);</span>
+
+<span class="nv">$content</span> <span class="o">=</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+<span class="nv">$hash</span> <span class="o">=</span> <span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">'SHA256'</span><span class="p">,</span> <span class="nv">$request_type</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">.</span> <span class="nv">$url</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span> <span class="o">.</span> <span class="nv">$content</span><span class="p">,</span> <span class="nv">$api_secret</span><span class="p">);</span>
+<span class="nv">$hash</span> <span class="o">=</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$hash</span><span class="p">);</span>
+
+<span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$base_api</span><span class="o">.</span><span class="nv">$url</span><span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_CUSTOMREQUEST</span><span class="p">,</span> <span class="nv">$request_type</span><span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$content</span><span class="p">);</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span>
+<span class="s1">'Content-type: application/json'</span><span class="p">,</span>
+<span class="s1">'X-Public-Key: '</span> <span class="o">.</span> <span class="nv">$api_key</span><span class="p">,</span>
+<span class="s1">'X-Signed-Request-Hash: '</span> <span class="o">.</span> <span class="nv">$hash</span>
+<span class="p">));</span>
+
+<span class="nv">$out</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+<span class="nv">$info</span> <span class="o">=</span> <span class="nb">curl_getinfo</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+<span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+
+<span class="nv">$result</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$out</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Note the line below which generates the hash for this request.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$hash = hash_hmac('SHA256', $request_type . "\n" . $url . "\n" . $content, $api_secret);
+</code></pre>
+</div>
+
+<h2 id="errors">Errors</h2>
+
+<p>When a call can’t sucessfully complete, Weebly throws an error and returns in the JSON response.</p>
+
+<pre><code class="language-JSON">{
+    "error": {
+        "code": 900,
+        "message": "brand_name field missing"
+    }
+}
+</code></pre>
+
+<p>Following are the error codes and descriptions:</p>
+<table>
+    <tr>
+        <td>​100</td>
+        <td>Invalid hash provided.<br />The hash does not match the request</td>
+    </tr>
+    <tr>
+        <td>101</td>
+        <td>Unknown API key provided.<br />Check the Admin portal to verify that your key still exists.</td>
+    </tr>
+    <tr>
+        <td>102</td>
+        <td>This Weebly account doesn't have API access.</td>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>This Weebly account doesn't have access to this user.</td>
+    </tr>
+    <tr>
+        <td>201</td>
+        <td>This Weebly account doesn't have access to this site.</td>
+    </tr>
+    <tr>
+        <td>300</td>
+        <td>Query cannot be routed.</td>
+    </tr>
+    <tr>
+        <td>​900</td>
+        <td>​Invalid request.</td>
+    </tr>
+    <tr>
+        <td>​999</td>
+        <td>​An unknown error occurred.</td>
+    </tr>
+    <tr>
+        <td>​-32001</td>
+        <td>​Invalid namespace or function name.</td>
+    </tr>
+    <tr>
+        <td>​-32002</td>
+        <td>​Class not found.</td>
+    </tr>
+    <tr>
+        <td>​32404</td>
+        <td>​Invalid request.</td>
+    </tr>
+    <tr>
+        <td>​32600</td>
+        <td>​Invalid request.</td>
+    </tr>
+    <tr>
+        <td>​32601</td>
+        <td>​Method not found.</td>
+    </tr>
+    <tr>
+        <td>32602</td>
+        <td>Invalid parameters - too few.</td>
+    </tr>
+</table>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+
+	        
+
+                
+		        	<a href="tag_getting_started.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">getting_started</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

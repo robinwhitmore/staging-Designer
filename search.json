@@ -1,0 +1,1172 @@
+
+[
+	
+		{
+			"title": "About the Weebly Cloud for Designer REST APIs",
+			"tags": "apisgetting_started",
+			"keywords": "endpoint, list view, detail view, http verbs, pagination, authentication, authorization, errors",
+			"url": "ds_api_about.html",
+			"summary": "Weebly APIs are provided using REST over HTTPS and utilize the HTTP verbs GET, POST, PUT, PATCH and DELETE. We provide a number of client libraries to help get you started. See the following sections for more general information about using our APIs."
+		}, 
+	
+		{
+			"title": "Account APIs",
+			"tags": "configuration",
+			"keywords": "account",
+			"url": "ds_api_account.html",
+			"summary": "The Account API provides methods for managing settings for the account authorized in this API call."
+		}, 
+	
+		{
+			"title": "Blog APIs",
+			"tags": "sites",
+			"keywords": "blog",
+			"url": "ds_api_blog.html",
+			"summary": "Use the Blog API to return information about a site&#39;s blog(s)."
+		}, 
+	
+		{
+			"title": "Blog Post APIs",
+			"tags": "sites",
+			"keywords": "blog, blog post, post",
+			"url": "ds_api_blog_post.html",
+			"summary": "Use the Blog Post API to return details about a post to a blog, or to update a post."
+		}, 
+	
+		{
+			"title": "Category APIs",
+			"tags": "sites",
+			"keywords": "category, categories",
+			"url": "ds_api_category.html",
+			"summary": "​Use the Category API to retrieve category information, as well as to update, replace, create, and delete categories."
+		}, 
+	
+		{
+			"title": "Category Image APIs",
+			"tags": "sites",
+			"keywords": "category, categories, image,",
+			"url": "ds_api_category_image.html",
+			"summary": "​Use the Category Image API to retrieve image information, as well as to create and delete category images."
+		}, 
+	
+		{
+			"title": "Client APIs",
+			"tags": "clients",
+			"keywords": "client",
+			"url": "ds_api_client.html",
+			"summary": "Use the Client API to create and manage clients and their sites."
+		}, 
+	
+		{
+			"title": "Client Site APIs",
+			"tags": "clientssitesappselements",
+			"keywords": "client, site",
+			"url": "ds_api_client_site.html",
+			"summary": "Use the Client Site API to create and manage sites for your clients. Also use this API to retrieve a user_id and site_id needed to access the rest of the Cloud API."
+		}, 
+	
+		{
+			"title": "Coupon APIs",
+			"tags": "sites",
+			"keywords": "coupon, store, checkout",
+			"url": "ds_api_coupon.html",
+			"summary": "Use the Coupon API to manage a store&#39;s coupons, including retrieving coupons, updating or deleting existing ones, and creating new ones."
+		}, 
+	
+		{
+			"title": "Form APIs",
+			"tags": "sites",
+			"keywords": "forms",
+			"url": "ds_api_form.html",
+			"summary": "Use the Form API to retrieve all forms for a site."
+		}, 
+	
+		{
+			"title": "Form Entry APIs",
+			"tags": "sites",
+			"keywords": "forms, form entries, entries",
+			"url": "ds_api_form_entry.html",
+			"summary": "​Use the Form Entry API to return entries for a given form."
+		}, 
+	
+		{
+			"title": "Group APIs",
+			"tags": "sites",
+			"keywords": "member, membership, group,",
+			"url": "ds_api_group.html",
+			"summary": "Use the Group API to view, create, update and delete groups."
+		}, 
+	
+		{
+			"title": "Member APIs",
+			"tags": "sites",
+			"keywords": "member, membership, login,",
+			"url": "ds_api_member.html",
+			"summary": "Use the Member API to return information about members, as well as to create, update, and delete members."
+		}, 
+	
+		{
+			"title": "Order APIs",
+			"tags": "sites",
+			"keywords": "store, order",
+			"url": "ds_api_order.html",
+			"summary": "Use the Order API to view information about a site&#39;s orders."
+		}, 
+	
+		{
+			"title": "Order Billing APIs",
+			"tags": "sites",
+			"keywords": "payment provider, payment, billing address, payment method, transactions",
+			"url": "ds_api_order_billing.html",
+			"summary": "Use the Order Billing API to retrieve payment information like billing address or payment provider for payments against an order."
+		}, 
+	
+		{
+			"title": "Order Billing Transactions APIs",
+			"tags": "sites",
+			"keywords": "order, transaction, billing, invoice, order method, credit card",
+			"url": "ds_api_order_billing_transaction.html",
+			"summary": "​Use the Order Billing Transaction API to retrieve information about the payment of orders, like the amount, payment processor, currency, credit card, and status."
+		}, 
+	
+		{
+			"title": "Order Item APIs",
+			"tags": "sites",
+			"keywords": "order, order item, sku",
+			"url": "ds_api_order_item.html",
+			"summary": "Use the Order Item API to retrieve information about order items from a given order."
+		}, 
+	
+		{
+			"title": "Order Shipment APIs",
+			"tags": "sites",
+			"keywords": "shipping, tax, tracking",
+			"url": "ds_api_order_shipment.html",
+			"summary": "Use the Order Shipment API to retrieve information about the shipment for an order."
+		}, 
+	
+		{
+			"title": "Order Shipment Transaction APIs",
+			"tags": "sites",
+			"keywords": "shipment, transaction",
+			"url": "ds_api_order_shipment_transaction.html",
+			"summary": "​Use the Order Shipment Transaction API to retrieve the shipment transactions for an order."
+		}, 
+	
+		{
+			"title": "Page APIs",
+			"tags": "sites",
+			"keywords": "page, hidden, page order, layout, url",
+			"url": "ds_api_page.html",
+			"summary": "The Page API provides methods for reading and updating information about the pages for a site."
+		}, 
+	
+		{
+			"title": "Plan APIs",
+			"tags": "plans",
+			"keywords": "plans, plan, page limit, terms",
+			"url": "ds_api_plan.html",
+			"summary": "The Plan API lets you review your plans and add plans for a given site."
+		}, 
+	
+		{
+			"title": "Product APIs",
+			"tags": "sites",
+			"keywords": "product, price, tax,",
+			"url": "ds_api_product.html",
+			"summary": "Use the Product API to manage the product catalog for a site&#39;s store and to change the options and skus available for a product."
+		}, 
+	
+		{
+			"title": "Product Image APIs",
+			"tags": "sites",
+			"keywords": "image, format, product",
+			"url": "ds_api_product_image.html",
+			"summary": "​Use the Product Image API to view and manage the images used to display products in a Weebly store."
+		}, 
+	
+		{
+			"title": "Product Option APIs",
+			"tags": "sites",
+			"keywords": "option, choice",
+			"url": "ds_api_product_option.html",
+			"summary": "Use the Product Option API to retrieve or update the options available for a given product."
+		}, 
+	
+		{
+			"title": "Product SKU APIs",
+			"tags": "sites",
+			"keywords": "sku, option, choice",
+			"url": "ds_api_product_sku.html",
+			"summary": "Use the Product SKU API to retrieve and update product SKUs. Use the Products API to create new SKUs."
+		}, 
+	
+		{
+			"title": "Product SKU Option Choice APIs",
+			"tags": "sites",
+			"keywords": "sku, option, choice,",
+			"url": "ds_api_product_sku_option_choice.html",
+			"summary": "Use the Product SKU Option Choice API to retrieve the option choices for a given product sku."
+		}, 
+	
+		{
+			"title": "Site APIs",
+			"tags": "sites",
+			"keywords": "site, publish, unpublish, login, login link, credentials, restore, disable",
+			"url": "ds_api_site.html",
+			"summary": "Use the Site API to manage sites, including the ability to create, update, publish, disable, restore, and delete sites and to generate login links and set publish credentials."
+		}, 
+	
+		{
+			"title": "Store APIs",
+			"tags": "sites",
+			"keywords": "store, eCommerce",
+			"url": "ds_api_store.html",
+			"summary": "The Store API provides methods for managing and creating stores owned by a given user."
+		}, 
+	
+		{
+			"title": "Team Member APIs",
+			"tags": "configuration",
+			"keywords": "user, contributor,",
+			"url": "ds_api_team_member.html",
+			"summary": "Use the Team Member API to view and create team members."
+		}, 
+	
+		{
+			"title": "Themes (Custom) APIs",
+			"tags": "themes",
+			"keywords": "themes",
+			"url": "ds_api_themes_cloud.html",
+			"summary": "Use the Custom Themes API to manage any custom themes you&#39;ve created."
+		}, 
+	
+		{
+			"title": "Theme (User) APIs",
+			"tags": "sitesthemes",
+			"keywords": "theme,",
+			"url": "ds_api_themes_user.html",
+			"summary": "Use the Theme (User) API to manage the theme used on a site"
+		}, 
+	
+		{
+			"title": "User APIs",
+			"tags": "configurationsites",
+			"keywords": "user, login link, email",
+			"url": "ds_api_user.html",
+			"summary": "The User API provides methods for managing and creating Weebly Cloud users. For designers, this is your team members."
+		}, 
+	
+		{
+			"title": "Create a Backend Service",
+			"tags": "apps",
+			"keywords": "backend, service, backend service, app, snippet, snippets",
+			"url": "ds_apps_backend.html",
+			"summary": "Backend services typically provide additional functionality for a user&#39;s website. They can be full-fledged apps that run on your server and access our API, or they can be simple snippets."
+		}, 
+	
+		{
+			"title": "Develop an App",
+			"tags": "appscustom",
+			"keywords": "apps, custom, steps, elements, backend, service",
+			"url": "ds_apps_dev.html",
+			"summary": "While there are two different types of apps (backend services and elements), they both have the same initial and final development steps. Start your development process by following the initial steps below. Then follow the development process for the type of app you&#39;re creating. Finish up by following the final steps, also below."
+		}, 
+	
+		{
+			"title": "Create an Element",
+			"tags": "appselements",
+			"keywords": "element, develop",
+			"url": "ds_apps_element_create.html",
+			"summary": "After you create your app, you implement these additional steps to create an element."
+		}, 
+	
+		{
+			"title": "Add Element Folders",
+			"tags": "elements",
+			"keywords": "elements, directory, folders",
+			"url": "ds_apps_element_folders.html",
+			"summary": "If you&#39;ve already created your file directory for your app, you may have also created your element directories. But if not, follow these guidelines."
+		}, 
+	
+		{
+			"title": "Add JavaScript to an Element",
+			"tags": "elements",
+			"keywords": "JavaScript, element, scripts, events",
+			"url": "ds_apps_element_js.html",
+			"summary": "Adding JavaScript to your element is easy, and allows for more powerful elements."
+		}, 
+	
+		{
+			"title": "Element Manifest Example",
+			"tags": "elements",
+			"keywords": "example, sample, json, manifest, settings",
+			"url": "ds_apps_element_man_ex.html",
+			"summary": "The following example shows the manifest from the Pricing Chart sample element. This manifest contains both application-level manifest data and element manifest data. The element-specific information lives within the objects in the &quot;elements&quot; array."
+		}, 
+	
+		{
+			"title": "Add an Element to the Manifest",
+			"tags": "elements",
+			"keywords": "manifest, element, properties, settings",
+			"url": "ds_apps_element_manifest.html",
+			"summary": "Each element provided in your app is defined in the top-level manifest.json, within the elements array.  Each element is a single object in the array, and specifies the name, location, and settings of the element. Once you define the element, you then define the properties that make up the settings."
+		}, 
+	
+		{
+			"title": "Release Your App",
+			"tags": "appselements",
+			"keywords": "release, app, element, auto-install, install",
+			"url": "ds_apps_element_release.html",
+			"summary": "You release your app by associating it with a plan. Every site on that plan will have the app installed."
+		}, 
+	
+		{
+			"title": "Create Element Settings",
+			"tags": "elements",
+			"keywords": "elements, settings, manifest, group, properties",
+			"url": "ds_apps_element_settings.html",
+			"summary": "Your element can include settings that the user configures when including it on a web page. You create these settings as property keys in the manifest.json file."
+		}, 
+	
+		{
+			"title": "Add Stylesheets to an Element",
+			"tags": "elements",
+			"keywords": "CSS, style, stylesheets, element",
+			"url": "ds_apps_element_style.html",
+			"summary": "Stylesheets are the paint and polish on top of your element. They provide style instructions, and are a powerful way to make your element appear more professional. Keep in mind though that the sites using your element are styled using themes. You want your element to also be styled by themes so that it appears seamless. The styling you add for your element should be minimal - only style HTML components that you want to appear the same in every site, no matter the theme being used."
+		}, 
+	
+		{
+			"title": "Create an Element Template",
+			"tags": "elements",
+			"keywords": "template, element, mustache, content fields,",
+			"url": "ds_apps_element_temp.html",
+			"summary": "Templates are the core component of an element. The template is the actual HTML content that will be rendered on a users page."
+		}, 
+	
+		{
+			"title": "Element Template Example",
+			"tags": "elements",
+			"keywords": "element, template, sample, example, mustache",
+			"url": "ds_apps_element_temp_ex.html",
+			"summary": "The following example shows the template code for the Pricing Chart sample element."
+		}, 
+	
+		{
+			"title": "Test Your App",
+			"tags": "apps",
+			"keywords": "test, QA, dev site,",
+			"url": "ds_apps_element_test.html",
+			"summary": "After you&#39;ve uploaded your application, you&#39;ll want install it on your test site to view and QA it."
+		}, 
+	
+		{
+			"title": "Update Your App",
+			"tags": "appselements",
+			"keywords": "update, version, release, app, element",
+			"url": "ds_apps_element_update.html",
+			"summary": "You can update your app by creating a new version"
+		}, 
+	
+		{
+			"title": "Upload Your App",
+			"tags": "appselements",
+			"keywords": "upload, zip, dev admin portal,",
+			"url": "ds_apps_element_upload.html",
+			"summary": "Once you create and package your app, you upload it so that you can test it and eventually release it to your customers."
+		}, 
+	
+		{
+			"title": "What are Elements?",
+			"tags": "elements",
+			"keywords": "elements, settings, tutorial",
+			"url": "ds_apps_elements.html",
+			"summary": "​Elements are the widgets that users drag and drop from Weebly&#39;s Editor element tray to create HTML for the page. Users can create an entire web site using elements, without ever having to create any code themselves!"
+		}, 
+	
+		{
+			"title": "Create the App File Structure",
+			"tags": "apps",
+			"keywords": "directory, files, manifest",
+			"url": "ds_apps_files.html",
+			"summary": "The file structure for your app must be as Weebly expects in order for you to upload it to the App Center."
+		}, 
+	
+		{
+			"title": "Get Started with Custom Weebly Apps",
+			"tags": "getting_startedapps",
+			"keywords": "apps, custom, development site, elements, backend,",
+			"url": "ds_apps_gs.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Element Design Guidelines",
+			"tags": "elements",
+			"keywords": "guidelines, icon, placeholder, element, elements",
+			"url": "ds_apps_guides.html",
+			"summary": "Follow these guidelines to create an element that behaves like a native Weebly element."
+		}, 
+	
+		{
+			"title": "Element Icon Guidelines",
+			"tags": "elements",
+			"keywords": "elements, icon, icons, svg, editor",
+			"url": "ds_apps_icon.html",
+			"summary": "You need to provide an icon .svg file used to drag and drop the element onto a page."
+		}, 
+	
+		{
+			"title": "Manage Your App",
+			"tags": "apps",
+			"keywords": "manage, apps, custom, status, version, developer site,",
+			"url": "ds_apps_manage.html",
+			"summary": "You manage your app(s) using the Cloud Admin. From here, you can do a number of different things like access your development site, install the app to your development site, release the app to a plan, and upload new versions."
+		}, 
+	
+		{
+			"title": "Create the App Manifest",
+			"tags": "configurationapps",
+			"keywords": "manifest, files, apps, configure",
+			"url": "ds_apps_manifest.html",
+			"summary": "The manifest.json file outlines the structure of the app, and provides pertinent information about locales, authorship, and more. It must exist for each app and must live at the root of the application&#39;s zip file."
+		}, 
+	
+		{
+			"title": "Register Your App",
+			"tags": "appscustom",
+			"keywords": "register, app, client ID,",
+			"url": "ds_apps_reg.html",
+			"summary": "You use the APPS tab of the Cloud Admin to register and manage your apps."
+		}, 
+	
+		{
+			"title": "Sample Applications",
+			"tags": "apps",
+			"keywords": "bootstrap, pricing chart, git hub, examples",
+			"url": "ds_apps_samples.html",
+			"summary": "This page contains downloadable sample application bundles. Feel free to download, inspect, and modify any of these applications. Each application comes in a working state, and can be downloaded and immediately uploaded into your developer account."
+		}, 
+	
+		{
+			"title": "1. Design the Element",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_1.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "2. Register the App",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_2.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "3. Create the Directory Structure",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_3.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "4. Create the Manifest",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_4.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "5. Create the Settings",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_5.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "6. Create the HTML Template",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_6.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "7. Create the Styles",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_7.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "8. Create the JavaScript",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_8.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "9. Package, Upload, and Test Your Element",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_9.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Finish!",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_element_finish.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Tutorial&amp;#58; Create an Element",
+			"tags": "apps",
+			"keywords": "price chart, tutorial, custom",
+			"url": "ds_element_main.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Give Clients and Staff Site Access",
+			"tags": "getting_startedclientssites",
+			"keywords": "site contributor, contributor, access, permissions, authorization, site access, site",
+			"url": "ds_gs_access_sites.html",
+			"summary": "Once you create a site, you can add site contributors - users that have varying access to edit that site and some of the site&#39;s settings."
+		}, 
+	
+		{
+			"title": "Using Weebly Cloud Admin",
+			"tags": "getting_started",
+			"keywords": "cloud admin, admin",
+			"url": "ds_gs_admin.html",
+			"summary": "The Weebly Cloud Admin is where you manage your clients, their sites, and your Weebly account and installation."
+		}, 
+	
+		{
+			"title": "Provide Apps to Sites",
+			"tags": "getting_startedconfigurationapps",
+			"keywords": "App Center, apps, custom, elements, snippets",
+			"url": "ds_gs_apps.html",
+			"summary": "Weebly offers an App Center that includes apps from Weebly and also from third parties and you can grant sites access to this center. Or, you can create your own custom apps and have them automatically installed to sites on a specific plan."
+		}, 
+	
+		{
+			"title": "Get Started Checklist",
+			"tags": "getting_started",
+			"keywords": "",
+			"url": "ds_gs_checklist.html",
+			"summary": "Use this checklist to get up and running quickly with Weebly Cloud for Designers"
+		}, 
+	
+		{
+			"title": "How Your Clients Work with You",
+			"tags": "getting_startedclientssites",
+			"keywords": "clients, portal, user portal, ui, sites",
+			"url": "ds_gs_client_ui.html",
+			"summary": "Your clients access their sites and their site&#39;s statistics from the Weebly User Portal"
+		}, 
+	
+		{
+			"title": "Create and Manage Clients",
+			"tags": "getting_startedclientssites",
+			"keywords": "clients, admin, configure,",
+			"url": "ds_gs_clients.html",
+			"summary": "You create and manage your clients in the Cloud Admin. Along with contact information, you can manage a client&#39;s sites and their access to functionality on those sites."
+		}, 
+	
+		{
+			"title": "Configure Weebly Cloud",
+			"tags": "getting_startedconfiguration",
+			"keywords": "brand, cloud admin, domain, url, email, settings, upgrade, hash, support, message, contact,",
+			"url": "ds_gs_configure.html",
+			"summary": "You use the Settings tab of the Weebly Cloud Admin portal to configure your cloud account. You can add your logo and other company links and contact info, configure locale settings like time and date, set up messages for our support team, set up your domain and URLs, contacts, and access your API keys."
+		}, 
+	
+		{
+			"title": "Create and Manage Sites",
+			"tags": "getting_startedsites",
+			"keywords": "publish, copy, preview, template, templates, apps",
+			"url": "ds_gs_cr_sites.html",
+			"summary": "Once a client is created, you can create and implement their site(s) from Cloud Admin. You can also create templates that you can copy to create new sites. Once the site is created, you can use the Editor to edit, preview, and publish the site."
+		}, 
+	
+		{
+			"title": "View and Pay Weebly Invoices",
+			"tags": "clients",
+			"keywords": "invoices, clients, bills, billing",
+			"url": "ds_gs_invoice.html",
+			"summary": "Cloud Admin has a Billing tab that displays your current Weebly invoices. You can view the details of those invoices and download the current activity. You can also pay invoices from here."
+		}, 
+	
+		{
+			"title": "Market to Your Customers in Weebly",
+			"tags": "sites",
+			"keywords": "sites, publish, publish modal",
+			"url": "ds_gs_market.html",
+			"summary": "When a user publishes their site, the Weebly Editor displays a modal. You can customize this modal window by supplying a URL to other content."
+		}, 
+	
+		{
+			"title": "Create Plans",
+			"tags": "getting_startedplans",
+			"keywords": "plans, packages, pages, apps, access",
+			"url": "ds_gs_plans.html",
+			"summary": "Weebly offers plans that determine the functionality available to a site. You create your own plans and plan pricing and then associate them with Weebly plans. Clients see only your plans."
+		}, 
+	
+		{
+			"title": "Restore Elements, Pages, and Sites",
+			"tags": "troubleshootingsites",
+			"keywords": "sites, elements, editor",
+			"url": "ds_gs_restore.html",
+			"summary": "There may be times when someone accidentally delete an element. When this happens, you can use Cloud Admin to restore deleted elements. You can also restore deleted pages and deleted sites."
+		}, 
+	
+		{
+			"title": "Allow Sites to Use SSL",
+			"tags": "configurationsites",
+			"keywords": "ssl, sites",
+			"url": "ds_gs_ssl.html",
+			"summary": "Weebly sites can use SSL, as long as they are on the Weebly Business plan. However, you&#39;ll need to use the Weebly Cloud API to enable the SSL option to display in the Site&#39;s settings so that the site owner can enable it."
+		}, 
+	
+		{
+			"title": "Create Team Members",
+			"tags": "getting_started",
+			"keywords": "Cloud Admin, users, roles",
+			"url": "ds_gs_team_members.html",
+			"summary": "You use Cloud Admin to create team members, which are the users at your company that can use Cloud Admin. Team members are assigned roles that determine what they can and cannot do in Cloud Admin."
+		}, 
+	
+		{
+			"title": "Troubleshooting Weebly Cloud",
+			"tags": "troubleshooting",
+			"keywords": "trouble, email, invitation, SPF, IP, domain",
+			"url": "ds_gs_trouble.html",
+			"summary": "​Following are common issues and their resolutions."
+		}, 
+	
+		{
+			"title": "Handle Site Upgrades",
+			"tags": "planssites",
+			"keywords": "sites, upgrades, plans",
+			"url": "ds_gs_upgrades.html",
+			"summary": "Plans determine what functionality a site has. If you try to access functionality not supported by the plan, a popup displays information about upgrading. If you expect your clients to be using the Weebly Editor, you need to provide the content for this popup and you need to handle the upgrade process. If clients won&#39;t be using the editor, you&#39;ll be shown the standard Weebly dialog."
+		}, 
+	
+		{
+			"title": "About Migrating to Weebly Cloud for Designers",
+			"tags": "getting_started",
+			"keywords": "migration, map",
+			"url": "ds_mg_about.html",
+			"summary": "Use these topics to understand how to do your work in the Cloud Admin"
+		}, 
+	
+		{
+			"title": "Setting Up Your Account",
+			"tags": "configuration",
+			"keywords": "account, email, migration",
+			"url": "ds_mg_account.html",
+			"summary": "This topic shows how to edit your account information."
+		}, 
+	
+		{
+			"title": "Working with Clients",
+			"tags": "getting_startedclients",
+			"keywords": "migration, clients",
+			"url": "ds_mg_clients.html",
+			"summary": "This topic shows how to work with your clients in the Cloud Admin"
+		}, 
+	
+		{
+			"title": "Controlling Access to a Site",
+			"tags": "clientssites",
+			"keywords": "access, site, migrating, staff, team, migration",
+			"url": "ds_mg_control.html",
+			"summary": "This topic shows how to control client and staff access to sites."
+		}, 
+	
+		{
+			"title": "Configuring the Company Portal",
+			"tags": "configuration",
+			"keywords": "migration, portal, contacts, brand, urls, settings",
+			"url": "ds_mg_portal.html",
+			"summary": "This topic describes how to configure UI settings the Cloud Admin and the User Portal like contact info and branding."
+		}, 
+	
+		{
+			"title": "Retired Features",
+			"tags": "troubleshooting",
+			"keywords": "migration, retired",
+			"url": "ds_mg_retired.html",
+			"summary": "This topic lists features from the Designer Platform that don&#39;t exist in Cloud Admin."
+		}, 
+	
+		{
+			"title": "Working with Sites",
+			"tags": "clientssites",
+			"keywords": "migration, sites",
+			"url": "ds_mg_sites.html",
+			"summary": "This topic shows how to create and manage sites in the Cloud Admin."
+		}, 
+	
+		{
+			"title": "Working with Staff",
+			"tags": "",
+			"keywords": "migration, staff, team member",
+			"url": "ds_mg_staff.html",
+			"summary": "This topic explains how you create and manage your staff, now called Team Members."
+		}, 
+	
+		{
+			"title": "Getting Support",
+			"tags": "troubleshooting",
+			"keywords": "support, migration",
+			"url": "ds_mg_support.html",
+			"summary": "This topic shows how to get support from the Cloud Admin"
+		}, 
+	
+		{
+			"title": "Topics",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_tags_about.html",
+			"summary": "Click a topic card to find articles based on subject matter."
+		}, 
+	
+		{
+			"title": "1. Download the Base Theme",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_1.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "10. Deliver Your Theme",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_10.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "2. Apply Your Theme to a Test Site",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_2.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "3. Add a Color Palette",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_3.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "4. Create Variations",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_4.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "5. Edit the Header Template",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_5.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "6. Edit the main.less File",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_6.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "7. Edit the Blog Post Partial",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_7.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "8. Add a Theme Option",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_8.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "9. Add a Screenshot",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_9.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "About LESS",
+			"tags": "themes",
+			"keywords": "LESS, css, stylesheets",
+			"url": "ds_themes_LESS.html",
+			"summary": "This topic provides some high-level info about what you can do with LESS. For more information, visit the LESS website at http://lesscss.org/#."
+		}, 
+	
+		{
+			"title": "Anatomy of a Theme",
+			"tags": "themes",
+			"keywords": "template, layout, css, less, js, javascript,",
+			"url": "ds_themes_anatomy.html",
+			"summary": "When creating themes, you&#39;ll be working with HTML pages, mustache templates, JavaScript, cascading style sheets (CSS or LESS), images, and manifest files. This may sound like a lot, but once you understand how all the pieces fit together, you&#39;ll realize there&#39;s not much to it!"
+		}, 
+	
+		{
+			"title": "Blog Paritals",
+			"tags": "themes",
+			"keywords": "blog, partials, templates, themes,",
+			"url": "ds_themes_blogPartials.html",
+			"summary": "Blog partials are used on the blog pages"
+		}, 
+	
+		{
+			"title": "Commerce Partials",
+			"tags": "themes",
+			"keywords": "eCommerce, commerce, partials, templates",
+			"url": "ds_themes_comPartials.html",
+			"summary": "Commerce partials are used in the store pages."
+		}, 
+	
+		{
+			"title": "How to Create a Theme",
+			"tags": "themes",
+			"keywords": "theme, steps, procedure",
+			"url": "ds_themes_create.html",
+			"summary": "The best way to create a theme is start with an existing theme and change it as you need."
+		}, 
+	
+		{
+			"title": "Create the HTML Layout Templates",
+			"tags": "themes",
+			"keywords": "template, header, theme, layout, foundation, tag, tags, section, mobile, theme tags",
+			"url": "ds_themes_create_templates.html",
+			"summary": "You implement one HTML template file for each of the header types your theme will support - header, no header, and splash)."
+		}, 
+	
+		{
+			"title": "Deliver Your Theme",
+			"tags": "themes",
+			"keywords": "create, admin, theme, upload",
+			"url": "ds_themes_deliver.html",
+			"summary": "You use the Cloud Admin to make your theme available to sites. You can make it available to all sites by uploading it to the Theme Gallery, or you can deliver it to a single site."
+		}, 
+	
+		{
+			"title": "Design Resources",
+			"tags": "themes",
+			"keywords": "resources, palettes, colors, icons, images",
+			"url": "ds_themes_design_resources.html",
+			"summary": "This page lists resources you can use while building your theme."
+		}, 
+	
+		{
+			"title": "Theme Directory Structure",
+			"tags": "themes",
+			"keywords": "directory, folders, assets, manifest",
+			"url": "ds_themes_directory.html",
+			"summary": "If you will edit your theme using the Weebly Code Editor, the directories and files are created for you remotely. If you want to use another editor, follow these guidelines to set up your development directory."
+		}, 
+	
+		{
+			"title": "Element Requirements for Themes",
+			"tags": "troubleshootingthemes",
+			"keywords": "requirements, elements, button, gallery, divider, forms,",
+			"url": "ds_themes_element_guidelines.html",
+			"summary": "Site owners build Weebly pages by dragging and dropping elements onto a page. Some of these elements are configurable. Your theme needs to be able to handle the different configurations. Review the main.less stylesheets for different themes to see how these elements can be styled."
+		}, 
+	
+		{
+			"title": "Theme FAQs",
+			"tags": "troubleshootingthemes",
+			"keywords": "faq,",
+			"url": "ds_themes_faqs.html",
+			"summary": "Here are answers to common questions about customizing themes for the Weebly Platform."
+		}, 
+	
+		{
+			"title": "You Did It!",
+			"tags": "",
+			"keywords": "",
+			"url": "ds_themes_finish.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Customize Weebly Themes",
+			"tags": "sitesthemescustom",
+			"keywords": "themes, sites, custom",
+			"url": "ds_[X].html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Theme Design Guidelines",
+			"tags": "troubleshootingthemes",
+			"keywords": "guidelines, themes, design, requirements, troubleshooting, font, color, palette, variation, browser, image, responsive, display, layout",
+			"url": "ds_themes_guidelines.html",
+			"summary": "When you create a Weebly theme, your design needs to support the functionality found on the pages in the different areas of a Weebly site, as well support the elements often used on a site. For example, blog pages expect certain content and elements, while pages that display products expect something different. Because users can easily switch between themes, you need to make sure that you follow these guidelines and requirements to ensure switching between themes is a smooth transition."
+		}, 
+	
+		{
+			"title": "Implement the CSS or LESS",
+			"tags": "themes",
+			"keywords": "css, less, stylesheets, theme, image, layouts, color, color variables, variables",
+			"url": "ds_themes_implement_css.html",
+			"summary": "Your stylesheets provide the look and feel of the theme, and as such, is what gives your theme its soul. Weebly themes support both CSS and LESS, which is a pre-processor for CSS that provides additional functionality, such as variables, mixins, and nesting. You can use either CSS or LESS, but not a mix."
+		}, 
+	
+		{
+			"title": "Known Issues",
+			"tags": "troubleshootingthemes",
+			"keywords": "troubleshooting, JavaScript",
+			"url": "ds_themes_issues.html",
+			"summary": "Following are current issues when creating themes."
+		}, 
+	
+		{
+			"title": "Create the Theme Manifest",
+			"tags": "configurationthemes",
+			"keywords": "manifest, theme, configuration,",
+			"url": "ds_themes_manifest.html",
+			"summary": "Metadata for a theme is contained in the manifest.json file, which lives in the root directory of the theme zip that you upload to Weebly.  Here you add functionality like responsiveness, color adjusting, and options like search and social icons."
+		}, 
+	
+		{
+			"title": "Membership Partials",
+			"tags": "themes",
+			"keywords": "members, membership, partials, templates",
+			"url": "ds_themes_membershipPartials.html",
+			"summary": "When a site allows members, a login link is displayed in the navigation bar (controlled by the navigation partials). When logged in, users can view their account information. The Membership partials display the dialogs used to log in."
+		}, 
+	
+		{
+			"title": "About Mustache",
+			"tags": "themes",
+			"keywords": "mustache, templates, templating language,",
+			"url": "ds_themes_mustache.html",
+			"summary": "Mustache is a templating language that expands tags in a template with provided values. Weebly uses Mustache in theme partial files."
+		}, 
+	
+		{
+			"title": "Navigation Partials",
+			"tags": "themes",
+			"keywords": "navigation, templates, partials",
+			"url": "ds_themes_navPartials.html",
+			"summary": "The navigation partials display the menu at the top of the web page."
+		}, 
+	
+		{
+			"title": "Add Options to Your Theme",
+			"tags": "themes",
+			"keywords": "options, toggle, dropdown, body class",
+			"url": "ds_themes_options.html",
+			"summary": "You can design your theme so that some aspects of it can be globally changed. For example, you might want site owners to be able to turn search off and on, or determine how to align the menu. Or you might want them to be able to change the color or size of something. These choices are created with options and controlled with styles."
+		}, 
+	
+		{
+			"title": "Page Requirements for Themes",
+			"tags": "troubleshootingthemes",
+			"keywords": "guidelines, requirements, themes, blog, store, search",
+			"url": "ds_themes_page.html",
+			"summary": "Pages that display in certain areas of a Weebly site need to provide distinct content provided by partials. This topic includes all expected classes used on blog, store, and search partials. Your theme needs to support styling these components. Review the .tpl partial files and main.less files for actual class names."
+		}, 
+	
+		{
+			"title": "Create a Color Palette",
+			"tags": "themes",
+			"keywords": "color palette, eyedropper, accent color, primary color, variables, LESS variables, LESS, manifest,",
+			"url": "ds_themes_palette.html",
+			"summary": "You can create a color palette for your theme that allows the user to select a primary and an accent color for the site."
+		}, 
+	
+		{
+			"title": "Use Partials",
+			"tags": "themes",
+			"keywords": "partials, template, mustache, product, blog, commerce, membership",
+			"url": "ds_themes_partials.html",
+			"summary": "Weebly sites use partials as a way to easily organize and find different parts of the website. You can edit these partials to change how their contents display."
+		}, 
+	
+		{
+			"title": "Download Sample Themes",
+			"tags": "themes",
+			"keywords": "samples, themes, github",
+			"url": "ds_themes_sample.html",
+			"summary": "Use our Base theme to get started creating your own custom theme."
+		}, 
+	
+		{
+			"title": "Create a Theme Screenshot",
+			"tags": "themes",
+			"keywords": "theme, screenshot, gallery",
+			"url": "ds_themes_screenshot.html",
+			"summary": "Once your theme is complete, you need to create a screenshot of it to display in the Theme chooser, shown when a user creates a site or decides to change their theme."
+		}, 
+	
+		{
+			"title": "Search Partials",
+			"tags": "themes",
+			"keywords": "search, partials, templates",
+			"url": "ds_themes_searchPartials.html",
+			"summary": "The search partials are used to display the search results page."
+		}, 
+	
+		{
+			"title": "Get Started with Customizing Themes",
+			"tags": "getting_startedthemes",
+			"keywords": "themes, code editor, manage",
+			"url": "ds_themes_start.html",
+			"summary": "​Themes provide the general look and feel used throughout a website. While Weebly provides a number of great themes, you may find you want to change a few things in a theme. Or maybe you want to change everything! You can do those and everything in between."
+		}, 
+	
+		{
+			"title": "Tutorial&amp;#58; Customize a Weebly Theme",
+			"tags": "themes",
+			"keywords": "tutorial, themes, custom",
+			"url": "ds_themes_tutorial.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Update Your Theme",
+			"tags": "themes",
+			"keywords": "update, version, theme, upgrade",
+			"url": "ds_themes_update.html",
+			"summary": "After you&#39;ve created a theme and added it to the Gallery, you can create a new version."
+		}, 
+	
+		{
+			"title": "Add Color Variations",
+			"tags": "themes",
+			"keywords": "color, color variations, light, dark, is_dark, LESS, css",
+			"url": "ds_themes_variations.html",
+			"summary": "If you&#39;re creating color palettes for your theme, then you may also want to create light and dark variations of each palette."
+		}, 
+	
+		{
+			"title": "Timezone Values",
+			"tags": "configuration",
+			"keywords": "timezone, time",
+			"url": "ds_timezones.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Blog Webhooks",
+			"tags": "sitesappselements",
+			"keywords": "blog, blog post",
+			"url": "ds_wh_blog.html",
+			"summary": "Blog webhooks notify you when blogs and blog posts are created and updated."
+		}, 
+	
+		{
+			"title": "Form Webhooks",
+			"tags": "sitesappselements",
+			"keywords": "form",
+			"url": "ds_wh_form.html",
+			"summary": "Form webhooks notify you when an entry for a form has been submitted."
+		}, 
+	
+		{
+			"title": "Member Webhooks",
+			"tags": "sitesappselements",
+			"keywords": "member, membership, register",
+			"url": "ds_wh_member.html",
+			"summary": "Member webhooks notify you when a change occurs to a site&#39;s member."
+		}, 
+	
+		{
+			"title": "Site Webhooks",
+			"tags": "sitesappselements",
+			"keywords": "site, manage",
+			"url": "ds_wh_site.html",
+			"summary": "Site webhooks notify you when certain events happen for a site."
+		}, 
+	
+		{
+			"title": "Store Webhooks",
+			"tags": "appselements",
+			"keywords": "category, product, cart, order, coupon",
+			"url": "ds_wh_store.html",
+			"summary": "Store webhooks notify you when an event happens in the site&#39;s store."
+		}, 
+	
+		{
+			"title": "User Webhooks",
+			"tags": "appselements",
+			"keywords": "user",
+			"url": "ds_wh_user.html",
+			"summary": "User webhooks notify you when an event happens for a user."
+		}, 
+	
+		{
+			"title": "Use Webhooks",
+			"tags": "appselements",
+			"keywords": "webhooks, subscribe, callback url,",
+			"url": "ds_wh_webhooks.html",
+			"summary": "Webhooks allow your app to be notified of events that happen in a Weebly site."
+		}, 
+	
+		{
+			"title": "Glossary",
+			"tags": "getting_started",
+			"keywords": "",
+			"url": "cl_glossary.html",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Get Started with Weebly Cloud for Designers",
+			"tags": "getting_started",
+			"keywords": "get started, test mode, editor, code, apps, themes, custom,",
+			"url": "home.html",
+			"summary": "Welcome to Weebly Cloud for Designers! With Weebly Cloud, you use Weebly’s best-in-class website builder to create websites, blogs or online stores in minutes for your clients, and the Cloud Admin to maintain full control over billing, support, and the customer relationship."
+		}, 
+	
+		{
+			"title": "",
+			"tags": "",
+			"keywords": "",
+			"url": "csstheme-weebly.css",
+			"summary": ""
+		}, 
+	
+		{
+			"title": "Import and Export Themes",
+			"tags": "themes",
+			"keywords": "import, export, theme,",
+			"url": "ds_themes_import_export.html",
+			"summary": "Import themes to bring them into the Weebly editor where you can edit and test them. You import themes using the Weebly UI. Export themes to create a zip file used to distribute the theme."
+		}
+	
+]

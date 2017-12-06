@@ -1,0 +1,22 @@
+destination: x_designer_output/pdf
+url: https://robinwhitmore.github.io
+baseurl: /DesignerDocs
+port: 4010
+output: pdf
+product: Designer Platform
+print_title: Designer Platform Migration to Weebly Cloud
+print_subtitle: How to do Your Work in the Cloud Admin
+output: pdf
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page_print"
+      comments: true
+      search: true
+
+sidebar_pdf: ds_migration_sidebar
+
+

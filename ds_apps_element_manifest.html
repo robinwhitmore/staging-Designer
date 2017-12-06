@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Each element provided in your app is defined in the top-level manifest.json, within the elements array.  Each element is a single object in the array, and sp...">
+<meta name="keywords" content="elements,  manifest, element, properties, settings">
+<title>Add an Element to the Manifest | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Add an Element to the Manifest page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Apps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_gs.html" class="NavLink isSecondary">Get Started with Developing Apps</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_samples.html" class="NavLink isSecondary">Sample Applications</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_main.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_1.html" class="NavLink isSecondary">1. Design the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_2.html" class="NavLink isSecondary">2. Register the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_3.html" class="NavLink isSecondary">3. Create a Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_4.html" class="NavLink isSecondary">4. Create the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_5.html" class="NavLink isSecondary">5. Create the Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_6.html" class="NavLink isSecondary">6. Create the HTML Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_7.html" class="NavLink isSecondary">7. Create the Styles</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_8.html" class="NavLink isSecondary">8. Create the JavaScript</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_9.html" class="NavLink isSecondary">9. Package, Upload, and Test Your Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Develop an App</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_dev.html" class="NavLink isSecondary">Develop an App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_reg.html" class="NavLink isSecondary">Register Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manage.html" class="NavLink isSecondary">Manage Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_files.html" class="NavLink isSecondary">Create the App File Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manifest.html" class="NavLink isSecondary">Create the App Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Backend Service</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_backend.html" class="NavLink isSecondary">Create a Backend Service</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_elements.html" class="NavLink isSecondary">What are Elements?</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_guides.html" class="NavLink isSecondary">Element Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_icon.html" class="NavLink isSecondary">Element Icon Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_create.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_folders.html" class="NavLink isSecondary">Add Element Folders</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_apps_element_manifest.html" class="NavLink  isSecondary">Add an Element to the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_settings.html" class="NavLink isSecondary">Create Element Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_man_ex.html" class="NavLink isSecondary">Element Manifest Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp.html" class="NavLink isSecondary">Create an Element Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp_ex.html" class="NavLink isSecondary">Element Template Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_style.html" class="NavLink isSecondary">Add Stylesheets to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_js.html" class="NavLink isSecondary">Add JavaScript to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Your App Ready to Publish</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_upload.html" class="NavLink isSecondary">Upload your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_test.html" class="NavLink isSecondary">Test Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_release.html" class="NavLink isSecondary">Release Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_update.html" class="NavLink isSecondary">Update Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Add an Element to the Manifest</h1>
+    </div>
+    <div class="page-type">  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Each element provided in your app is defined in the top-level manifest.json, within the elements array.  Each element is a single object in the array, and specifies the name, location, and settings of the element. Once you define the element, you then define the properties that make up the settings.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <h2 id="define-the-element">Define the Element</h2>
+
+<p>An element is defined using the <code class="highlighter-rouge">elements</code> property that lives at the root of <code class="highlighter-rouge">manifest.json</code>.
+Each element must contain the following properties (see the <a href="ds_apps_element_man_ex.html">example</a> for additional help):</p>
+<ul>
+  <li><code class="highlighter-rouge">path</code> (required): A file path to the root directory of the element within the bundle.  For example, if you place the element files within the <code class="highlighter-rouge">elements/ExampleElement</code> directory, the path property would simply be <code class="highlighter-rouge">elements/ExampleElement</code>.</li>
+  <li><code class="highlighter-rouge">name</code> (required): The name of the element.  This is what will appear in the element tray in the editor, and will be used as the title in any setting dialogs shown to users.</li>
+  <li><code class="highlighter-rouge">version</code> (required): The version of the element, provided as a string following <a href="http://semver.org/">Semantic Versioning</a> guidelines (<code class="highlighter-rouge">Major.Minor.Patch</code>: for example <code class="highlighter-rouge">1.5.13</code>). Elements do not need to use the same version number as the parent app.</li>
+  <li><code class="highlighter-rouge">settings</code>: These are the configurable settings that the user can change. If you’re element doesn’t have settings, then you don’t need to include this property, and you’re done configuring the manifest. If you do want to add settings, continue on to <a href="ds_apps_element_settings.html">Create Element Settings</a></li>
+</ul>
+
+<p>Here’s an example of this first part of the manifest:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"manifest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.2.4"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"elements"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Price Chart"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"files"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.2.4"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="err">...</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2 id="create-a-tutorial">Create a Tutorial</h2>
+
+<p>You create a tutorial in the manifest. You can configure it so that it opens the first time a user drags your element to the page. Otherwise, the tutorial is accessed from a Tutorial button in the settings dialog. Tutorial topics can be either stepped content or embedded videos, and you can nest one level of up to 8 topics.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Use HTML only for links. These must open in a new tab/window.
+</div>
+
+<p>Use the following properties to create your tutorial in the manifest:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">tutorial</code>: Property used to group the tutorial content. This is placed at the same level as the <code class="highlighter-rouge">settings</code> property.</li>
+  <li><code class="highlighter-rouge">label</code>: Required when nesting topics, this is the name of the nested topic. It displays as the title in the parent topic. Use only for nested topics.</li>
+  <li><code class="highlighter-rouge">introduction</code>: The text that appears at the top of the dialog. If you are nesting topics, each has its own introduction.</li>
+  <li><code class="highlighter-rouge">type</code>: The type of content in this topic. Valid values are:
+    <ul>
+      <li><code class="highlighter-rouge">step</code>: Creates a numbered procedure list.</li>
+      <li><code class="highlighter-rouge">video</code>: Embeds a YouTube video.</li>
+      <li><code class="highlighter-rouge">topics</code>: Denotes this as the parent topic to nested child topics</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">content</code>: Holds the actual content to display. Valid values depend on the type.
+    <ul>
+      <li><code class="highlighter-rouge">step</code>: An array of strings, one for each step. The maximum number of steps is 5.</li>
+      <li><code class="highlighter-rouge">video</code>: Enter the YouTube ID as a string (for example, as29f83)</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">autopop</code>: Set to <code class="highlighter-rouge">true</code> to have the tutorial automatically open the first time the user drags the element onto the page. The default is <code class="highlighter-rouge">false</code>. If you also set <code class="highlighter-rouge">autopop=true</code> on your element, the tutorial opens first and then the settings dialog.</li>
+</ul>
+
+<p>​Here’s an example of a tutorial consisting of one stepped topic:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err"></span><span class="s2">"tutorial"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The price chart is a simple way to visually compare different plans with their features and prices."</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"steps"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"Choose the number of plans you would like. Each plan will add a new column to the chart."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Choose the number of features for each plan. Each feature will add a row to the chart."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Modify the currency setting to ensure the price of each plan is in the correct currency."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Fill out each plan's name, price, and list of features."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"Choose where to put your sign up button. It can be place at the end of the features list or at the top with the plan's price."</span><span class="p">,</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"autopop"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="err">.</span><span class="w"> </span><span class="err">.</span><span class="w"> </span><span class="err">.</span></code></pre></figure>
+
+<p>You create more than one topic by nesting an array of topics as content for the parent, being sure to set the parent to <code class="highlighter-rouge">type=topics</code>.  Use the <code class="highlighter-rouge">label</code> property for each child topic to set the title bar of the dialog. You can have a maximum of 8 nested topics.</p>
+
+<p>​Here’s a tutorial with nested topics - the first one is a stepped topic and the second is a video.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err"></span><span class="w">
+</span><span class="s2">"tutorial"</span><span class="err">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The price chart is a simple way to visually compare different plans with their features and prices."</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"topics"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Setup instructions"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Follow these simple steps to help you get started!"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"steps"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"Choose the number of plans you would like. Each plan will add a new column to the chart."</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Choose the number of features for each plan. Each feature will add a row to the chart."</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Modify the currency setting to ensure the price of each plan is in the correct currency."</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Fill out each plan's name, price, and list of features."</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"Choose where to put your sign up button. It can be place at the end of the features list or at the top with the plan's price."</span><span class="p">,</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Build an online store"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"View an in-depth webinar about building an online store with Weebly."</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"video"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6clKBa8x1qk"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"autopop"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_elements.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">elements</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Your element can include settings that the user configures when including it on a web page. You create these settings as property keys in the manifest.json f...">
+<meta name="keywords" content="elements,  elements, settings, manifest, group, properties">
+<title>Create Element Settings | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Create Element Settings page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Apps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_gs.html" class="NavLink isSecondary">Get Started with Developing Apps</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_samples.html" class="NavLink isSecondary">Sample Applications</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_main.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_1.html" class="NavLink isSecondary">1. Design the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_2.html" class="NavLink isSecondary">2. Register the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_3.html" class="NavLink isSecondary">3. Create a Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_4.html" class="NavLink isSecondary">4. Create the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_5.html" class="NavLink isSecondary">5. Create the Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_6.html" class="NavLink isSecondary">6. Create the HTML Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_7.html" class="NavLink isSecondary">7. Create the Styles</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_8.html" class="NavLink isSecondary">8. Create the JavaScript</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_9.html" class="NavLink isSecondary">9. Package, Upload, and Test Your Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Develop an App</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_dev.html" class="NavLink isSecondary">Develop an App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_reg.html" class="NavLink isSecondary">Register Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manage.html" class="NavLink isSecondary">Manage Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_files.html" class="NavLink isSecondary">Create the App File Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manifest.html" class="NavLink isSecondary">Create the App Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Backend Service</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_backend.html" class="NavLink isSecondary">Create a Backend Service</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_elements.html" class="NavLink isSecondary">What are Elements?</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_guides.html" class="NavLink isSecondary">Element Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_icon.html" class="NavLink isSecondary">Element Icon Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_create.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_folders.html" class="NavLink isSecondary">Add Element Folders</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_manifest.html" class="NavLink isSecondary">Add an Element to the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_apps_element_settings.html" class="NavLink  isSecondary">Create Element Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_man_ex.html" class="NavLink isSecondary">Element Manifest Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp.html" class="NavLink isSecondary">Create an Element Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp_ex.html" class="NavLink isSecondary">Element Template Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_style.html" class="NavLink isSecondary">Add Stylesheets to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_js.html" class="NavLink isSecondary">Add JavaScript to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Your App Ready to Publish</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_upload.html" class="NavLink isSecondary">Upload your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_test.html" class="NavLink isSecondary">Test Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_release.html" class="NavLink isSecondary">Release Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_update.html" class="NavLink isSecondary">Update Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Create Element Settings</h1>
+    </div>
+    <div class="page-type">  concepts  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Your element can include settings that the user configures when including it on a web page. You create these settings as property keys in the manifest.json file.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <p>When a user interacts with your element in the editor (in most cases by clicking on it), Weebly uses the data in the manifest to generate a dialog that allows the user to update the settings.</p>
+
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/settings.png" alt="" style="max-width: 400px" />
+
+	
+
+	
+		<figcaption>Settings Dialog</figcaption>
+	</figure>
+
+<p>Before you configure your settings in the manifest, be sure that you’ve considered the <a href="ds_apps_guides.html">guidelines</a> and started the configuration of your element in the <a href="ds_apps_element_manifest.html">manifest</a>. Refer to the <a href="ds_apps_element_man_ex.html">example</a> manifest for help.</p>
+
+<h2 id="start-the-settings-configuration">Start the Settings Configuration</h2>
+<p>The parent <code class="highlighter-rouge">settings</code> property tells Weebly that this element has settings and needs a dialog to display them. It has two sub-properties: <code class="highlighter-rouge">config</code> and <code class="highlighter-rouge">properties</code>. <code class="highlighter-rouge">Config</code> determines how the dialog behaves. <code class="highlighter-rouge">Properties</code> holds the individual settings. As a child to the <code class="highlighter-rouge">settings</code> object you created in <a href="ds_apps_element_manifest.html">Add an element to the Manifest</a>, add the following:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">config</code> (required): A configuration object which informs Weebly of how you want your element to behave when it’s dropped onto the page.  Create the following subproperties:</li>
+  <li><code class="highlighter-rouge">autopop</code> (required): Set to <code class="highlighter-rouge">true</code> to have the dialog launch immediately after it is dropped onto the page. Set to <code class="highlighter-rouge">false</code> to have it open only when the element is clicked on.</li>
+  <li><code class="highlighter-rouge">external</code>: Set to allow users to edit the settings outside of the Weebly ecosystem (more about external settings configuration, <a href="#create-external-settings">here</a>.</li>
+  <li><code class="highlighter-rouge">properties</code>: An array of objects.  Each object represents one setting for your element. Each instance of an element will have it’s own values.</li>
+</ul>
+
+<p>Next you create child <code class="highlighter-rouge">properties</code> objects that are the actual settings. But first, you need to group them in a parent <code class="highlighter-rouge">properties</code> object that represents a group in the dialog. The next section explain the structure of the <code class="highlighter-rouge">properties</code> object.</p>
+
+<h2 id="properties-structure">Properties Structure</h2>
+
+<p><code class="highlighter-rouge">Properties</code> are the objects that hold the settings information. A parent <code class="highlighter-rouge">properties</code> must be of type <code class="highlighter-rouge">group</code>. A <code class="highlighter-rouge">group</code> is used to structure how the properties are displayed on the first page of the dialog. Members of a group are displayed together on the dialog page, using the group’s name as the heading for that section.</p>
+
+<p>For example, in the Price Chart sample element, the <code class="highlighter-rouge">settings</code> group holds the plans and features settings, the button position, and the text alignment. The <code class="highlighter-rouge">advanced</code> group holds the currency and color settings.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/priceChartSettings.png" alt="" style="max-width: 400px" />
+
+	
+
+	</figure>
+
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/priceChartSettingsAdv.png" alt="" style="max-width: 400px" />
+
+	
+
+	</figure>
+
+<p>Settings that rely on a selection (like color) take the user to another page in the dialog.</p>
+
+<h2 id="create-a-group">Create a Group</h2>
+
+<p>You must create at least one group.</p>
+
+<p>To create a group, set the following:</p>
+<ul>
+  <li><code class="highlighter-rouge">name</code>: The internal name of your group.  This name will be used to access the group from within your element code.</li>
+  <li><code class="highlighter-rouge">label</code>: The label for the group displayed as the group heading in the settings dialog.</li>
+  <li><code class="highlighter-rouge">type</code>: Set to <code class="highlighter-rouge">group</code>.</li>
+  <li><code class="highlighter-rouge">properties</code>: Create the array of settings for your element.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"properties"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"settings"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Settings"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"group"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="err">...</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span></code></pre></figure>
+
+<h2 id="add-the-settings">Add the Settings</h2>
+<p>To create the element’s setting properties, you define the following:</p>
+<ul>
+  <li><code class="highlighter-rouge">name</code>: The internal name of your setting.  This name will be used to access the setting from within your element code.</li>
+  <li><code class="highlighter-rouge">label</code>: The label for the setting displayed in the dialog.</li>
+  <li><code class="highlighter-rouge">type</code>: The type of the setting.  This dictates how the setting will appear in the dialog, and what validations can be applied to it. See Setting Types, <a href="#setting-types">below</a>, for allowed options.</li>
+  <li><code class="highlighter-rouge">default</code>: The default value for this setting.</li>
+</ul>
+
+<div class="Notice type_success" role="alert">
+	<b>Tip:</b> Use <code class="highlighter-rouge">default: " "</code>  for null.
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">hidden</code>: Set to <code class="highlighter-rouge">true</code> if you don’t want this setting to display in the dialog. When set to <code class="highlighter-rouge">true</code>, you must supply a value for <code class="highlighter-rouge">default</code>. Default is <code class="highlighter-rouge">false.</code></li>
+</ul>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> If you want to have all of your settings managed from an external URL (see <a href="#create-external-settings">below</a>), you can set <code class="highlighter-rouge">hidden</code> to <code class="highlighter-rouge">true</code> on all settings.  When the dialog displays, it will simply contain a button to open the iframe.
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">private</code>: Set to <code class="highlighter-rouge">true</code> to make the setting unavailable to the published site (default is <code class="highlighter-rouge">false</code>).  In some cases, settings may contain private information (such as API Keys).  This ensure that the data is not available to visitors of the site, and can only be used within the editor.</li>
+  <li><code class="highlighter-rouge">tooltip</code>: A string that displays when the user hovers over the setting in the dialog. Max length is 100 characters. No HTML is allowed.</li>
+</ul>
+
+<h2 id="setting-types">Setting Types</h2>
+<p>Each setting must specify one of the following types. Each type creates a specific UI control in the dialog. Some types allow additional data.</p>
+<ul>
+  <li><code class="highlighter-rouge">string</code>: A single-line text input.  You may specify both <code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code> properties to indicate minimum and maximum string length.</li>
+  <li><code class="highlighter-rouge">text</code>: A multi-line text input.  You may specify both <code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code> properties to indicate minimum and maximum string length.</li>
+  <li><code class="highlighter-rouge">int</code>: A single-line text input, validated to allow only numeric input.  You may specify both <code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code> properties to indicate minimum and maximum values.  You may also specify a <code class="highlighter-rouge">step</code> property, which adds up and down buttons, and auto-round any input to an appropriate step value. <code class="highlighter-rouge">Default</code>, <code class="highlighter-rouge">step</code>, <code class="highlighter-rouge">min</code>, and <code class="highlighter-rouge">max</code> properties are all integers.</li>
+  <li><code class="highlighter-rouge">slider</code>: A slider selection.  You may specify both <code class="highlighter-rouge">min</code> and <code class="highlighter-rouge">max</code> properties to indicate minimum and maximum values.  You may also specify a <code class="highlighter-rouge">step</code> property, which will cause the slider to move in steps of that size. <code class="highlighter-rouge">Default</code>, <code class="highlighter-rouge">step</code>, <code class="highlighter-rouge">min</code>, and <code class="highlighter-rouge">max</code> properties are all integers.</li>
+  <li><code class="highlighter-rouge">toggle</code>: A toggle selection of on/off. The value will be returned as a boolean <code class="highlighter-rouge">true</code>/<code class="highlighter-rouge">false</code>, respectively.</li>
+  <li><code class="highlighter-rouge">radio</code>: A radio group selection. You must specify a <code class="highlighter-rouge">values</code> array.  This array can either be a simple array of strings as values, or an array of objects that provide both <code class="highlighter-rouge">name</code> and <code class="highlighter-rouge">value</code> properties.</li>
+  <li><code class="highlighter-rouge">select</code>: A separate dialog page that allows the user to select an option.  You must specify a <code class="highlighter-rouge">values</code> array.  This array can either be a simple array of strings as values, or an array of objects that provide both <code class="highlighter-rouge">name</code> and <code class="highlighter-rouge">value</code> properties.</li>
+  <li><code class="highlighter-rouge">color</code>: A color picker input.</li>
+  <li><code class="highlighter-rouge">align</code>: A series of buttons, indicating left, center, and right.</li>
+  <li><code class="highlighter-rouge">group</code>: Don’t use for settings - use only when creating a group.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"properties"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"settings"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Settings"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"group"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"plans"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plans"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"step"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"tooltip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Select the number of plans to display."</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"features"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Features"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"step"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"tooltip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Select the number of features per plan."</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"location"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sign Up Button"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"values"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"Top"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"Bottom"</span><span class="w">
+                </span><span class="p">],</span><span class="w">
+                </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Top"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="err">.</span><span class="w"> </span><span class="err">.</span><span class="w"> </span><span class="err">.</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="err">}</span></code></pre></figure>
+
+<h2 id="create-external-settings">Create External Settings</h2>
+
+<p>If your application or element requires external data, or you feel that your customized settings panel will provide a better experience for users, you can provide some configuration options in an iframe that allows users to edit certain settings directly on your site, while others are kept in the Weebly dialog. We’ll provide a button in the dialog to open your site in an iframe.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Your server must be appropriately configured to send the right headers to allow us to load up the iframe. Please read the documentation about the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/X-Frame-Options"><code class="highlighter-rouge">X-Frame-Options HTTP header</code></a> for more information.
+</div>
+
+<p>​By default, the dialog that is opened for editing settings is an 800x600 modal.  You can change this with the <code class="highlighter-rouge">height</code> and <code class="highlighter-rouge">width</code> properties. The modal that we generate will never grow beyond the page bounds, regardless of the size specified in your manifest. You can instead choose it to be set to be <code class="highlighter-rouge">fullscreen</code>.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Your iframe settings panel should be constructed to expect requests from differently sized clients, as many users may not have the screen real estate expected.
+</div>
+
+<p>​If your element does not have any visible settings or settings that use the Weebly dialog (they are all in the iframe), then only the iframe is displayed.</p>
+
+<p>Set the following to create external settings:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">url</code>: A URL that contains a self-hosted page for editing settings.  The URL must use the <code class="highlighter-rouge">HTTPS</code> protocol.</li>
+</ul>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> All URLs must use the <code class="highlighter-rouge">HTTPS</code> protocol. You will not be able to upload an app that uses <code class="highlighter-rouge">HTTP</code>.
+</div>
+
+<p>We use a JSON web token (JWT) to inject information, including their <code class="highlighter-rouge">user_id</code>, <code class="highlighter-rouge">site_id</code>, <code class="highlighter-rouge">element_id</code>, <code class="highlighter-rouge">element_uuid</code>, <code class="highlighter-rouge">iat</code> (issued-at timestamp - i.e. the time the token was generated), and the <code class="highlighter-rouge">jti</code> (JWT token ID).</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Weebly automatically appends the JWT string to the end of the URL, including any necessary operands (like <code class="highlighter-rouge">?</code> and <code class="highlighter-rouge">&amp;</code>). If you want the JWT to be placed in a specific part of the URL, you can use <code class="highlighter-rouge">:jwt</code>, and Weebly will replace that with the JWT (without adding any operands - you’ll need to include those).
+</div>
+
+<p>Below is an example of how to decode the JWT hash:</p>
+
+<p><code class="highlighter-rouge">$decoded = JWT::decode($_GET['jwt'], $client_secret, array('HS256'));</code></p>
+
+<ul>
+  <li><code class="highlighter-rouge">label</code>: This string will be used as the label for button displayed in the dialog to open the iframe. Below shows what might be displayed if you set this to “Edit Your Map.”
+    <figure class="post-content__figure">
+	
+
+  <img class="post-content__image" src="images/externalButton2.png" alt="" />
+
+	
+
+	
+      <figcaption>Button using the label property to open an iframe</figcaption>
+  </figure>
+  </li>
+  <li><code class="highlighter-rouge">height</code>: The height the modal should be set to. Your iframe will be placed inside this modal size. Do not set if you want the modal to be fullscreen.</li>
+  <li><code class="highlighter-rouge">width</code>: The width the modal should be set to. Your iframe will be placed inside this modal size. Do not set if you want the modal to be fullscreen.</li>
+  <li><code class="highlighter-rouge">modal</code>: Set to <code class="highlighter-rouge">true</code> to have your iframe display in a modal. Set to <code class="highlighter-rouge">false</code> to allow the user to interact with the Weebly editor in the background.</li>
+  <li><code class="highlighter-rouge">fullscreen</code>: Set to <code class="highlighter-rouge">true</code> to have your iframe display in the entire screen area.</li>
+</ul>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> <code class="highlighter-rouge">Fullscreen</code> should be used only when absolutely necessary, as it breaks the design flow for the user.
+</div>
+
+<p>The following shows an external setting using a modal:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"elements"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"elements/ExampleElement"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example Element"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"config"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"external"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/:jwt"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Configure Advanced Settings"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">250</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"modal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"fullscreen"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+        </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">...</span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+</span><span class="err">}</span></code></pre></figure>
+
+<h2 id="combine-external-and-native-settings">Combine External and Native Settings</h2>
+
+<p>Your element can use both external and native settings. Simply create the external settings as children to the config element and create native settings as children to the properties element, as shown in the following example.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"elements"</span><span class="err">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nt">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"files"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example Element"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.1"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"config"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"external"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.com/:jwt"</span><span class="w">
+                </span><span class="s2">"label"</span><span class="err">:</span><span class="w"> </span><span class="s2">"Edit Your External Settings"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"height"</span><span class="p">:</span><span class="mi">800</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"width"</span><span class="p">:</span><span class="mi">1024</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"modal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"fullscreen"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nt">"autopop"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"group"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"settings"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Settings"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"height"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Height"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"medium"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"select"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"values"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                    </span><span class="s2">"small"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"medium"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"large"</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zoom"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zoom"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"slider"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"step"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}]</span></code></pre></figure>
+
+<h2 id="pass-data-to-weebly">Pass Data to Weebly</h2>
+
+<p>To pass data between your external settings page and our system, we leverage the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window.postMessage"><code class="highlighter-rouge">postMessage</code></a> API.  All messages are in the form of objects containing <code class="highlighter-rouge">action</code> and <code class="highlighter-rouge">data</code> keys.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ACTION_NAME"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>We support these actions:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">settings:load</code>: This event is sent to your iframe once it is loaded and initialized.  The <code class="highlighter-rouge">data</code> key has two sub-keys.  First, <code class="highlighter-rouge">config</code>, which contains information about the current configuration of the element (such as <code class="highlighter-rouge">user_id</code>, <code class="highlighter-rouge">site_id</code>, and <code class="highlighter-rouge">element_id</code>). The second is <code class="highlighter-rouge">settings</code>, which is an object that contains key/value pairs of settings.  We do not pass the entire settings structure (including minimums, maximums, etc.).</li>
+  <li><code class="highlighter-rouge">settings:update</code>: This is an event you send to us. The <code class="highlighter-rouge">data</code> key should be a key/value hash of the settings and the value you hope to set them to.  This object is a modified copy of the <code class="highlighter-rouge">data.settings</code> key provided to you by <code class="highlighter-rouge">settings:load</code>.  If the settings are invalid, you will receive a <code class="highlighter-rouge">settings:invalid</code> <code class="highlighter-rouge">postMessage</code> back.  If the settings are successfully saved, you will receive the <code class="highlighter-rouge">settings:updated</code> event.</li>
+  <li><code class="highlighter-rouge">settings:invalid</code>: If you try to save settings but they are invalid, we <code class="highlighter-rouge">postMessage</code> back an action of <code class="highlighter-rouge">settings:invalid</code>.  The <code class="highlighter-rouge">data</code> key will contain setting names as keys, each having an array of errors as the value.  Only invalid settings will appear in this object.</li>
+  <li><code class="highlighter-rouge">settings:updated</code>: This is returned to your external frame after your settings are successfully saved after a <code class="highlighter-rouge">settings:update</code> call.  This event should be used to auto-close the settings dialog if you would like to to disappear after a successfull save.</li>
+  <li><code class="highlighter-rouge">dialog:close</code>: You may trigger this action at any time to tell our system to close the settings dialog.</li>
+</ul>
+
+<p>When sending messages to us, you must ensure that you are sending them to the correct domain endpoint.  The easiest way to do this is to listen for the initial <code class="highlighter-rouge">settings:load</code> event and store the origin URL for later use:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"message"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">evt</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">frameOrigin</span> <span class="o">=</span> <span class="nx">evt</span><span class="p">.</span><span class="nx">origin</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="nx">evt</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">action</span> <span class="o">==</span> <span class="err">“</span><span class="nx">settings</span><span class="err">:</span><span class="nx">load</span><span class="err">”</span><span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">“</span><span class="nx">Got</span> <span class="nx">settings</span><span class="o">!</span><span class="err">”</span><span class="p">);</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+        <span class="nx">parent</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span><span class="na">action</span><span class="p">:</span> <span class="err">“</span><span class="na">dialog</span><span class="p">:</span><span class="nx">close</span><span class="err">”</span><span class="p">},</span> <span class="nb">window</span><span class="p">.</span><span class="nx">frameOrigin</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> You <strong>must</strong> remain on the same host/domain that you specify in <code class="highlighter-rouge">manifest.json</code>.  Any redirects will cause the <code class="highlighter-rouge">postMessage</code> protocol to fail. Additionally, all URLS must use the <code class="highlighter-rouge">HTTPS</code> protocol.
+</div>
+
+<h2 id="access-settings-from-your-app">Access Settings from Your App</h2>
+<p>You can access your settings from anywhere within your application code, including JavaScript, CSS, and templates. Please see the various sections for <a href="ds_apps_element_temp.html">templates</a>, <a href="ds_apps_element_js.html">JavaScript</a>, and <a href="ds_apps_element_style.html">CSS</a> for information on how to access them from each location.</p>
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_elements.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">elements</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

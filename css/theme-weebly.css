@@ -1,0 +1,350 @@
+/*
+888       888                   888      888
+888   o   888                   888      888
+888  d8b  888                   888      888
+888 d888b 888  .d88b.   .d88b.  88888b.  888 888  888
+888d88888b888 d8P  Y8b d8P  Y8b 888 "88b 888 888  888
+88888P Y88888 88888888 88888888 888  888 888 888  888
+8888P   Y8888 Y8b.     Y8b.     888 d88P 888 Y88b 888
+888P     Y888  "Y8888   "Y8888  88888P"  888  "Y88888 888 Y8b d88P "Y88P"
+*/
+/* New color */
+/* New color */
+a[data-toggle="tooltip"] { color: #649345; font-style: italic; cursor: default; }
+
+/*--------
+what i added
+--------*/
+/* .next is used on the button at the bottom of an intro page for a series.
+Classname could be improved. */
+div.next { margin-top: 32px; margin-bottom: 16px; }
+
+.action { -webkit-border-radius: 3px; border-radius: 3px; background-clip: padding-box; background: rgba(0, 0, 0, 0.1); padding: 0; margin: 0 0 16px 0; line-height: 26px; font-weight: normal; }
+
+.post-content ol li, .post-content ul li { margin: 8px 0px; }
+
+caption { padding-top: 8px; padding-bottom: 8px; color: #777; text-align: left; page-break-before: avoid; }
+
+p.external a { text-align: right; font-size: 12px; color: #0088cc; display: inline; }
+
+#search-demo-container { position: relative; }
+
+#search-input { width: 100%; margin-top: 8px; }
+@media (min-width: 767px) { #search-input { width: 100px; padding-left: 16px; } }
+
+#search-demo-container .fa-search { position: absolute; top: 13px; left: 18px; }
+
+#search-demo-container { position: relative; }
+
+#search-demo-container .fa-search { position: absolute; top: 4px; left: 0; }
+@media (min-width: 767px) { #search-demo-container .fa-search { left: auto; } }
+
+/* search area */
+#search-demo-container ul#results-container { list-style: none; background-color: white; position: absolute; top: 41px; /* if you change anything about the nav, you'll prob. need to reset the top and left values here.*/ left: 20px; right: 0; width: 100%; z-index: 1; font-size: 14px; left: auto; }
+@media (max-width: 767px) { #search-demo-container ul#results-container { width: 223px; left: 0; padding-left: 0; } }
+
+#search-demo-container ul#results-container, .no-results { width: 223px; }
+
+.no-results { border: 1px solid #e5e5e5; padding: 8px 16px; display: inline-block; box-sizing: border-box; }
+
+#results-container li { border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; }
+#results-container li:first-child { border-top: 1px solid #e5e5e5; }
+#results-container li:last-child { border-bottom: 1px solid #e5e5e5; }
+
+ul#results-container a { background-color: transparent; padding: 8px 16px; display: block; }
+
+ul#results-container a:hover { color: black; }
+
+#search-demo-container a:hover { color: black; }
+
+/* end search */
+li.dropdownActive a { font-weight: bold; }
+
+.post-content a.fa-rss { color: orange; }
+
+/* navgoco sidebar styles (customized) */
+.nav, .nav ul, .nav li { list-style: none; }
+
+/* end sidebar */
+dl dt p { margin-left: 20px; }
+
+dl dd { margin-top: 10px; margin-bottom: 10px; }
+
+dl.dl-horizontal dd { padding-top: 20px; }
+
+figcaption { padding-bottom: 12px; padding-top: 6px; max-width: 90%; margin-bottom: 20px; font-style: italic; color: gray; page-break-before: avoid; }
+
+hr.faded { border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
+hr.shaded { height: 12px; border: 0; box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.5); margin-top: 70px; background: white; width: 100%; margin-bottom: 10px; }
+
+a[data-toggle] { color: #248EC2; }
+
+.alert, .callout { overflow: hidden; }
+
+ol li ol li { list-style-type: lower-alpha; }
+
+ol li ul li { list-style-type: disc; }
+
+li img { clear: both; }
+
+.alert-warning { color: #444; }
+
+div.alert code, h2 code { background-color: transparent !important; }
+
+/* without this, the links in these notes aren't visible.*/
+.alert a { text-decoration: underline; }
+
+hr { background: #999; margin: 30px 0px; width: 90%; margin-left: auto; margin-right: auto; }
+
+a[data-toggle="tooltip"] { color: #649345; font-style: italic; cursor: default; }
+
+#mysidebar { padding-left: 0; }
+
+#mysidebar > .NavLinkLi { margin-bottom: 12px; }
+
+#mysidebar .nav-group-list.Children { padding-left: 8px; margin: 16px 0 0 0; }
+
+#mysidebar .NavList > *:first-child { margin-top: 8px; }
+
+span.muted { color: #666; }
+
+table code { background-color: transparent; }
+
+.highlight .err { color: #a61717; background-color: transparent !important; }
+
+table p { margin-top: 12px; margin-bottom: 12px; }
+
+video { display: block; margin: 30px 0px; border: 1px solid #c0c0c0; }
+
+dd { margin-left: 20px; }
+
+.post-content img.inline { margin: 0px; margin-bottom: 6px; }
+
+.panel-heading { font-weight: bold; }
+
+.note code, .alert code, .warning code, h2 code, h3 code, h4 code { color: inherit; padding: 0px; }
+
+.alert { margin-bottom: 10px; margin-top: 10px; }
+
+span.red { color: red; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
+
+.githubEditButton { margin-bottom: 7px; }
+
+/* this part adds an icon after external links, using FontAwesome*/
+a[href^="http://"]:after, a[href^="https://"]:after { content: "\f08e"; font-family: FontAwesome; font-weight: normal; font-style: normal; display: inline-block; text-decoration: none; padding-left: 3px; }
+
+/* Strip the outbound icon when this class is present */
+a[href].noCrossRef::after, a.no_icon:after { content: "" !important; padding-left: 0; }
+
+a code { color: #248EC2; }
+
+code + a > code { margin-left: -7px; }
+
+table th code { color: white; }
+
+ol li ul li ol li { list-style: decimal; }
+
+ol li ul li ol li ul li { list-style: disc; }
+
+.post-content table th { vertical-align: top; }
+
+table thead th code.highlighter-rouge { background-color: transparent; }
+
+.box { padding: 10px; border: 1px solid #888; box-shadow: 2px 2px 4px #dedede; width: 100px; height: 80px; background-color: #f5f5f5; font-family: Arial; font-size: 12px; hyphens: auto; float: left; font-size: 12px; }
+
+.box:hover { background-color: #f0f0f0; }
+
+div.arrow { max-width: 50px; margin-left: 15px; margin-right: 15px; font-size: 20px; }
+
+div.content { max-width: 110px; }
+
+.clearfix { clear: both; }
+
+.box1 { margin-left: 0px; }
+
+button.btn.btn-default.btn-lg.modalButton1 { margin-left: -20px; }
+
+div.box.box1 { margin-left: -20px; }
+
+/* EXTENDABLES -------------------------------------------------------------- */
+.font-base { color: #003055; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; font-size: 16px; line-height: 1.5; }
+
+.font-smoothing, a.nav-group-list-link { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+
+/* BASE TYPOGRAPHY ---------------------------------------------------------- */
+body { margin: 0; padding: 0; color: #28292C; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; font-size: 16px; }
+
+p { margin-top: 0; }
+
+figure { margin: 0; }
+
+/* LAYOUT ------------------------------------------------------------------- */
+.top-nav, .page { padding: 0 16px; }
+@media (min-width: 767px) { .top-nav, .page { padding: 0 8px; } }
+
+.page { margin: 0 auto; }
+
+.col-sidebar { margin-bottom: 32px; }
+
+@media (min-width: 767px) { .top-nav { max-width: 1024px; padding: 0 16px; }
+  .page { position: relative; max-width: 1024px; padding: 0 16px; }
+  .col-sidebar { position: absolute; width: 220px; }
+  .page.has-sidebar .col-content { margin-left: 320px; } }
+/* POST --------------------------------------------------------------------- */
+/* POST TOC */
+.toc { border-bottom: 1px solid #dfe6ee; padding-bottom: 8px; margin-bottom: 24px; }
+
+.toc > ul { list-style: none; padding: 0; }
+
+.toc > ul::before { content: "Table of Contents"; font-size: 14px; color: #000b2e; }
+
+/* POST HEADER */
+.page-type { margin-bottom: 12px; color: #bdccdc; text-transform: uppercase; }
+
+.summary { color: #5B6D7F; line-height: 1.5; margin-bottom: 40px; }
+
+/* POST CONTENT */
+.post-content a, .post-content a:hover { color: #46A2FF; }
+
+/* Images are wrapped by <figure> */
+.post-content__figure { margin: 24px 0; page-break-before: avoid; }
+
+.post-content__image { max-width: 100%; border: 1px solid #dfe6ee; border-radius: 2px; }
+
+.post-content pre { overflow-x: auto; margin-bottom: 40px; padding: 24px; color: #5B6D7F; background-color: #f4f8fa; border: 1px solid #dfe6ee; border-radius: 2px; }
+
+.post-content code { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px; padding: 2px 4px; background-color: #f4f8fa; border-radius: 4px; color: #5B6D7F; }
+
+.post-content pre code { padding: 0; font-size: 13px; background-color: transparent; }
+
+/* FOOTER ------------------------------------------------------------------- */
+.footer { color: #5B6D7F; padding-top: 16px; padding-bottom: 40px; text-align: right; }
+
+.footer__fineprint { margin-bottom: 16px; line-height: 1.5em; }
+
+/* CARD ------------------------------------------------------------------- */
+.card-header { margin: 0; font-size: 16px; }
+
+a.Card, a.Card:hover { color: #003055; }
+
+a.Card .card-header { /*color: $color;*/ font-weight: 600; }
+
+.topic-card { display: block; float: left; max-width: 300px; height: 160px; margin: 0 24px 24px 0; }
+.topic-card p { color: #5B6D7F; }
+
+/* SERIES ------------------------------------------------------------------- */
+/* Hiding the Series Dropdown. Seem unnecessary. List of steps is visible in the sidebar. */
+.seriesContext { display: none; }
+
+.btn-group { position: relative; margin-bottom: 16px; }
+
+.dropdown-menu { display: none; position: absolute; z-index: 1; top: 24px; max-width: 320px; padding-left: 16px; background-color: white; border: 1px solid #dfe6ee; box-shadow: 0 1px 3px 1px rgba(0, 11, 46, 0.2); list-style: none; }
+.dropdown-menu .active { font-weight: bold; }
+
+.btn-group.open .dropdown-menu { display: block; }
+
+.series-nav { display: flex; justify-content: space-between; margin-bottom: 16px; }
+
+/* POPOVER ------------------------------------------------------------------- */
+[data-toggle="popover"]:hover { cursor: pointer; }
+
+.popover { position: absolute; top: 0; left: 0; z-index: 1060; display: block; max-width: 276px; padding: 1px; text-align: left; text-align: start; text-decoration: none; word-break: normal; word-spacing: normal; word-wrap: break-word; background-color: #fff; border: 1px solid #0003; border-radius: 2px; }
+
+.popover.top { margin-top: -10px; }
+
+.popover.top > .arrow { bottom: -11px; left: 50%; margin-left: -11px; border-top-color: #999; border-top-color: #0003; border-bottom-width: 0; }
+
+.popover.top > .arrow:after { bottom: 1px; margin-left: -10px; content: " "; border-top-color: #fff; border-bottom-width: 0; }
+
+.popover > .arrow:after { content: ""; border-width: 10px; }
+
+.popover > .arrow { border-width: 11px; }
+
+.popover > .arrow, .popover > .arrow:after { position: absolute; display: block; width: 0; height: 0; border-color: #0000; border-style: solid; }
+
+.popover-content { padding: 8px 16px; }
+
+/* Tags -----------------------------------------------------------*/
+.tags .tags-link:after { content: ","; cursor: default; color: #003055; margin-right: 2px; }
+.tags .tags-link:only-child:after, .tags .tags-link:last-child:after { content: ''; }
+
+/* ORBIT EXTERNAL - OVERRIDES -----------------------------------------------------------*/
+/* orbit-exernal.css is generated from https://github.intern.weebly.net/weebly/orbit-3rd-party. It includes Orbit style rules applied to HTML elements.
+*/
+h1 { font-weight: 600; }
+
+h2 { margin-top: 32px; font-size: 24px; font-weight: 500; }
+
+h3 { margin-top: 16px; font-size: 20px; font-weight: 400; }
+
+table { margin-bottom: 32px; }
+
+td { font-size: 15px; vertical-align: top; }
+
+td:first-child { padding-left: 16px; }
+
+/* ORBIT - OVERRIDES -----------------------------------------------------------*/
+/* orbit.css is generated from https://github.intern.weebly.net/weebly/orbit. It includes all the Orbit CSS. All the rules apply to classes and do not target HTML elements.
+*/
+.post-title-main { /* Overrides .display-2 */ margin-top: 0; margin-bottom: 6px; font-size: 36px; font-weight: 600; }
+
+div.Notice { display: block; margin-bottom: 24px; background-image: url(/images/icons/circle.svg); background-repeat: no-repeat; background-position: 20px 20px; padding-left: 42px; }
+
+/* Move top margin in secondary nav from container of the links to the links. Any top/bottom margins on the container will cause the layout to bounce when it is targeted by a jQuery collapse.
+*/
+.Children { margin-top: 0; }
+
+/* Tags are often displayed inline alongside text, give them a little breath to room. */
+.Tag { margin-right: 4px; }
+
+/* Nav Stuff -----------------------------------------------------------*/
+a.nav-group-list-link { font-weight: 400; color: #000b2e; font-size: 16px; }
+
+.nav-group .nav-group-list { flex-direction: column; margin: 0; padding: 0; list-style-type: none; display: flex; }
+
+@media (min-width: 767px) { .nav-group-list.horizontal { flex-direction: row; justify-content: space-between; } }
+
+.nav-group-list.horizontal > * { margin: 8px 0; }
+@media (min-width: 767px) { .nav-group-list.horizontal > * { margin: 0; display: flex; align-items: center; } }
+
+.nav-group-list.horizontal > *:first-child { margin: 0 0 8px 0; }
+@media (min-width: 767px) { .nav-group-list.horizontal > *:first-child { margin: 0; } }
+
+.nav-group-list.horizontal > *:last-child { margin-bottom: 0; margin-left: 0; }
+
+.NavLink { /* Reduce font-size font by 1. System fonts tend to be bigger than Effra. */ font-size: 15px; }
+
+.NavLinkLi { margin: 8px 0; line-height: 1.4; }
+
+/* When a nested Nav Link is active, Orbit does not highlight the parent. */
+.NavLinkLi.active > .NavLink { color: #0073ff; font-weight: 500; }
+
+.top-nav { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; margin: 32px auto; }
+@media (min-width: 767px) { .top-nav { margin: 32px auto 64px; flex-wrap: nowrap; } }
+
+@media (max-width: 767px) { .top-nav-item { flex: 1; text-align: right; }
+  .top-nav-item * { text-align: left; } }
+
+.top-nav-item:first-child { padding-right: 26px; }
+@media (min-width: 992px) { .top-nav-item:first-child { padding-right: 76px; } }
+
+.top-nav-item:nth-of-type(2) { text-align: right; }
+
+@media (max-width: 767px) { .top-nav-item:last-child { flex-basis: 100%; display: flex; padding: 0 20px; border-left: 1px solid #dfe6ee; box-sizing: border-box; margin-top: 20px; } }
+@media (min-width: 767px) { .top-nav-item:last-child { flex: 1; } }
+
+.cloud-logo { vertical-align: middle; }
+
+.mobile-nav-btn { padding: 6px 16px; vertical-align: middle; }
+@media (min-width: 767px) { .mobile-nav-btn { display: none; } }
+.mobile-nav-btn:hover { cursor: pointer; }
+
+.nav-group { width: 100%; }
+@media (max-width: 767px) { .nav-group { height: 1px; opacity: 0; transition: 0.2s ease-in height, 0.2s ease-in opacity; }
+  .nav-group.open { height: 281px; opacity: 1; } }
+
+/* Print Styles -----------------------------------------------------------*/
+/* TODO: Move these into printstyles.css */
+@media print { .col-sidebar, .top-nav { display: none; }
+  .col-content { margin-left: 0; } }

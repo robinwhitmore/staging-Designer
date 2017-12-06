@@ -1,0 +1,4400 @@
+/*
+CSS Utility Classes
+---
+These classes are used with `compose` to extend existing selectors.
+Learn more about compose: https://github.com/css-modules/css-modules#composition
+
+.MyComponent {
+	composes: font-base from "orbit/styles/util.css";
+	display: block;
+	margin: 0;
+	...
+}
+*/
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.font-base {
+	color: #003055;
+	font-family: "effra", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+/*
+Only display content to screen readers
+
+Taken from Bootstrap 4. More info:
+- http://a11yproject.com/posts/how-to-hide-content
+- http://hugogiraudel.com/2016/10/13/css-hide-and-seek/
+*/
+
+.screen-readers-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	-webkit-clip-path: inset(50%);
+	        clip-path: inset(50%);
+}
+
+/* Corrects overflow bug: https://bugzilla.mozilla.org/show_bug.cgi?id=748518 */
+
+.pad-overflow-bottom {
+	padding: 24px 24px 0 24px
+}
+
+.pad-overflow-bottom::after {
+	display: block;
+	height: 24px;
+	content: "";
+}
+
+@media (min-width: 600px) {
+
+	.pad-overflow-bottom {
+		padding: 32px 32px 0 32px;
+	}
+
+	.pad-overflow-bottom::after {
+		height: 24px;
+	}
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.Alert {
+	width: 420px;
+	margin: 40px;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, .1) 0 2px 20px, rgba(0, 0, 0, .1) 0 0 0 1px;
+}
+
+.Content {
+	padding: 40px;
+	text-align: center;
+}
+
+.Title {
+	margin-bottom: 24px;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.Footer {
+	padding: 40px;
+	border-top: 1px solid #dfe6ee;
+	background-color: #f4f8fa;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.CrumbContainer {
+	display: inline-block;
+}
+
+.Crumb {
+	color: #708399;
+	font-size: 24px;
+	text-decoration: none;
+	cursor: default;
+	vertical-align: middle
+}
+
+.Crumb.lastCrumb {
+	color: #000b2e;
+	font-weight: 500;
+}
+
+a.Crumb {
+	cursor: pointer
+}
+
+a.Crumb:hover,
+	a.Crumb:active {
+	color: #0073ff;
+}
+
+.Delimiter {
+	margin: 0 10px;
+}
+
+/* Transition */
+
+.fadingActive {
+	transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)
+}
+
+.fadingActive .Crumb {
+	transition: margin-left 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.fadeFrom {
+	opacity: 0
+}
+
+.fadeFrom .Crumb {
+	margin-left: 40px;
+}
+
+.fadeTo {
+	opacity: 1
+}
+
+.fadeTo .Crumb {
+	margin-left: 0;
+}
+
+.leaveTo {
+	position: absolute;
+	opacity: 0;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.ButtonWrap {
+	display: inline-block;
+}
+
+.Anchor {
+	display: inline-block;
+}
+
+.ButtonEl {
+	display: none
+}
+
+.ButtonEl:last-child,
+	.ButtonEl:disabled {
+	display: inline-block;
+}
+
+.ButtonEl:disabled + .Anchor {
+	display: none;
+}
+
+.Button {
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	border-radius: 2px;
+	text-align: center;
+	text-decoration: none; /* Removes underlines on <a> buttons */
+	white-space: nowrap;
+	cursor: pointer;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none
+
+	/* Hack needed for icons. Could have un-intended effects. */
+}
+
+.Button > * {
+	line-height: 1em;
+	vertical-align: middle;
+}
+
+/* Sizes
+------------------------- */
+
+.size_small {
+	padding: 8px 16px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.size_medium {
+	padding: 8px 24px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.size_large {
+	padding: 12px 32px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* Composed Styles
+------------------------- */
+
+.comp_button {
+	border: 0
+}
+
+.comp_button:hover {
+	color: #000b2e;
+	box-shadow: inset 0 0 0 1px transparent, 0 4px 8px rgba(0, 0, 0, .2);
+}
+
+.comp_button:active {
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.comp_button:focus {
+	outline: none;
+	box-shadow: inset 0 0 0 2px #0073ff;
+}
+
+.comp_button::-moz-focus-inner {
+	border: 0;
+}
+
+.comp_button:disabled {
+	background-color: #f4f8fa;
+	color: #bdccdc;
+	box-shadow: inset 0 0 0 1px #dfe6ee;
+	cursor: auto;
+}
+
+.comp_button:disabled:hover,
+		.comp_button:disabled:active,
+		.comp_button:disabled:focus {
+	background-color: #f4f8fa;
+	color: #bdccdc;
+	box-shadow: inset 0 0 0 1px #dfe6ee;
+}
+
+.comp_button:disabled .Icon {
+	color: #dfe6ee;
+}
+
+.comp_transition {
+	transition:
+		color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Styles
+------------------------- */
+
+/* Primary */
+
+.style_primary {
+	color: #fff
+}
+
+.style_primary:hover,
+	.style_primary:active,
+	.style_primary:focus {
+	color: #fff;
+}
+
+/* Default */
+
+.style_default {
+	background-color: #fff;
+	color: #003055;
+	box-shadow: inset 0 0 0 1px #bdccdc, 0 0 10px transparent;
+}
+
+/* Muted */
+
+.style_muted {
+	background-color: #f4f8fa
+}
+
+.style_muted:hover,
+	.style_muted:active,
+	.style_muted:focus {
+	background-color: #fff;
+	color: #000b2e;
+}
+
+/* Text */
+
+.style_text {
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: #0073ff
+}
+
+.style_text:disabled {
+	color: #bdccdc;
+	cursor: default;
+}
+
+.style_text:active,
+	.style_text:focus {
+	color: #005ac7;
+}
+
+/* Primary Buttons
+------------------------- */
+
+/* Primary: Default */
+
+.primary_default {
+	background-color: #0073ff
+}
+
+.primary_default:hover {
+	box-shadow: 0 4px 8px rgba(0, 115, 255, .4);
+}
+
+.primary_default:active {
+	box-shadow: 0 1px 2px 1px rgba(0, 115, 255, .4);
+}
+
+.primary_default:focus {
+	box-shadow: inset 0 0 0 2px #005ac7;
+}
+
+.primary_default::-moz-focus-inner {
+	border: 0;
+}
+
+/* Primary: Destructive */
+
+.primary_destructive {
+	background-color: #ff2825
+}
+
+.primary_destructive:hover {
+	box-shadow: 0 4px 8px rgba(255, 61, 51, .4);
+}
+
+.primary_destructive::-moz-focus-inner {
+	border: 0;
+}
+
+.primary_destructive:focus {
+	box-shadow: inset 0 0 0 2px #d00000;
+}
+
+.primary_destructive:active {
+	box-shadow: 0 1px 2px 1px rgba(255, 61, 51, .4);
+}
+
+/* Fullwidth
+------------------------- */
+
+.full-width {
+	display: block;
+	width: 100%;
+}
+
+/* Icons
+------------------------- */
+
+.icon-margin_right {
+	margin-right: 8px;
+}
+
+.icon-margin_left {
+	margin-left: 8px;
+}
+
+.ButtonGroup {
+	display: inline-block;
+	vertical-align: middle;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.ButtonGroupItem {
+	position: relative
+}
+
+.ButtonGroupItem.selected,
+	.ButtonGroupItem.selected:disabled {
+	outline: none;
+	box-shadow: inset 0 0 0 2px #0073ff;
+}
+
+.ButtonGroupItem:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.ButtonGroupItem:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.ButtonGroupItem:not(:first-child):not(:last-child) {
+	border-radius: 0;
+}
+
+.ButtonGroupItem:not(:last-child) {
+	margin-right: -1px;
+}
+
+.ButtonGroupItem:hover,
+	.ButtonGroupItem:focus,
+	.ButtonGroupItem:active {
+	z-index: 1;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.Card {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	padding: 24px;
+	transition: box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-radius: 4px;
+	background-color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.Header {
+	margin-bottom: 16px;
+	color: #000b2e;
+	font-size: 16px;
+	font-size: 1.5;
+	font-weight: 500;
+}
+
+.HeaderIcon {
+	margin-right: 12px;
+	vertical-align: middle
+}
+
+.HeaderIcon.external {
+	max-width: 16px;
+	max-height: 16px;
+}
+
+.SecondaryAction {
+	margin-top: 24px;
+}
+
+/* Card Themes
+- default
+- blue
+- Potentially 4 gradients (insights, store, website, marketing)
+------------------------------------- */
+
+.theme_default {
+	box-shadow: 0 1px 3px 1px rgba(0, 11, 46, .2)
+}
+
+.theme_default:hover {
+	box-shadow: 0 3px 6px 1px rgba(0, 11, 46, .2);
+}
+
+.theme_primary {
+	background: linear-gradient(45deg, #0071ff 0%, #00a3ff 100%);
+	color: #fff;
+	box-shadow: 0 1px 3px 1px rgba(0, 115, 255, .4)
+}
+
+.theme_primary:hover {
+	box-shadow: 0 3px 6px 1px rgba(0, 115, 255, .3);
+}
+
+.theme_primary .Header {
+	color: #fff;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+:root {
+	/* WIP until designs are done and colors are added -HIROKI */
+}
+
+.Checkbox {
+	display: block;
+	cursor: pointer;
+}
+
+.HiddenInput {
+	position: absolute;
+	width: 0;
+	opacity: 0
+
+	/* Disabled state */
+}
+
+.HiddenInput + .Control {
+	box-shadow:
+			inset 0 0 0 0 transparent,
+			inset 0 0 0 1px #dfe6ee;
+}
+
+.HiddenInput:checked + .Control {
+	background-color: #dfe6ee;
+}
+
+.HiddenInput:checked + .Control .BoxCheck::before,
+			.HiddenInput:checked + .Control .BoxCheck::after {
+	background-color: #fff;
+}
+
+.HiddenInput:checked + .Control .BoxCheck::before {
+	height: 100%;
+}
+
+.HiddenInput:checked + .Control .BoxCheck::after {
+	width: 100%;
+}
+
+.HiddenInput:not(:disabled) + .Control {
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 1px #bdccdc;
+}
+
+.HiddenInput:not(:disabled):hover + .Control {
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 1px #708399;
+}
+
+.HiddenInput:not(:disabled):focus + .Control {
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 1px #0073ff;
+}
+
+.HiddenInput:not(:disabled):active + .Control {
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 2px #81baff;
+}
+
+.HiddenInput:not(:disabled):active + .Control .BoxCheck {
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(0.8);
+}
+
+.HiddenInput:not(:disabled):checked + .Control {
+	background-color: #0073ff;
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 5px #0073ff;
+}
+
+.HiddenInput:not(:disabled):checked:active + .Control {
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 2px #005ac7;
+}
+
+.HiddenInput:not(:disabled):checked:active + .Control .BoxCheck {
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(0.8);
+}
+
+.Control {
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	transition:
+		box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s ease-out;
+	border-radius: 2px;
+	background-color: #fff;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.BoxCheck {
+	position: relative;
+	top: 45%;
+	left: 50%;
+	width: 10px;
+	height: 5px;
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg) scale(1);
+	transform-origin: 50% 50%;
+	transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1)
+}
+
+.BoxCheck::before,
+	.BoxCheck::after {
+	display: block;
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	transition:
+			height 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+			width 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+			background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	background-color: #bdccdc;
+	content: "";
+}
+
+.BoxCheck::before {
+	left: 0;
+	width: 2px;
+}
+
+.BoxCheck::after {
+	bottom: 0;
+	height: 2px;
+}
+
+.Label {
+	display: inline-block;
+	margin-left: 8px;
+	vertical-align: middle;
+	line-height: 24px;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.CheckboxGroup {
+	display: flex;
+	flex-direction: column;
+	width: 100%
+}
+
+.CheckboxGroup:hover {
+	border-color: #708399;
+}
+
+.CheckboxGroup > .o-checkbox {
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	transition:
+		border-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	background-color: #fff
+}
+
+.CheckboxGroup > .o-checkbox::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: calc(100% - 20px);
+	height: 1px;
+	background: #dfe6ee;
+	content: "";
+}
+
+.CheckboxGroup > .o-checkbox:last-child::after {
+	content: none;
+}
+
+.CheckboxGroup > .o-checkbox:hover {
+	background-color: #fafcfd;
+}
+
+.CheckboxGroup > .o-checkbox + .o-checkbox {
+	margin-left: 0;
+}
+
+.CheckboxGroup > .o-checkbox.is-disabled,
+	.CheckboxGroup > .o-checkbox.is-disabled:hover {
+	background-color: #f4f8fa;
+	color: #bdccdc;
+	cursor: default;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.Collapse {
+	transition: background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-radius: 2px;
+	background-color: #f4f8fa;
+	box-shadow: 0 0 5px transparent
+}
+
+.Collapse:hover,
+	.Collapse.open {
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .1)
+}
+
+.Collapse:hover .Label, .Collapse.open .Label {
+	color: #000b2e;
+}
+
+.Collapse:hover .CollapseIcon, .Collapse.open .CollapseIcon {
+	color: #000b2e;
+}
+
+.Collapse.open .CollapseIcon {
+	transform: rotate(-180deg);
+}
+
+.Header {
+	display: flex;
+	padding: 12px 16px;
+	cursor: pointer;
+}
+
+.Label {
+	flex: 1;
+	color: #708399;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.43;
+}
+
+.CollapseIcon {
+	flex: 0 0 auto;
+	transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+	color: #708399;
+}
+
+.Content {
+	transition: max-height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+	overflow: hidden
+}
+
+.Content:not(.open) {
+	max-height: 0;
+}
+
+.Container {
+	padding: 24px 16px;
+	border-top: 1px solid #dfe6ee;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Divider {
+	display: flex;
+	align-items: center;
+}
+
+.Line {
+	flex: 1;
+	height: 1px;
+	border: none;
+}
+
+/* Divider Theme
+-------------------------------------- */
+
+.theme_light {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme_dark {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme_transparent {
+	display: none;
+}
+
+/* Divider Sizes
+-------------------------------------- */
+
+.size_8 {
+	height: 8px;
+}
+
+.size_16 {
+	height: 16px;
+}
+
+.size_24 {
+	height: 24px;
+}
+
+.size_32 {
+	height: 32px;
+}
+
+.size_40 {
+	height: 40px;
+}
+
+.size_64 {
+	height: 64px;
+}
+
+.size_128 {
+	height: 128px;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.FormItem {
+	position: relative;
+	margin-bottom: 20px;
+	border-radius: 0;
+}
+
+.FormItem::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+/* IE doesn't display clear X
+Do we need this anymore with autoprefixer/our current setup?
+*/
+
+.FormItem::-ms-clear {
+	width: 0;
+	height: 0;
+}
+
+.Label {
+	display: block;
+	transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	color: #708399;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	cursor: pointer;
+}
+
+.LabelText {
+	display: block;
+	margin-bottom: 7px;
+}
+
+/* Modifiers ---------------------------------------------------------------- */
+
+.FormItem.disabled .FormItem__label {
+	cursor: default;
+}
+
+.FormItem.required .LabelText::after {
+	display: inline-block;
+	float: right;
+	color: #bdccdc;
+	content: "Required"; /* TODO: Translation stringz */
+}
+
+.ErrorNotice {
+	margin-top: 8px;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Grid {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin: 0 -8px -16px;
+}
+
+.GridItem {
+	box-sizing: border-box;
+	padding: 0 8px 16px
+
+	/* Columns */
+}
+
+.GridItem.span_1 {
+	width: 8.33333%;
+}
+
+.GridItem.span_2 {
+	width: 16.66667%;
+}
+
+.GridItem.span_3 {
+	width: 25%;
+}
+
+.GridItem.span_4 {
+	width: 33.33333%;
+}
+
+.GridItem.span_5 {
+	width: 41.66667%;
+}
+
+.GridItem.span_6 {
+	width: 50%;
+}
+
+.GridItem.span_7 {
+	width: 58.33333%;
+}
+
+.GridItem.span_8 {
+	width: 66.66667%;
+}
+
+.GridItem.span_9 {
+	width: 75%;
+}
+
+.GridItem.span_10 {
+	width: 83.33333%;
+}
+
+.GridItem.span_11 {
+	width: 91.66667%;
+}
+
+.GridItem.span_12 {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+
+	.GridItem.tablet-portrait_1 {
+		width: 8.33333%;
+	}
+
+	.GridItem.tablet-portrait_2 {
+		width: 16.66667%;
+	}
+
+	.GridItem.tablet-portrait_3 {
+		width: 25%;
+	}
+
+	.GridItem.tablet-portrait_4 {
+		width: 33.33333%;
+	}
+
+	.GridItem.tablet-portrait_5 {
+		width: 41.66667%;
+	}
+
+	.GridItem.tablet-portrait_6 {
+		width: 50%;
+	}
+
+	.GridItem.tablet-portrait_7 {
+		width: 58.33333%;
+	}
+
+	.GridItem.tablet-portrait_8 {
+		width: 66.66667%;
+	}
+
+	.GridItem.tablet-portrait_9 {
+		width: 75%;
+	}
+
+	.GridItem.tablet-portrait_10 {
+		width: 83.33333%;
+	}
+
+	.GridItem.tablet-portrait_11 {
+		width: 91.66667%;
+	}
+
+	.GridItem.tablet-portrait_12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.GridItem.tablet-landscape_1 {
+		width: 8.33333%;
+	}
+
+	.GridItem.tablet-landscape_2 {
+		width: 16.66667%;
+	}
+
+	.GridItem.tablet-landscape_3 {
+		width: 25%;
+	}
+
+	.GridItem.tablet-landscape_4 {
+		width: 33.33333%;
+	}
+
+	.GridItem.tablet-landscape_5 {
+		width: 41.66667%;
+	}
+
+	.GridItem.tablet-landscape_6 {
+		width: 50%;
+	}
+
+	.GridItem.tablet-landscape_7 {
+		width: 58.33333%;
+	}
+
+	.GridItem.tablet-landscape_8 {
+		width: 66.66667%;
+	}
+
+	.GridItem.tablet-landscape_9 {
+		width: 75%;
+	}
+
+	.GridItem.tablet-landscape_10 {
+		width: 83.33333%;
+	}
+
+	.GridItem.tablet-landscape_11 {
+		width: 91.66667%;
+	}
+
+	.GridItem.tablet-landscape_12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.GridItem.desktop_1 {
+		width: 8.33333%;
+	}
+
+	.GridItem.desktop_2 {
+		width: 16.66667%;
+	}
+
+	.GridItem.desktop_3 {
+		width: 25%;
+	}
+
+	.GridItem.desktop_4 {
+		width: 33.33333%;
+	}
+
+	.GridItem.desktop_5 {
+		width: 41.66667%;
+	}
+
+	.GridItem.desktop_6 {
+		width: 50%;
+	}
+
+	.GridItem.desktop_7 {
+		width: 58.33333%;
+	}
+
+	.GridItem.desktop_8 {
+		width: 66.66667%;
+	}
+
+	.GridItem.desktop_9 {
+		width: 75%;
+	}
+
+	.GridItem.desktop_10 {
+		width: 83.33333%;
+	}
+
+	.GridItem.desktop_11 {
+		width: 91.66667%;
+	}
+
+	.GridItem.desktop_12 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.GridItem.big-desktop_1 {
+		width: 8.33333%;
+	}
+
+	.GridItem.big-desktop_2 {
+		width: 16.66667%;
+	}
+
+	.GridItem.big-desktop_3 {
+		width: 25%;
+	}
+
+	.GridItem.big-desktop_4 {
+		width: 33.33333%;
+	}
+
+	.GridItem.big-desktop_5 {
+		width: 41.66667%;
+	}
+
+	.GridItem.big-desktop_6 {
+		width: 50%;
+	}
+
+	.GridItem.big-desktop_7 {
+		width: 58.33333%;
+	}
+
+	.GridItem.big-desktop_8 {
+		width: 66.66667%;
+	}
+
+	.GridItem.big-desktop_9 {
+		width: 75%;
+	}
+
+	.GridItem.big-desktop_10 {
+		width: 83.33333%;
+	}
+
+	.GridItem.big-desktop_11 {
+		width: 91.66667%;
+	}
+
+	.GridItem.big-desktop_12 {
+		width: 100%;
+	}
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */
+	--space: 8px;
+	--space-half: calc(var(--space) / 2);	/* 4px */
+	--space-x2: calc(var(--space) * 2);	/* 16px */
+	--space-x3: calc(var(--space) * 3);	/* 24px */
+	--space-x4: calc(var(--space) * 4);	/* 32px */
+	--space-x5: calc(var(--space) * 5);	/* 40px */
+	--space-x8: calc(var(--space) * 8);	/* 64px */
+	--space-x16: calc(var(--space) * 16); /* 128px */
+
+	/* Transition
+	-------------------------- */
+	--transition-time: 0.2s;
+	--transition-easing: cubic-bezier(0.25, 0.1, 0.25, 1); /* Principle default */
+	--transition-base: var(--transition-time) var(--transition-easing);
+
+	/* Primary Palette
+	-------------------------- */
+	--color-slate-10: #fafcfd;
+	--color-slate-20: #f4f8fa;
+	--color-slate-30: #dfe6ee;
+	--color-slate-40: #bdccdc;
+	--color-slate-50: #9bafc5;
+	--color-slate: var(--color-slate-30);
+	--color-blue-10: #dcedfe;
+	--color-blue-20: #81baff;
+	--color-blue-30: #0073ff;
+	--color-blue-40: #005ac7;
+	--color-blue-50: #002f69;
+	--color-blue: var(--color-blue-30);
+	--color-navy-10: #708399;
+	--color-navy-20: #3b526d;
+	--color-navy-30: #003055;
+	--color-navy-40: #002242;
+	--color-navy-50: #000b2e;
+	--color-navy: var(--color-navy-30);
+
+	/* Extended Palette
+	-------------------------- */
+	--color-green-10: #d9ffe6;
+	--color-green-20: #91ffb7;
+	--color-green-30: #00ce48;
+	--color-green-40: #00912e;
+	--color-green-50: #006013;
+	--color-green: var(--color-green-30);
+	--color-orange-10: #fff2de;
+	--color-orange-20: #ffd58f;
+	--color-orange-30: #ff9f00;
+	--color-orange-40: #d57000;
+	--color-orange-50: #8e3600;
+	--color-orange: var(--color-orange-30);
+	--color-red-10: #fbeae5;
+	--color-red-20: #ffcbbf;
+	--color-red-30: #ff2825;
+	--color-red-40: #d00000;
+	--color-red-50: #830808;
+	--color-red: var(--color-red-30);
+
+	/* Base Colors
+	-------------------------- */
+	--color-primary: var(--color-blue);
+	--color-black: #000;
+	--color-white: #fff;
+	--color-negative: var(--color-red);
+	--color-disabled: var(--color-slate-40);
+
+	/* Backgrounds
+	-------------------------- */
+	--bg-base: var(--color-white);
+	--bg-disabled: var(--color-slate-20);
+
+	/* Border
+	-------------------------- */
+	--border-color-base: var(--color-slate-30);
+	--border-color-hover: var(--color-navy-10);
+	--border-color-focus: var(--color-blue-30);
+	--border-base: 1px solid var(--border-color-base);
+	--border-color-disabled: var(--color-slate-30);
+	--border-disabled: 1px solid var(--border-color-disabled);
+	--border-radius-base: 2px;
+
+	/* Font
+	-------------------------- */
+	--font-family-base: "effra", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+	--font-size-base: 16px;
+	--font-color-base: var(--color-navy-30);
+	--font-weight-light: 300;
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+
+	/* Breakpoints
+	-------------------------- */
+	@custom-media --for-tablet-portrait-up (min-width: 600px);
+	@custom-media --for-tablet-landscape-up (min-width: 992px);
+	@custom-media --for-desktop-up (min-width: 1200px);
+	@custom-media --for-big-desktop-up (min-width: 1440px);
+}
+:root {
+	/* Heading
+	-------------------------- */
+	--heading-color: var(--color-navy-50);
+	--heading-d1-size: 56px;
+	--heading-d2-size: 44px;
+	--heading-d3-size: 32px;
+	--heading-t1-size: 24px;
+	--heading-t2-size: 20px;
+	--heading-t3-size: 16px;
+	--heading-t4-size: 14px;
+	--heading-t5-size: 12px;
+	--heading-d1-line-height: 1.22;
+	--heading-d2-line-height: 1.1;
+	--heading-d3-line-height: 1.25;
+	--heading-t1-line-height: 1.33;
+	--heading-t2-line-height: 1.2;
+	--heading-t3-line-height: 1.5;
+	--heading-t4-line-height: 1.43;
+	--heading-t5-line-height: 1.33;
+	--heading-d1-spacing: -0.5px;
+	--heading-d2-spacing: -0.4px;
+	--heading-d3-spacing: -0.3px;
+	--heading-t1-spacing: -0.2px;
+	--heading-t2-spacing: 0;
+	--heading-t3-spacing: 0;
+	--heading-t4-spacing: 0;
+	--heading-t5-spacing: 0.5px;
+
+	/* Header */
+	--header-padding: 32px;
+}
+.display-1,
+.display-2,
+.display-3 {
+	margin-bottom: 1rem;
+	font-weight: 300;
+}
+
+.display-1 {
+	font-size: 56px;
+	letter-spacing: -0.5px;
+	line-height: 1.22;
+}
+
+.display-2 {
+	font-size: 44px;
+	letter-spacing: -0.4px;
+	line-height: 1.1;
+}
+
+.display-3 {
+	font-size: 32px;
+	letter-spacing: -0.3px;
+	line-height: 1.25;
+
+	& strong,
+	&.bold {
+		font-weight: 400;
+	}
+}
+
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5 {
+	font-weight: 400;
+}
+
+.title-1 {
+	margin-bottom: 0.5rem;
+	font-size: var(--heading-t1-size);
+	letter-spacing: var(--heading-t1-spacing);
+	line-height: var(--heading-t1-line-height);
+
+	& strong,
+	&.bold {
+		font-weight: 500;
+	}
+}
+
+.title-2 {
+	margin-bottom: 0.5rem;
+	font-size: var(--heading-t2-size);
+	letter-spacing: var(--heading-t2-spacing);
+	line-height: var(--heading-t2-line-height);
+
+	& strong,
+	&.bold {
+		font-weight: 500;
+	}
+}
+
+.title-3 {
+	margin-bottom: 0.5rem;
+	font-size: var(--heading-t3-size);
+	letter-spacing: var(--heading-t3-spacing);
+	line-height: var(--heading-t3-line-height);
+
+	& strong,
+	&.bold {
+		font-weight: 500;
+	}
+}
+
+.title-4 {
+	margin-bottom: 1rem;
+	font-size: var(--heading-t4-size);
+	letter-spacing: var(--heading-t4-spacing);
+	line-height: var(--heading-t4-line-height);
+
+	& strong,
+	&.bold {
+		font-weight: 500;
+	}
+}
+
+.title-5 {
+	margin-bottom: 1rem;
+	font-size: var(--heading-t5-size);
+	letter-spacing: var(--heading-t5-spacing);
+	line-height: var(--heading-t5-line-height);
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.Heading {
+	margin-top: 0;
+	color: #000b2e;
+}
+
+.size_display-1,
+.size_display-2,
+.size_display-3 {
+	margin-bottom: 1rem;
+	font-weight: 300;
+}
+
+.size_display-1 {
+}
+
+.size_display-2 {
+}
+
+.size_display-3 {
+}
+
+.size_title-1 {
+}
+
+.size_title-2 {
+}
+
+.size_title-3 {
+}
+
+.size_title-4 {
+}
+
+.size_title-5 {
+}
+
+.Icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	font-family: serif;
+	font-family: initial;
+	font-size: 16px;
+	-webkit-font-smoothing: initial;
+	-moz-osx-font-smoothing: initial;
+	line-height: normal;
+	text-rendering: initial;
+	overflow: hidden;
+	vertical-align: middle
+}
+.Icon polygon,
+	.Icon path,
+	.Icon circle {
+	fill: currentColor;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.InputWrapper {
+	display: flex;
+}
+
+.Input {
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 8px 24px;
+	transition:
+		border 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border: 1px solid #bdccdc;
+	border-radius: 2px;
+	background-color: #fff;
+	color: #003055;
+	line-height: normal
+}
+
+.Input:-ms-input-placeholder {
+	color: #708399;
+}
+
+.Input::placeholder {
+	color: #708399;
+}
+
+.Input:hover {
+	border-color: #708399;
+	color: #000b2e;
+}
+
+.Input:focus:not(:disabled),
+	.Input:active:not(:disabled) {
+	border-color: #0073ff;
+	outline: none;
+	background-color: #fafcfd;
+	color: #000b2e;
+	box-shadow: 0 0 0 1px #0073ff;
+}
+
+.Input:disabled,
+	.Input:disabled:hover {
+	border-color: #dfe6ee;
+	background-color: #f4f8fa;
+	color: #bdccdc;
+}
+
+.Input:disabled:-ms-input-placeholder, .Input:disabled:hover:-ms-input-placeholder {
+	color: #bdccdc;
+}
+
+.Input:disabled::placeholder, .Input:disabled:hover::placeholder {
+	color: #bdccdc;
+}
+
+.Input.size_small {
+	height: 32px;
+	padding: 8px 24px;
+	font-size: 14px;
+}
+
+.Input.size_medium {
+	font-size: 16px;
+}
+
+.Input.invalid,
+.Input.invalid:focus,
+.Input.invalid:hover,
+.Input.invalid:active {
+	border-color: #ff2825;
+	box-shadow: 0 0 0 1px #ff2825;
+}
+
+.Layout {
+	display: flex;
+	position: relative;
+	flex: auto;
+	flex-direction: column;
+	overflow: hidden;
+	z-index: 0
+}
+.Layout.scrollable {
+	overflow-y: auto;
+}
+.Layout.hasSider {
+	flex-direction: row;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.LayoutHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 104px;
+	padding: 24px;
+	transition:
+		box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		min-height 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	background-color: #fff;
+	box-sizing: border-box;
+	z-index: 1
+}
+
+.LayoutHeader.levitate {
+	min-height: 88px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+
+	.LayoutHeader {
+		padding: 32px
+	}
+}
+
+.Actions button {
+	margin-left: 16px;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.LayoutContent {
+	flex: auto
+}
+
+.LayoutContent.scrollable {
+	overflow-y: auto;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.LayoutFooter {
+	flex: 0 0 auto;
+	padding: 24px;
+}
+
+@media (min-width: 600px) {
+
+	.LayoutFooter {
+		padding: 32px;
+	}
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.LayoutSider {
+	box-sizing: border-box;
+	position: relative;
+	flex: 0 0 216px;
+	max-width: 216px;
+	padding: 24px;
+}
+
+@media (min-width: 600px) {
+
+	.LayoutSider {
+		padding: 32px;
+	}
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Loading {
+	display: flex;
+	justify-content: center;
+}
+
+.Ball {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	border-radius: 100%;
+	background: #0073ff;
+	animation: scale 1.7s infinite ease-in-out both;
+}
+
+.Ball1 {
+	animation-delay: -0.6s;
+}
+
+.Ball2 {
+	animation-delay: -0.4s;
+}
+
+.Ball3 {
+	animation-delay: -0.2s;
+}
+
+@keyframes scale {
+0%,
+	80%,
+	100% {
+		transform: scale(0);
+		opacity: 0;
+}
+40% {
+		transform: scale(1);
+		opacity: 1;
+}
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.Modal {
+	width: 620px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.Header {
+	position: relative;
+	min-height: auto;
+	padding: 24px;
+}
+
+.Title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	transform: translateX(-50%) translateY(-50%);
+	color: #000b2e;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.2;
+}
+
+.Content {
+	max-height: 600px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Title {
+	margin-bottom: 24px;
+	color: #000b2e;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: default;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.NavList {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+.NavList > * {
+	margin: 8px 0
+}
+
+.NavList > *:first-child {
+	margin: 0 0 8px 0;
+}
+
+.NavList > *:last-child {
+	margin: 8px 0 0 0;
+}
+
+.NavList.horizontal {
+	flex-direction: row
+}
+
+.NavList.horizontal > * {
+	margin: 0 20px
+}
+
+.NavList.horizontal > *:first-child {
+	margin: 0 20px 0 0;
+}
+
+.NavList.horizontal > *:last-child {
+	margin: 0 0 0 20px;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.NavLinkLi {
+	color: #003055
+}
+
+.NavLinkLi:hover {
+	color: #0073ff;
+}
+
+.NavLinkLi.isActive > .NavLink {
+	color: #0073ff;
+	font-weight: 500;
+}
+
+.NavLinkLi.isExpanded .Children {
+	display: block;
+}
+
+.NavLink {
+	transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) color;
+	color: inherit;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.NavLink.isSecondary {
+	color: #708399;
+	font-weight: 400
+}
+
+.NavLink.isSecondary:hover {
+	color: #0073ff;
+}
+
+.NavLink.isNested {
+	color: #708399;
+	font-weight: inherit;
+}
+
+.Children {
+	display: none;
+	margin-top: 8px;
+	padding-left: 8px;
+	border-left: 1px solid #dfe6ee;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.margin-left {
+	margin-left: 8px;
+}
+
+.margin-right {
+	margin-right: 8px;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Notice {
+	display: flex;
+	padding: 16px 24px;
+	border-radius: 2px;
+	line-height: 24px
+}
+
+.Notice a {
+	text-decoration: none;
+}
+
+.Notice + .Notice {
+	margin-top: 16px;
+}
+
+.Icon {
+	flex: 0 0 auto;
+	margin-top: 3px;
+	margin-right: 8px;
+}
+
+/* Types
+------------------------- */
+
+.Notice.type_info {
+	background-color: #f4f8fa;
+	color: #003055
+}
+
+.Notice.type_info .Icon {
+	color: #0073ff;
+}
+
+.Notice.type_info + .type_info:not(.subtle) {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.Notice.type_info.subtle + .type_info {
+	margin-top: 16px;
+	padding-top: 16px;
+}
+
+.Notice.type_success {
+	background-color: #d9ffe6;
+	color: #006013
+}
+
+.Notice.type_success .Icon {
+	color: #00ce48;
+}
+
+.Notice.type_success + .Notice.type_success:not(.subtle) {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.Notice.type_success.subtle + .type_success {
+	margin-top: 16px;
+	padding-top: 16px;
+}
+
+.Notice.type_warning {
+	background-color: #fff2de;
+	color: #8e3600
+}
+
+.Notice.type_warning .Icon {
+	color: #ff9f00;
+}
+
+.Notice.type_warning + .Notice.type_warning:not(.subtle) {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.Notice.type_warning.subtle + .Notice.type_warning {
+	margin-top: 16px;
+	padding-top: 16px;
+}
+
+.Notice.type_error {
+	background-color: #fbeae5;
+	color: #830808
+}
+
+.Notice.type_error .Icon {
+	color: #ff2825;
+}
+
+.Notice.type_error + .Notice.type_error:not(.subtle) {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.Notice.type_error.subtle + .Notice.type_error {
+	margin-top: 16px;
+	padding-top: 16px;
+}
+
+/* Subtle
+------------------------- */
+
+.subtle {
+	padding: 0;
+	background: none;
+}
+
+
+.Overlay {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .6);
+	z-index: 1
+}
+.Overlay.clickable {
+	cursor: pointer;
+}
+.Overlay.unblocked {
+	background-color: transparent;
+	pointer-events: none;
+	* {
+			pointer-events: initial;
+	}
+}
+.Overlay.align_middle {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.Container {
+	cursor: auto;
+	cursor: initial;
+}
+.disable_scroll {
+	overflow: hidden;
+}
+/* Fade Transition */
+.fading {
+	transition: opacity 0.3s ease-in-out;
+}
+.transparent {
+	opacity: 0;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.Pagination {
+	display: inline-flex;
+	position: relative;
+	z-index: 0
+
+	/* Creates a dividing line between the buttons that remains on hover
+	over `either button */
+}
+
+.Pagination::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: calc(50% - 1px);
+	width: 1px;
+	background-color: #bdccdc;
+	content: "";
+	z-index: 3;
+	pointer-events: none;
+}
+
+.Pagination.selectable::after {
+	content: none;
+}
+
+.Pagination.selectable .Button:first-child {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.Pagination.selectable .Button:last-child {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.Button {
+	position: relative;
+	z-index: 2
+}
+
+.Button:first-child {
+	margin-right: -1px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.Button:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.Button {/*
+Ensures that the box shadow of the hovered button doesnt go over the
+	other button
+*/
+}
+
+.Button:hover {
+	z-index: 1;
+}
+
+.Select {
+	margin: 0 16px;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.PasswordWrapper {
+	display: flex;
+}
+
+.Password {
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 8px 24px;
+	transition:
+		border 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border: 1px solid #bdccdc;
+	border-radius: 2px;
+	background-color: #fff;
+	color: #003055;
+	font-family: inherit;
+	line-height: normal
+}
+
+.Password:-ms-input-placeholder {
+	color: #708399;
+}
+
+.Password::placeholder {
+	color: #708399;
+}
+
+.Password:hover {
+	border-color: #708399;
+	color: #000b2e;
+}
+
+.Password:focus:not(:disabled),
+	.Password:active:not(:disabled) {
+	border-color: #0073ff;
+	outline: none;
+	color: #000b2e;
+	box-shadow: 0 0 0 1px #0073ff;
+}
+
+.Password:disabled,
+	.Password:disabled:hover {
+	border-color: #dfe6ee;
+	background-color: #f4f8fa;
+	color: #bdccdc;
+}
+
+.Password:disabled:-ms-input-placeholder, .Password:disabled:hover:-ms-input-placeholder {
+	color: #bdccdc;
+}
+
+.Password:disabled::placeholder, .Password:disabled:hover::placeholder {
+	color: #bdccdc;
+}
+
+.Password.size_small {
+	height: 32px;
+	padding: 8px 24px;
+	font-size: 14px;
+}
+
+.Password.size_medium {
+	font-size: 16px;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.ProgressBar {
+	height: 2px;
+	background: #dfe6ee;
+}
+
+.Fill {
+	min-width: 5%;
+	height: 2px;
+	transition: width 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	background: #0073ff;
+}
+
+.RadioGroup {
+	display: flex;
+	flex-direction: column;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+:root {
+	/*
+		These variables remain WIP until designs are more concrete -Hiroki
+	*/
+}
+
+.Radio {
+	display: block;
+	cursor: pointer;
+}
+
+.HiddenInput {
+	position: absolute;
+	width: 0;
+	opacity: 0
+}
+
+.HiddenInput + .Control {
+	box-shadow: inset 0 0 0 1px #dfe6ee;
+}
+
+.HiddenInput:checked + .Control {
+	box-shadow: inset 0 0 0 6px #dfe6ee;
+}
+
+.HiddenInput:not(:disabled) + .Control {
+	box-shadow:
+				inset 0 0 0 1px #bdccdc,
+				inset 0 0 0 0 transparent;
+}
+
+.HiddenInput:not(:disabled):hover + .Control {
+	background-color: #dfe6ee;
+	box-shadow:
+				inset 0 0 0 1px #708399,
+				inset 0 0 0 6px #fff;
+}
+
+.HiddenInput:not(:disabled):focus + .Control {
+	box-shadow: inset 0 0 0 1px #3b526d;
+}
+
+.HiddenInput:not(:disabled):active + .Control {
+	box-shadow: inset 0 0 0 2px #3b526d;
+}
+
+.HiddenInput:not(:disabled):hover:active + .Control {
+	background-color: #3b526d;
+	box-shadow:
+				inset 0 0 0 2px #3b526d,
+				inset 0 0 0 6px #fff;
+}
+
+.HiddenInput:not(:disabled):hover:focus + .Control {
+	background-color: #3b526d;
+	box-shadow:
+				inset 0 0 0 1px #3b526d,
+				inset 0 0 0 6px #fff;
+}
+
+.HiddenInput:not(:disabled):checked + .Control {
+	box-shadow:
+				inset 0 0 0 0 transparent,
+				inset 0 0 0 6px #0073ff;
+}
+
+.HiddenInput:not(:disabled):checked:hover + .Control {
+	background-color: #fff;
+	box-shadow:
+				inset 0 0 0 1px #002f69,
+				inset 0 0 0 6px #0073ff;
+}
+
+.HiddenInput:not(:disabled):checked:focus + .Control {
+	background-color: #fff;
+}
+
+.HiddenInput:not(:disabled):checked:active + .Control {
+	background-color: #fff;
+	box-shadow:
+				inset 0 0 0 2px #002f69,
+				inset 0 0 0 7px #0073ff;
+}
+
+.Control {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-radius: 50%;
+	background-color: #fff;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.Label {
+	margin-left: 8px;
+	vertical-align: middle;
+	line-height: 24px;
+	display: inline-block;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Search {
+	display: inline-block;
+	position: relative
+
+	/* Needs tag style to override InputWrapper from Input component :( */
+}
+
+.Search input {
+	padding-left: 48px;
+}
+
+.Search:hover .SearchIcon {
+	color: #000b2e;
+}
+
+.SearchInput:focus + .SearchIcon,
+		.SearchInput:focus + .ClearIcon {
+	color: #000b2e;
+}
+
+.SearchInput {/*
+In IE/Edge there is an additional X icon when there is value in
+		the Input. This removes that X Icon, where display: none; may
+		introduce possible padding issues. See:
+		https://stackoverflow.com/questions/14007655/remove-ie10s-clear-field-x-button-on-certain-inputs
+*/
+}
+
+.SearchInput input::-ms-clear {
+	width: 0;
+	height: 0;
+}
+
+.SearchIcon {
+	position: absolute;
+	top: 13px;
+	left: 18px;
+	transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) color;
+	color: #003055;
+	cursor: default;
+	pointer-events: none;
+}
+
+.ClearIcon,
+.LoadingIcon {
+	position: absolute;
+	top: 13px;
+	right: 18px;
+	z-index: 1
+}
+
+.ClearIcon.fading, .LoadingIcon.fading {
+	transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ClearIcon.transparent, .LoadingIcon.transparent {
+	opacity: 0;
+}
+
+.ClearIcon {
+	transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	color: #003055;
+	cursor: pointer
+}
+
+.ClearIcon:hover {
+	color: #000b2e;
+}
+
+.LoadingIcon {
+	color: #003055;
+	animation: rotating 0.6s linear infinite;
+}
+
+@keyframes rotating {
+from { transform: rotate(0deg);
+}
+to { transform: rotate(360deg);
+}
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Section {
+}
+
+.Header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.Section .Header .Heading {
+	margin-bottom: 0; /* LINNEA: TODO: Remove when heading has option to remove margin */
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Actions .ActionItem {
+	margin-left: 8px;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.Select {
+	position: relative;
+}
+
+.SelectInput {
+	width: 100%;
+	height: 40px;
+
+	/* for padding-right: width of select icon is (24px) */
+	padding:
+		8px
+		48px
+		8px
+		24px;
+	transition:
+		background 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		border 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border: 1px solid #bdccdc;
+	border-radius: 2px;
+	background: #fff;
+	color: #708399;
+	font-size: 16px;
+	line-height: 24px;
+	cursor: pointer;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none
+}
+
+.SelectInput.selected {
+	color: #003055;
+}
+
+.SelectInput:hover:not(:disabled) {
+	border-color: #708399;
+}
+
+.SelectInput:hover:not(:disabled).selected {
+	color: #000b2e;
+}
+
+.SelectInput:active:not(:disabled),
+	.SelectInput:focus:not(:disabled) {
+	border-color: #0073ff;
+	outline: none;
+	box-shadow: 0 0 0 1px #0073ff;
+}
+
+.SelectInput:active:not(:disabled).selected, .SelectInput:focus:not(:disabled).selected {
+	color: #000b2e;
+}
+
+.SelectInput:disabled {
+	border-color: #dfe6ee;
+	background: #f4f8fa;
+	color: #bdccdc;
+	cursor: default;
+}
+
+.SelectInput:disabled + .DownIcon {
+	color: #bdccdc;
+}
+
+.SelectInput.invalid,
+.SelectInput.invalid:focus,
+.SelectInput.invalid:hover,
+.SelectInput.invalid:active {
+	border-color: #ff2825;
+	box-shadow: 0 0 0 1px #ff2825;
+}
+
+.SelectInput::-ms-expand {
+	display: none;
+}
+
+.DownIcon {
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	height: 16px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	color: #003055;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Table {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+}
+
+.no-header {
+}
+
+.Pagination {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: baseline; /* Prevents items from stretching to the full height */
+	justify-content: space-between;
+	margin-top: 24px;
+}
+
+.PerPageSelect {
+	display: inline-block;
+	margin-left: 10px;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+/* Table Vars
+-------------------------- */
+
+.TableHeader {
+	box-sizing: border-box;
+	padding: 16px;
+	border: none;
+	border-bottom: 1px solid #dfe6ee;
+	background-color: #fafcfd;
+	color: #708399;
+	font-size: 14px;
+	font-weight: 500
+}
+
+.TableHeader:first-child {
+	padding-left: 24px;
+}
+
+.TableHeader:last-child {
+	padding-right: 24px;
+}
+
+.TableHeader.align_left {
+	text-align: left;
+}
+
+.TableHeader.align_center {
+	text-align: center;
+}
+
+.TableHeader.align_right {
+	text-align: right;
+}
+
+.TableHeader.sortable .SortIcon {
+	transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	color: #bdccdc;
+}
+
+.TableHeader.sortable .SortIcon.sorted {
+	color: #708399;
+}
+
+.TableHeader.sortable:hover .SortIcon {
+	color: #708399;
+}
+
+.TableHeader.clickable {
+	cursor: pointer
+}
+
+.TableHeader.clickable:hover {
+	background-color: #fafcfd;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+/* Table Vars
+-------------------------- */
+
+.Row {
+}
+
+.Row td {
+	box-sizing: border-box;
+	padding: 16px;
+	border: none;
+	border-bottom: 1px solid #dfe6ee;
+	color: #708399;
+	font-size: 16px
+}
+
+.Row td:first-child {
+	padding-left: 24px;
+}
+
+.Row td:last-child {
+	padding-right: 24px;
+}
+
+.Row td.align_left {
+	text-align: left;
+}
+
+.Row td.align_right {
+	text-align: right;
+}
+
+.Row td.align_center {
+	text-align: center;
+}
+
+.Row.checked {
+	background-color: #fafcfd;
+}
+
+.Row.clickable,
+	.Row td.clickable {
+	cursor: pointer
+}
+
+.Row.clickable:hover, .Row td.clickable:hover {
+	background-color: #fafcfd
+}
+
+.Row.clickable:hover td, .Row td.clickable:hover td {
+	color: #000b2e;
+}
+
+.Row td.clickable,
+	.Row th.clickable {
+	width: 52px;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Tabs {
+	text-align: left;
+}
+
+.Controller {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.ControllerSlider {
+	position: absolute;
+	height: 1px;
+	margin-top: -1px;
+	transition:
+		left 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		width 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	background-color: #0073ff;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.TabControl {
+	display: inline-block;
+	padding: 0 40px;
+	transition: color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-bottom: 1px solid #dfe6ee;
+	color: #003055;
+	line-height: 40px;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.TabControl:hover {
+	color: #81baff;
+}
+
+.TabControl.active {
+	color: #0073ff;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Heading
+	-------------------------- */
+
+	/* Header */
+}
+
+.Tag {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 2px;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/* Type
+-------------------- */
+
+.type_info {
+	background-color: #dfe6ee;
+	color: #003055;
+}
+
+.type_error {
+	background-color: #ffd5d0;
+	color: #9b534b;
+}
+
+.type_success {
+	background-color: #b7ffc3;
+	color: #4c8452;
+}
+
+.type_warning {
+	background-color: #ffe7b6;
+	color: #897209;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root { /* Ignore warning: */ /* Has to be viewport units to work with current overlay */
+}
+
+.Takeover {
+	width: 100vw;
+	height: 100vh !important; /* Needed to overwrite O-Layout height 100% */
+	background-color: #fff;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.Textarea {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 120px;
+	padding: 8px 24px;
+	transition:
+		border 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border: 1px solid #bdccdc;
+	border-radius: 2px;
+	background-color: #fff;
+	color: #003055;
+	font-size: 16px;
+	resize: none
+}
+
+.Textarea:-ms-input-placeholder {
+	color: #708399;
+}
+
+.Textarea::placeholder {
+	color: #708399;
+}
+
+.Textarea:hover {
+	border-color: #708399;
+	color: #000b2e;
+}
+
+.Textarea:active:not(:disabled),
+	.Textarea:focus:not(:disabled) {
+	border-color: #0073ff;
+	outline: none;
+	background-color: #fafcfd;
+	color: #000b2e;
+	box-shadow: 0 0 0 1px #0073ff;
+}
+
+.Textarea:disabled,
+	.Textarea:disabled:hover {
+	border-color: #dfe6ee;
+	background-color: #f4f8fa;
+	color: #bdccdc
+}
+
+.Textarea:disabled:-ms-input-placeholder, .Textarea:disabled:hover:-ms-input-placeholder {
+	color: #bdccdc;
+}
+
+.Textarea:disabled::placeholder, .Textarea:disabled:hover::placeholder {
+	color: #bdccdc;
+}
+
+.Textarea.resizable {
+	resize: vertical;
+}
+
+.Textarea.invalid,
+.Textarea.invalid:focus,
+.Textarea.invalid:hover,
+.Textarea.invalid:active {
+	border-color: #ff2825;
+	box-shadow: 0 0 0 1px #ff2825;
+}
+
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+.Tip {
+	position: relative;
+}
+
+.Content {
+	position: relative;
+	width: 240px;
+	padding: 16px;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .1)
+
+	/* Tip Arrow */
+}
+
+.Content::before {
+	position: absolute;
+	top: -8px;
+	left: 16px;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	border-left: 8px solid transparent;
+	content: "";
+}
+
+.Content.fading {
+	transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.Content.transparent {
+	opacity: 0;
+}
+/*
+This file is duplicated during the build.
+These are our global variables available for developers
+to use on their projects.
+*/
+
+:root {
+	/* Space
+	-------------------------- */	/* 4px */	/* 16px */	/* 24px */	/* 32px */	/* 40px */	/* 64px */ /* 128px */
+
+	/* Transition
+	-------------------------- */ /* Principle default */
+
+	/* Primary Palette
+	-------------------------- */
+
+	/* Extended Palette
+	-------------------------- */
+
+	/* Base Colors
+	-------------------------- */
+
+	/* Backgrounds
+	-------------------------- */
+
+	/* Border
+	-------------------------- */
+
+	/* Font
+	-------------------------- */
+
+	/* Breakpoints
+	-------------------------- */
+}
+
+:root {
+	/* Form
+	-------------------------- */ /* DEPRECATED */
+
+	/* To give form controls a 2px visual 'border' on focus without affecting the layout, we first
+	update the border color which has a 1px width and then we add a 1px box-shadow. */  /* DEPRECATED */
+}
+
+.Toggle {
+	display: inline-block;
+	position: relative;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.HiddenInput {
+	position: absolute;
+	opacity: 0;
+}
+
+/* Disabled + Unchecked */
+
+.Control {
+	display: inline-block;
+	position: relative;
+	width: 40px;
+	height: 20px;
+	box-sizing: border-box;
+	transition:
+		box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-radius: 20px;
+	background-color: #bdccdc;
+	box-shadow: inset 0 0 0 0 #0073ff;
+	vertical-align: middle;
+}
+
+.ToggleBall {
+	position: absolute;
+	right: 20px;
+	left: 0;
+	box-sizing: border-box;
+	height: 20px;
+	padding: 1px;
+	transition:
+		right 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		left 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+		background-color 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-radius: inherit;
+	background-color: rgba(0, 0, 0, 0)
+}
+
+.ToggleBall::after {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+	border-radius: inherit;
+	background-color: #f4f8fa;
+	box-shadow: 0 0 0 8px transparent;
+	content: "";
+}
+
+/* Disabled + Checked */
+
+.HiddenInput:checked + .Control .ToggleBall {
+	right: 0;
+	left: 20px;
+}
+
+/* Enabled + Unchecked */
+
+.HiddenInput:not(:disabled) + .Control {
+	cursor: pointer
+}
+
+.HiddenInput:not(:disabled) + .Control .ToggleBall::after {
+	background-color: #fff;
+}
+
+.HiddenInput:not(:disabled) + .Control:hover .ToggleBall {
+	right: 17px;
+	left: 0;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.HiddenInput:not(:disabled) + .Control:active .ToggleBall::after {
+	transform: scale(0.8);
+}
+
+/* Enabled + Checked */
+
+.HiddenInput:not(:disabled):checked + .Control {
+	background-color: #0073ff;
+	box-shadow: inset 0 0 0 5px #0073ff
+}
+
+.HiddenInput:not(:disabled):checked + .Control:hover .ToggleBall {
+	right: 0;
+	left: 17px;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+/* Focus (enabled) + Unchecked */
+
+.HiddenInput:focus + .Control {
+	box-shadow: 0 0 5px 0 rgb(59, 153, 252), inset 0 0 0 0 #0073ff;
+}
+
+/* Focus (enabled) + Checked */
+
+.HiddenInput:focus:checked + .Control {
+	box-shadow:
+		0 0 5px 0 rgb(59, 153, 252),
+		inset 0 0 0 5px #0073ff;
+}

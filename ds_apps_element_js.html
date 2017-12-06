@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adding JavaScript to your element is easy, and allows for more powerful elements.">
+<meta name="keywords" content="elements,  JavaScript, element, scripts, events">
+<title>Add JavaScript to an Element | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Add JavaScript to an Element page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Apps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_gs.html" class="NavLink isSecondary">Get Started with Developing Apps</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_samples.html" class="NavLink isSecondary">Sample Applications</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_main.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_1.html" class="NavLink isSecondary">1. Design the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_2.html" class="NavLink isSecondary">2. Register the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_3.html" class="NavLink isSecondary">3. Create a Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_4.html" class="NavLink isSecondary">4. Create the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_5.html" class="NavLink isSecondary">5. Create the Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_6.html" class="NavLink isSecondary">6. Create the HTML Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_7.html" class="NavLink isSecondary">7. Create the Styles</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_8.html" class="NavLink isSecondary">8. Create the JavaScript</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_9.html" class="NavLink isSecondary">9. Package, Upload, and Test Your Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Develop an App</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_dev.html" class="NavLink isSecondary">Develop an App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_reg.html" class="NavLink isSecondary">Register Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manage.html" class="NavLink isSecondary">Manage Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_files.html" class="NavLink isSecondary">Create the App File Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manifest.html" class="NavLink isSecondary">Create the App Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Backend Service</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_backend.html" class="NavLink isSecondary">Create a Backend Service</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_elements.html" class="NavLink isSecondary">What are Elements?</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_guides.html" class="NavLink isSecondary">Element Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_icon.html" class="NavLink isSecondary">Element Icon Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_create.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_folders.html" class="NavLink isSecondary">Add Element Folders</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_manifest.html" class="NavLink isSecondary">Add an Element to the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_settings.html" class="NavLink isSecondary">Create Element Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_man_ex.html" class="NavLink isSecondary">Element Manifest Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp.html" class="NavLink isSecondary">Create an Element Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp_ex.html" class="NavLink isSecondary">Element Template Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_style.html" class="NavLink isSecondary">Add Stylesheets to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_apps_element_js.html" class="NavLink  isSecondary">Add JavaScript to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Your App Ready to Publish</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_upload.html" class="NavLink isSecondary">Upload your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_test.html" class="NavLink isSecondary">Test Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_release.html" class="NavLink isSecondary">Release Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_update.html" class="NavLink isSecondary">Update Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Add JavaScript to an Element</h1>
+    </div>
+    <div class="page-type">  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Adding JavaScript to your element is easy, and allows for more powerful elements.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <p>You can use JavaScript to add events, interactions, and effects to your element.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> If your element doesn’t need JavaScript, you still must create this file and leave it blank.
+</div>
+
+<h2 id="editor-vs-published-scripts">Editor vs. Published Scripts</h2>
+
+<p>Your JavaScript files live in the <a href="ds_apps_element_folders.html"><code class="highlighter-rouge">js</code> directory</a> for your element. You need to create a file named <code class="highlighter-rouge">element.js</code>, which will be used for both the editor and the published site. You can also provide an <code class="highlighter-rouge">editor_element.js</code> file to be used only within the editor. This allows you to specify different events and interactions for the site owner when working with your element in the editor. This may be necessary when your element requires major interactivity with the user on a published site, as the element placeholder in the editor can handle only basic interaction, such as direct editing.</p>
+
+<h2 id="javascript-structure">JavaScript Structure</h2>
+<p>We provide a <a href="http://backbonejs.org/#View">Backbone View</a> as the base class (<code class="highlighter-rouge">PlatformElement.js</code>) for you to extend to create your element’s JavaScript.  This allows you to easily define events for your element using the events hash.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> If your element doesn’t need JavaScript, you still must create this file (but you can leave it blank).
+</div>
+
+<p>​There are two ways for you to define your element javascript code: extending the base class and providing all your JavaScript in that extended class, or using a self executing anonymous function that allows more flexibility as to where the script lives. Both methods can refer to jQuery (use <code class="highlighter-rouge">$</code>) and Underscore (use <code class="highlighter-rouge">_</code> ).</p>
+
+<h3 id="base-class-extension">Base class extension</h3>
+<p>To extend the base class, call the <code class="highlighter-rouge">extend</code> method of <code class="highlighter-rouge">PlatformElement</code>. With this method, all code must be contained within your extended class. You specify an <code class="highlighter-rouge">initialize</code> method that gets called once your element is placed on the DOM and is ready for event bindings and interaction.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="na">events</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"click .button"</span><span class="p">:</span> <span class="s2">"clickButton"</span>
+    <span class="p">},</span>
+
+    <span class="na">clickButton</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Button Clicked!"</span><span class="p">);</span>
+        <span class="c1">// You can use $ (jQuery) and _(Underscore) in here!</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<h3 id="self-executing-anonymous-function">Self-executing anonymous function</h3>
+<p>If you use the self executing anonymous function, you can move code outside of the element definition, and you have a bit more flexibility in terms of where you place your code.  You can use the example below as a starting point for your element.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// You can use $ (jQuery) and _ (Underscore) in here!</span>
+    <span class="c1">// Perform any setup you might need</span>
+    <span class="kd">var</span> <span class="nx">example</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+
+    <span class="c1">// Prepare the element</span>
+    <span class="kd">var</span> <span class="nx">myElement</span> <span class="o">=</span> <span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+        <span class="na">initialized</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Element Ready"</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+
+    <span class="c1">// do some work</span>
+    <span class="nx">myElement</span><span class="p">.</span><span class="nx">example</span> <span class="o">=</span> <span class="nx">example</span><span class="p">;</span>
+
+<span class="c1">// All done</span>
+    <span class="k">return</span> <span class="nx">myElement</span><span class="p">;</span>
+<span class="p">})</span> <span class="p">();</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> All URLs must use the HTTPS protocol.
+</div>
+
+<h2 id="access-settings">Access Settings</h2>
+<p>Within your JavaScript, you can access element settings using <code class="highlighter-rouge">this.settings</code>, which acts as a <a href="http://backbonejs.org/#Model">Backbone Model</a>, and the <code class="highlighter-rouge">get</code> method.  Any settings that are defined as private in your <code class="highlighter-rouge">manifest.json</code> will not be available to your JavaScript on the published site.  This is for security reasons, and allows you to place API Keys in your settings without exposing them to site visitors.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">initialize</span><span class="p">.</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">settings</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"name"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<h2 id="update-settings">Update Settings</h2>
+<p>When in the editor, your JavaScript can update the element settings also using the Backbone Model syntax:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="na">initialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">settings</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">"name"</span><span class="p">,</span> <span class="s2">"John Doe"</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">settings</span><span class="p">.</span><span class="nx">save</span><span class="p">().</span><span class="nx">done</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="c1">// This code will run once the settings are successfully saved</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> You can only update settings from the editor and not from the published site.  Attempting to update from the published site causes the <code class="highlighter-rouge">save</code> call to fail resolving.  You can catch this with the <code class="highlighter-rouge">.fail</code> chained method on your <code class="highlighter-rouge">save</code> call.
+</div>
+
+<p>​Once you update settings, you need to re-render the page for the new values to be applied.</p>
+
+<h2 id="rerender-to-apply-changes">Rerender to Apply Changes</h2>
+<p>If your element updates its settings, you need to trigger a re-render before the new settings are properly applied to the element in the editor.  We’ve overridden the <code class="highlighter-rouge">render</code> method of your element JavaScript.  Simply call <code class="highlighter-rouge">render</code> to trigger a rerender.  Once the rerender is complete, your element is in a fresh new state, and your <code class="highlighter-rouge">initialize</code> method is rerun.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="na">events</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"click .button"</span><span class="p">:</span> <span class="s2">"clickButton"</span>
+    <span class="p">},</span>
+
+    <span class="na">clickButton</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">render</span><span class="p">();</span> <span class="c1">// Triggers a re-render</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Triggering a rerender destroys the DOM nodes for your element and regenerates them.  This means that triggering the <code class="highlighter-rouge">render</code> method will interrupt any other JavaScript flow within the method, essentially acting as a return.
+</div>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Calling the <code class="highlighter-rouge">render</code> method from within your <code class="highlighter-rouge">initialize</code> method will cause an infinite loop. This is because the editor will destroy and regenerate the DOM nodes repeatedly. Be careful not to do this!
+</div>
+
+<h2 id="include-additional-data">Include Additional Data</h2>
+<p>You can access additional data in your JavaScript. This data is accessed similarly to settings, using mustache . You can access the following:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">assets_path</code>: The HTTP accessible root path to your elements’ assets folder, in protocol-agnostic form.  The path contains the trailing slash.  It is accessible as a property of your element:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="na">initialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">assets_path</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">element_id</code>, <code class="highlighter-rouge">user_id</code>, <code class="highlighter-rouge">site_id</code>: We also expose some identifying information about the current user, site, and element. The <code class="highlighter-rouge">element_id</code>  is the unique element ID for this element instance. The <code class="highlighter-rouge">user_id</code> and the <code class="highlighter-rouge">site_id</code> are the unique identifiers for the current user and site.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">PlatformElement</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="na">initialize</span><span class="p">:</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">element_id</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> We cannot guarantee that <code class="highlighter-rouge">element_id</code> and <code class="highlighter-rouge">site_id</code> will be universally unique. We recommend that you use a composite key for any storage you may be doing on your servers or services!
+</div>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_elements.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">elements</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

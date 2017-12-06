@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Use the Site API to manage sites, including the ability to create, update, publish, disable, restore, and delete sites and to generate login links and set pu...">
+<meta name="keywords" content="sites,  site, publish, unpublish, login, login link, credentials, restore, disable">
+<title>Site APIs | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Site APIs page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Use the REST APIs</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_about.html" class="NavLink isSecondary">How to Use the REST APIs</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_account.html" class="NavLink isSecondary">Account API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_blog.html" class="NavLink isSecondary">Blog API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_blog_post.html" class="NavLink isSecondary">Blog Post API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_category.html" class="NavLink isSecondary">Category API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_category_image.html" class="NavLink isSecondary">Category Image API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_client.html" class="NavLink isSecondary">Client API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_client_site.html" class="NavLink isSecondary">Client Site API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_coupon.html" class="NavLink isSecondary">Coupon API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_form.html" class="NavLink isSecondary">Form API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_form_entry.html" class="NavLink isSecondary">Form Entry API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_group.html" class="NavLink isSecondary">Group API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_member.html" class="NavLink isSecondary">Member API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order.html" class="NavLink isSecondary">Order API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_billing.html" class="NavLink isSecondary">Order Billing API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_billing_transaction.html" class="NavLink isSecondary">Order Billing Transaction API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_item.html" class="NavLink isSecondary">Order Item API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_shipment.html" class="NavLink isSecondary">Order Shipment API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_shipment_transaction.html" class="NavLink isSecondary">Order Shipment Transaction API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_page.html" class="NavLink isSecondary">Page API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_plan.html" class="NavLink isSecondary">Plan API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product.html" class="NavLink isSecondary">Product API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_image.html" class="NavLink isSecondary">Product Image API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_option.html" class="NavLink isSecondary">Product Option API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_sku.html" class="NavLink isSecondary">Product SKU API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_sku_option_choice.html" class="NavLink isSecondary">Product SKU Option Choice API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_api_site.html" class="NavLink  isSecondary">Site API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_store.html" class="NavLink isSecondary">Store API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_team_member.html" class="NavLink isSecondary">Team Member API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_themes_cloud.html" class="NavLink isSecondary">Themes (Custom Cloud) API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_themes_user.html" class="NavLink isSecondary">Themes (User) API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_user.html" class="NavLink isSecondary">User API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Webhooks</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_webhooks.html" class="NavLink isSecondary">How to Use Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_blog.html" class="NavLink isSecondary">Blog Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_form.html" class="NavLink isSecondary">Form Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_member.html" class="NavLink isSecondary">Member Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_site.html" class="NavLink isSecondary">Site Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_store.html" class="NavLink isSecondary">Store Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_user.html" class="NavLink isSecondary">User Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Site APIs</h1>
+    </div>
+    <div class="page-type">  reference </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Use the Site API to manage sites, including the ability to create, update, publish, disable, restore, and delete sites and to generate login links and set publish credentials.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  
+<p>Sites are associated with a particular user and plans. Plans determine the level of functionality available to a site. For example, higher-level plans allow eCommerce functionality.
+Every site has a unique domain. Each also has login credentials for users that have access to the site to edit and manage it.</p>
+
+<p>Sites can be published, and you can also suspend and restore sites, as well as disable and enable them.</p>
+
+<h2>Fields</h2>
+
+<p>The following table shows all fields that exist for this API, those that are returned when you retrieve a list, those that are required for <code class="highlighter-rouge">PUT</code> and <code class="highlighter-rouge">POST</code>, and those that are changeable using <code class="highlighter-rouge">PATCH</code> and <code class="highlighter-rouge">PUT</code>. All fields are returned when you retrieve a single item.</p>
+<table>
+    <tbody>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>List</strong></td>
+        <td><strong>Rqd for POST</strong></td>
+        <td><strong>Rqd for PATCH</strong></td>
+        <td><strong>Changeable</strong></td>
+    </tr>
+    <tr>
+        <td><code>site_id</code></td>
+        <td>ID of a Weebly site, unique to the currently authenticated user​</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>domain</code></td>
+        <td>Fully qualified domain name for the site, for example <code>www.samplesite.com</code>​</td>
+        <td>string</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>site_title</code></td>
+        <td>Title given to a site.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>brand_name</code></td>
+        <td>Your <a href="ds_gs_configure.html#brand-your-sites-and-the-cloud-admin">brand name</a>, as set in the Cloud Admin. If not set on the site level, the <code>brand_name</code> set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.
+        </td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>brand_url</code></td>
+        <td>Full <a href="ds_gs_configure.html#email-url">URL</a> to your website, as set in the Cloud Admin. The link in the footer of a published site will go to this site. If not set on the site level, the brand_url set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+   
+    <tr>
+        <td><code>publish_upsell_url</code></td>
+        <td>Full <a href="ds_gs_market.html">URL</a> you set to display in the Publish Modal. This url will be loaded in an iframe (640px W by 200px H) upon site publish and can be used to advertise other services. If not set on the site level, the <code>publish_upsell_url</code> <a href="ds_gs_market.html">set</a> in the Cloud Admin will be used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>publish_host</code></td>
+        <td>The hostname of the remote host that hosts the published site.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>publish_username</code></td>
+        <td>The username used to authenticate to the publish_host.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>publish_password</code></td>
+        <td>The password used to authenticate to the publish_host.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>publish_path</code></td>
+        <td>The absolute path of the remote host that hosts published site.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>platform</code></td>
+        <td></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>plan_id</code></td>
+        <td>Unique ID for the <a href="ds_api_plan.html">plan</a> for this site.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>term</code></td>
+        <td>Amount of time, in months, that the <a href="ds_api_plan.html">plan</a> is good for.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>allow_ssl</code></td>
+        <td>Whether or not the SSL option has been enabled for this site.
+            Any site use SSL. However, that option does not display in the General Settings area of the Editor unless <code>allow_ssl</code> is set to <code>true</code>. By default, this field is set to <code>false</code>.<br />
+            Valid values are:
+            <ul>
+                <li><code>true</code></li>
+                <li><code>false</code></li>
+            </ul>
+        </td>
+        <td>boolean</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>publish_state</code></td>
+        <td>The current state of the site.<br /> Valid values are:
+            <ul>
+                <li><code>not published</code></li>
+                <li><code>published</code></li>
+            </ul>
+        </td>
+        <td>string</td>
+        <td>X</td>
+        <td><br />
+        </td>
+        <td><br />
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>suspended</code></td>
+        <td>Whether or not a site is suspended. Set to true when the site is suspended (disabled). When a site is suspended, the site cannot be accessed from the editor. Set to false when the site is unsuspended (enabled).<br />Valid values are:
+            <ul>
+                <li><code>true</code></li>
+                <li><code>false</code></li>
+            </ul>
+        </td>
+        <td>boolean</td>
+        <td>X</td>
+        <td><br />
+        </td>
+        <td><br />
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>time_zone</code></td>
+        <td>Timezone used on the site. Valid values can be found <a href="http://cloud-developer.weebly.com/uploads/3/0/3/1/30316827/timezones.json">here</a>.
+        </td>
+        <td>string</td>
+        <td>X</td>
+        <td><br />
+        </td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>time_format</code></td>
+        <td>Format used for time on the site. Values are <code>12</code> and <code>24</code>.
+        </td>
+        <td>string</td>
+        <td>X</td>
+        <td><br />
+        </td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>date_format</code></td>
+        <td>Format used for dates on the site. Values are <code>n/j/Y</code> for month/day/year and <code>j/n/Y</code> for day/month/year.
+        </td>
+        <td>string</td>
+        <td>X</td>
+        <td><br />
+        </td>
+        <td></td>
+        <td>X</td>
+    </tr>
+     <tr>
+        <td><code>access</code></td>
+        <td>The type of access the given user has on this site.<br /> Valid values are:
+            <ul>
+                <li><code>owner</code>: The user is the owner and has full access.</li>
+                <li><code>admin</code>: The user has the same access as an owner but is not the owner</li>
+                <li><code>limited</code>: The user can access only what has been explicitly assigned.</li>
+                    </ul>
+            Admin and limited access means the user is a site contributor.
+        </td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+         <td></td>
+    </tr>
+
+    <tr>
+        <td><code>assigned_ip</code></td>
+        <td>IP address of the site.</td>
+        <td>string</td>
+        <td></td>
+        <td><br />
+        </td>
+        <td><br />
+        </td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Any fields returned that are not documented are currently unsupported and can be safely ignored
+</div>
+
+<h2>
+<div class="Tag type_info">GET</div>
+
+ Retrieve a List of Sites
+</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">GET /user/USER_ID/site/</code></pre></figure>
+
+<p>Returns all sites for the given user. Only <code class="highlighter-rouge">list</code> fields are returned.</p>
+
+<h3>Query Parameters</h3>
+<p>Returned values are <a href="ds_api_about.html#pagination">paginated</a>. You can further filter results using these parameters:</p>
+
+<table>
+    <tr>
+        <td><strong>Parameter</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Type</strong></td>
+    </tr>
+    <tr>
+        <td><code>page</code></td>
+        <td>Which page of results to return. Start is <code>1</code>.
+            
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Only the first 25 results are returned by default. If the result set is
+            expected to be over 25, you must implement pagination.
+</div>
+
+
+        </td>
+        <td>integer</td>
+    </tr>
+
+    <tr>
+        <td><code>limit</code></td>
+        <td>Number of results per page to return. Default is <code>25</code>. <br />Max is <code>200</code>.</td>
+        <td>integer</td>
+    </tr>
+
+    <tr>
+        <td><code>filterby</code></td>
+        <td>Field name to set a filter on. Valid value is <code>role</code>.</td>
+        <td>string</td>
+    </tr>
+    <tr>
+        <td><code>filterfor</code></td>
+        <td>​Value to search the filterby field for. <br />
+            Valid values are:
+            <ul>
+                <li><code>owner</code>: Return only sites that the user owns.</li>
+                <li><code>contributor</code>: Return only sites that the user is a <a href="ds_gs_access_sites.html">contributor</a> to</li>
+                <li><code>null</code>: Return all sites the user owns and is a contributor to.</li>
+            </ul>
+        </td>
+        <td>string</td>
+    </tr>
+</table>
+
+<p class="codeTitle">Example CURL request returning all sites:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example filtered request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site?roll<span class="o">=</span>owner <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"sites"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"site_id"</span><span class="p">:</span><span class="s2">"1234567890"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.website.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"site_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Great Site"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"brand_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Not the default Brand"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"brand_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.notyourdefaultbrand.com/"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"upgrade_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"publish_upsell_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"allow_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"publish_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not published"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"suspended"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"America/Los_Angeles"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"time_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"n/j/Y"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"access"</span><span class="p">:</span><span class="w"> </span><span class="s2">"owner"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"site_id"</span><span class="p">:</span><span class="s2">"1234567890"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.anotherwebsite.com"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"site_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Another Site"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"brand_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"brand_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"upgrade_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"publish_upsell_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"allow_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"publish_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not published"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"suspended"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"America/Los_Angeles"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"time_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"n/j/Y"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"access"</span><span class="p">:</span><span class="w"> </span><span class="s2">"limited"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_info">GET</div>
+
+ Retrieve Details for a Site
+</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">GET /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/</code></pre></figure>
+
+<p>Returns all fields for the given site.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321 <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mysite.designer.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mill Clothing"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upgrade_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_upsell_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"allow_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"suspended"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"America\/Los_Angeles"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"n\/j\/Y"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">POST</div>
+
+ Create or Copy a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site</code></pre></figure>
+
+<p>Creates a site for the given user. The domain must be unique. If non-required fields are not provided, values set in the Cloud Admin are used.</p>
+
+<p>These fields can be created:</p>
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Notes</strong></td>
+    </tr>
+    <tr>
+        <td><code>domain</code></td>
+        <td>Fully qualified domain name for the site, for example <code>www.samplesite.com</code>​</td>
+        <td>string</td>
+        <td>Required</td>
+    </tr>
+    <tr>
+        <td><code>site_title</code></td>
+        <td>Title given to a site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>brand_name</code></td>
+        <td>Your <a href="ds_gs_configure.html#brand-your-sites-and-the-cloud-admin">brand name</a>, as set in the Cloud Admin. If not set on the site level, the <code>brand_name</code> set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>brand_url</code></td>
+        <td>Full <a href="ds_gs_configure.html#email-url">URL</a> to your website, as set in the Cloud Admin. The link in the footer of a published site will go to this site. If not set on the site level, the brand_url set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td><code>publish_upsell_url</code></td>
+        <td>Full <a href="ds_gs_market.html">URL</a> you set to display in the Publish Modal. This url will be loaded in an iframe (640px W by 200px H) upon site publish and can be used to advertise other services. If not set on the site level, the <code>publish_upsell_url</code> <a href="ds_gs_market.html">set</a> in the Cloud Admin will be used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_host</code></td>
+        <td>The hostname of the remote host that hosts the published site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_username</code></td>
+        <td>The username used to authenticate to the publish_host.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_password</code></td>
+        <td>The password used to authenticate to the publish_host.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_path</code></td>
+        <td>The absolute path of the remote host that hosts published site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>platform</code></td>
+        <td></td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>plan_id</code></td>
+        <td>Unique ID for the <a href="ds_api_plan.html">plan</a> for this site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>term</code></td>
+        <td>Amount of time, in months, that the <a href="ds_api_plan.html">plan</a> is good for.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>time_zone</code></td>
+        <td>Timezone used on the site. Valid values can be found <a href="http://cloud-developer.weebly.com/uploads/3/0/3/1/30316827/timezones.json">here</a>.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>time_format</code></td>
+        <td>Format used for time on the site. Values are <code>12</code> and <code>24</code>.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>date_format</code></td>
+        <td>Format used for dates on the site. Values are <code>n/j/Y</code> for month/day/year and <code>j/n/Y</code> for day/month/year.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>copy_source</code></td>
+        <td>The <code>user_id</code> and <code>site_id</code> to be used as the source when creating a new site by copying an existing site.
+        </td>
+        <td>JSON object</td>
+        <td></td>
+    </tr>
+</table>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/page <span class="se">\</span>
+-X POST <span class="se">\</span>
+-d <span class="s1">'{
+        "domain": "test1234567890.com",
+        "site_title": "My Amazing Website"
+    }'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example Request to Copy an Existing Site:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/USER_ID/site <span class="se">\</span>
+-X POST <span class="se">\</span>
+-d <span class="s1">'{
+        "domain": "test1234567890.com",
+        "site_title": "My Amazing Website",
+        "copy_source": {
+            "site_id": "123456789",
+            "user_id": "987654321"
+        }
+    }'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test1234567890.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Amazing Website"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upgrade_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_upsell_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"allow_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not published"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"suspended"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"America\/Los_Angeles"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"n\/j\/Y"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"assigned_ip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"192.0.2.0"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">PUT</div>
+
+ Replace a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PUT /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span></code></pre></figure>
+
+<p>Replaces the entire given site.</p>
+
+<p>These fields can be replaced:</p>
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Notes</strong></td>
+    </tr>
+    <tr>
+        <td><code>domain</code></td>
+        <td>Fully qualified domain name for the site, for example <code>www.samplesite.com</code>​</td>
+        <td>string</td>
+        <td>Required. Must be unique.</td>
+    </tr>
+    <tr>
+        <td><code>site_title</code></td>
+        <td>Title given to a site.</td>
+        <td>string</td>
+        <td>Required</td>
+    </tr>
+    <tr>
+        <td><code>brand_name</code></td>
+        <td>Your <a href="ds_gs_configure.html#brand-your-sites-and-the-cloud-admin">brand name</a>, as set in the Cloud Admin. If not set on the site level, the <code>brand_name</code> set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.
+        </td>
+        <td>string</td>
+        <td>Required</td>
+    </tr>
+    <tr>
+        <td><code>brand_url</code></td>
+        <td>Full <a href="ds_gs_configure.html#email-url">URL</a> to your website, as set in the Cloud Admin. The link in the footer of a published site will go to this site. If not set on the site level, the brand_url set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td>Required</td>
+    </tr>
+    
+    <tr>
+        <td><code>publish_upsell_url</code></td>
+        <td>Full <a href="ds_gs_market.html">URL</a> you set to display in the Publish Modal. This url will be loaded in an iframe (640px W by 200px H) upon site publish and can be used to advertise other services. If not set on the site level, the <code>publish_upsell_url</code> <a href="ds_gs_market.html">set</a> in the Cloud Admin will be used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td>Required</td>
+    </tr>
+    <tr>
+        <td><code>time_zone</code></td>
+        <td>Timezone used on the site. Valid values can be found <a href="http://cloud-developer.weebly.com/uploads/3/0/3/1/30316827/timezones.json">here</a>.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>time_format</code></td>
+        <td>Format used for time on the site. Values are <code>12</code> and <code>24</code>.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>date_format</code></td>
+        <td>Format used for dates on the site. Values are <code>n/j/Y</code> for month/day/year and <code>j/n/Y</code> for day/month/year.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+</table>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321 <span class="se">\</span>
+-X PUT <span class="se">\</span>
+-d <span class="s1">'{
+        "domain": "www.test-site.com",
+        "site_title": "Sample Site",
+        "brand_name": "Test Brand",
+        "brand_url": "http:\/\/www.brand.com\/",
+        "upgrade_url": null,
+        "publish_upsell_url": "http:\/\/www.brand.com\/upsell.html",
+        "allow_ssl": false
+    }'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.test-site.com"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sample Site"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test Brand"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.brand.com/"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upgrade_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_upsell_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.brand.com/upsell.html"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"allow_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not published"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"suspended"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"America/Los_Angeles"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"n/j/Y"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">PATCH</div>
+
+ Update a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PATCH /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span></code></pre></figure>
+
+<p>Updates the given site. The domain must be unique.</p>
+
+<p>These fields can be updated:</p>
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Notes</strong></td>
+    </tr>
+    <tr>
+        <td><code>domain</code></td>
+        <td>Fully qualified domain name for the site, for example <code>www.samplesite.com</code>​</td>
+        <td>string</td>
+        <td>Must be unique</td>
+    </tr>
+    <tr>
+        <td><code>site_title</code></td>
+        <td>Title given to a site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>brand_name</code></td>
+        <td>Your <a href="ds_gs_configure.html#brand-your-sites-and-the-cloud-admin">brand name</a>, as set in the Cloud Admin. If not set on the site level, the <code>brand_name</code> set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>brand_url</code></td>
+        <td>Full <a href="ds_gs_configure.html#email-url">URL</a> to your website, as set in the Cloud Admin. The link in the footer of a published site will go to this site. If not set on the site level, the brand_url set in the Cloud Admin is used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td><code>publish_upsell_url</code></td>
+        <td>Full <a href="ds_gs_market.html">URL</a> you set to display in the Publish Modal. This url will be loaded in an iframe (640px W by 200px H) upon site publish and can be used to advertise other services. If not set on the site level, the <code>publish_upsell_url</code> <a href="ds_gs_market.html">set</a> in the Cloud Admin will be used. Passing a <code>NULL</code> value will ensure the site uses the value defined in the Cloud Admin.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_host</code></td>
+        <td>The hostname of the remote host that hosts the published site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_username</code></td>
+        <td>The username used to authenticate to the publish_host.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_password</code></td>
+        <td>The password used to authenticate to the publish_host.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>publish_path</code></td>
+        <td>The absolute path of the remote host that hosts published site.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>platform</code></td>
+        <td></td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>allow_ssl</code></td>
+        <td>Whether or not the SSL option has been enabled for this site.
+            Any site use SSL. However, that option does not display in the General Settings area of the Editor unless <code>allow_ssl</code> is set to <code>true</code>. By default, this field is set to <code>false</code>.<br />
+            Valid values are:
+            <ul>
+                <li><code>true</code></li>
+                <li><code>false</code></li>
+            </ul>
+        </td>
+        <td>boolean</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>time_zone</code></td>
+        <td>Timezone used on the site. Valid values can be found <a href="http://cloud-developer.weebly.com/uploads/3/0/3/1/30316827/timezones.json">here</a>.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>time_format</code></td>
+        <td>Format used for time on the site. Values are <code>12</code> and <code>24</code>.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>date_format</code></td>
+        <td>Format used for dates on the site. Values are <code>n/j/Y</code> for month/day/year and <code>j/n/Y</code> for day/month/year.
+        </td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>allow_ssl</code></td>
+        <td>Whether or not the SSL option has been enabled for this site.
+            Any site use SSL. However, that option does not display in the General Settings area of the Editor unless <code>allow_ssl</code> is set to <code>true</code>. By default, this field is set to <code>false</code>.<br />
+            Valid values are:
+            <ul>
+                <li><code>true</code></li>
+                <li><code>false</code></li>
+            </ul>
+        </td>
+        <td>boolean</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+</table>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/USER_ID/site/SITE_ID <span class="se">\</span>
+-X PATCH <span class="se">\</span>
+-d <span class="s1">'{
+        "domain": "www.test-site-secured.com",
+        "site_title": "Sample SSL Site",
+        "allow_ssl": true
+    }'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"www.test-site-secured.comm"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sample SSL Site"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"brand_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"upgrade_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_upsell_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"allow_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"publish_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"suspended"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_zone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"America\/Los_Angeles"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"time_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"n\/j\/Y"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">POST</div>
+
+ Publish a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/publish</code></pre></figure>
+
+<p>Publishes the given site.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/publish <span class="se">\</span>
+-X POST <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">POST</div>
+
+ Unpublish a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/unpublish</code></pre></figure>
+
+<p>Unpublishes the given site.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/unpublish <span class="se">\</span>
+-X POST <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">POST</div>
+
+ Generate a Login Link</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/loginLink</code></pre></figure>
+
+<p>Generates a one-time link that will direct users to the site specified. This method requires that the account is enabled.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/loginLink <span class="se">\</span>
+-X POST <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.weebly.com/editor/login.php?t=55ac062cfdba5a7c7ae5fe8c228d1635&amp;redirect=toSite.php%3Fsite=895826994839270359"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<div class="Tag type_warning">POST</div>
+
+<p>Restore a Site&lt;/h2&gt;</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/restore</code></pre></figure>
+
+<p>When a site is restored the owner of the site is granted access to it in the exact state it was when it was deleted, including the Weebly plan assigned. Restoring a site does not issue an automatic publish.</p>
+
+<p>These fields can be posted:</p>
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Notes</strong></td>
+    </tr>
+    <tr>
+        <td><code>domain</code></td>
+        <td>Fully qualified domain name for the site, for example <code>www.samplesite.com</code>​</td>
+        <td>string</td>
+        <td>Required. Must be unique</td>
+    </tr>
+</table>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/USER_ID/site/987654321/restore <span class="se">\</span>
+-X POST <span class="se">\</span>
+-d <span class="s1">'{
+        "domain": "www.test-site.com"
+    }'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">POST</div>
+
+ Disable a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/disable</code></pre></figure>
+
+<p>Suspends access to the given user’s site in the editor by setting the suspended parameter to <code class="highlighter-rouge">true</code>. If a user attempts to access the site in the editor, an error is thrown.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/disable <span class="se">\</span>
+-X POST <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">POST</div>
+
+ Enable a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">POST /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/enable</code></pre></figure>
+
+<p>Re-enables a suspended site by setting the suspended parameter to <code class="highlighter-rouge">false</code>. Users can access the editor for the site. Sites are enabled by default when created.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/enable <span class="se">\</span>
+-X POST <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_error">DELETE</div>
+
+ Delete a Site</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">DELETE /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span></code></pre></figure>
+
+<p>Deletes the given site.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321 <span class="se">\</span>
+-X DELETE <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p><strong>Response</strong>
+There is no response to a delete request.</p>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_sites.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">sites</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

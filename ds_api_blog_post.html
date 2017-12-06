@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Use the Blog Post API to return details about a post to a blog, or to update a post.">
+<meta name="keywords" content="sites,  blog, blog post, post">
+<title>Blog Post APIs | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Blog Post APIs page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Use the REST APIs</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_about.html" class="NavLink isSecondary">How to Use the REST APIs</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_account.html" class="NavLink isSecondary">Account API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_blog.html" class="NavLink isSecondary">Blog API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_api_blog_post.html" class="NavLink  isSecondary">Blog Post API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_category.html" class="NavLink isSecondary">Category API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_category_image.html" class="NavLink isSecondary">Category Image API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_client.html" class="NavLink isSecondary">Client API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_client_site.html" class="NavLink isSecondary">Client Site API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_coupon.html" class="NavLink isSecondary">Coupon API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_form.html" class="NavLink isSecondary">Form API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_form_entry.html" class="NavLink isSecondary">Form Entry API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_group.html" class="NavLink isSecondary">Group API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_member.html" class="NavLink isSecondary">Member API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order.html" class="NavLink isSecondary">Order API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_billing.html" class="NavLink isSecondary">Order Billing API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_billing_transaction.html" class="NavLink isSecondary">Order Billing Transaction API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_item.html" class="NavLink isSecondary">Order Item API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_shipment.html" class="NavLink isSecondary">Order Shipment API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_order_shipment_transaction.html" class="NavLink isSecondary">Order Shipment Transaction API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_page.html" class="NavLink isSecondary">Page API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_plan.html" class="NavLink isSecondary">Plan API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product.html" class="NavLink isSecondary">Product API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_image.html" class="NavLink isSecondary">Product Image API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_option.html" class="NavLink isSecondary">Product Option API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_sku.html" class="NavLink isSecondary">Product SKU API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_product_sku_option_choice.html" class="NavLink isSecondary">Product SKU Option Choice API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_site.html" class="NavLink isSecondary">Site API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_store.html" class="NavLink isSecondary">Store API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_team_member.html" class="NavLink isSecondary">Team Member API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_themes_cloud.html" class="NavLink isSecondary">Themes (Custom Cloud) API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_themes_user.html" class="NavLink isSecondary">Themes (User) API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_api_user.html" class="NavLink isSecondary">User API</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Webhooks</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_webhooks.html" class="NavLink isSecondary">How to Use Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_blog.html" class="NavLink isSecondary">Blog Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_form.html" class="NavLink isSecondary">Form Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_member.html" class="NavLink isSecondary">Member Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_site.html" class="NavLink isSecondary">Site Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_store.html" class="NavLink isSecondary">Store Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_wh_user.html" class="NavLink isSecondary">User Webhooks</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Blog Post APIs</h1>
+    </div>
+    <div class="page-type">  reference </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Use the Blog Post API to return details about a post to a blog, or to update a post.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <p>Site owners create <a href="https://hc.weebly.com/hc/en-us/articles/201405086-Create-a-Blog-Post">blog posts</a> for their <a href="https://dev.weebly.com/blog-api.html">blogs</a>. Weebly blog posts can accept comments from readers. When comments are allowed, they can be anonymous and they can optionally require approval. The approval process is handled by the moderation app (such as Disqus) set on the blog.</p>
+
+<p>​Use the Blog Post API to return details about a post to a blog, or to update a post. A message can be configured to be used when blog posts are shared on social media. Tags are used to group blog posts together.</p>
+
+<h2 id="fields">Fields</h2>
+<p>The following table shows all fields that exist for this API, those that are returned when you retrieve a list, those that are required for <code class="highlighter-rouge">PUT</code> and those that are changeable using <code class="highlighter-rouge">PATCH</code> and <code class="highlighter-rouge">PUT</code>. All fields are returned when you retrieve a single item.</p>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>List</th>
+        <th>Required</th>
+        <th>Changeable</th>
+    </tr>
+    <tr>
+        <td>​<code>user_id</code></td>
+        <td>The unique ID of the authenticated user</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>site_id</code></td>
+        <td>ID of a Weebly site, unique to the currently authenticated user​</td>
+        <td>string</td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>post_id</code></td>
+        <td>Unique ID for this blog post.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>post_title</code></td>
+        <td>Title of the blog post.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>post_body</code></td>
+        <td>Content of the post, including the markup.</td>
+        <td>string</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>post_author</code></td>
+        <td>The unique user_id of the user who created the post.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>post_created_date</code></td>
+        <td>​Date the post draft was first created.</td>
+        <td>string</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>post_lastrevision_date</code></td>
+        <td>​Date the post was last updated.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>allow_comments</code></td>
+        <td>Whether or not comments are allowed for this post, and if allowed, if non-anonymous comments are allowed. <br />Valid values are:
+            <ul>
+                <li><code>yes</code>: Comments are allowed.</li>
+                <li><code>no</code>: Comments are allowed.</li>
+                <li><code>noanon</code>: Comments are allowed, but they can't be anonymous.</li>
+            </ul></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>post_link</code></td>
+        <td>URL for this post, for example, <code>mynewblogpost.html</code></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>require_approval</code></td>
+        <td>Whether or not comments require approval on this post.<br />
+            ​Valid values are:
+            <ul>
+                <li>true</li>
+                <li>false</li>
+            </ul></td>
+        <td>boolean</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>post_url</code></td>
+        <td>​The full URL, including protocol, to the post. For example:
+            <code>http://mysite.weebly.com/blog/mynewblogpost.html</code></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>share_message</code></td>
+        <td>​​The <a href="https://hc.weebly.com/hc/en-us/articles/203775853-Sharing-Scheduled-Blog-Posts-to-Facebook-and-Twitter">configured message</a> to be used when sharing the post.</td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>seo_title</code></td>
+        <td>​​​The SEO title for the post. Site owners can create a different title for the browser title bar.
+        </td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>seo_description</code></td>
+        <td>​​​The SEO page description for the post.
+        </td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>tags</code></td>
+        <td>​​​​An array of strings that represent tags for the post. These are shown as <a href="https://hc.weebly.com/hc/en-us/articles/201405086-Create-a-Blog-Post">Categories</a> in the UI.
+        </td>
+        <td>array of strings</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td><code>commenting_system</code></td>
+        <td>The system used to allow commenting on the blog. The value <code>default</code> means that the native Weebly system is used.<br />
+            Valid values are:
+            <ul>
+                <li>​default</li>
+                <li>disqus</li>
+                <li>facebook</li>
+            </ul></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>date_format</code></td>
+        <td>Format used for dates on this site.<br />
+            Valid values are:
+            <ul>
+                <li><code>n/j/Y</code>: month/day/year</li>
+                <li><code>j/n/Y</code>: day/month/year</li></ul></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>created_date</code> </td>
+        <td>Date the post was first created.</td>
+        <td>Unix GMT Timestamp</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>updated_date</code> </td>
+        <td>Date the post was last updated.</td>
+        <td>Unix GMT Timestamp</td>
+        <td></td>
+        <td></td>
+        <td> </td>
+    </tr>
+
+</table>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Any fields returned that are not documented are currently unsupported and can be safely ignored
+</div>
+
+<h2>
+<div class="Tag type_info">GET</div>
+
+ Retrieve a List of Blog Posts
+</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">GET /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/blog/<span class="o">{</span>BLOG_ID<span class="o">}</span>/post</code></pre></figure>
+
+<p>Returns all posts for the given blog. Only <code class="highlighter-rouge">list</code> fields are returned.</p>
+
+<p class="codeTitle">Example CURL request returning all blog posts:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/blog/6543/post <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"528036988357777409"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"My New Blog Post"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_created_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-03 11:58:06"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"created_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1402964756</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"648291276105250798"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Another Blog Post"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_created_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-09-06 09:57:04"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"created_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1378504674</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"489389593268427583"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Travel Blog Post"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"post_created_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-09-06 07:00:00"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"created_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1378504578</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_info">GET</div>
+
+ Retrieve Details for a Blog Post
+</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">GET /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/blog/<span class="o">{</span>BLOG_ID<span class="o">}</span>/post/<span class="o">{</span>POST_ID<span class="o">}</span></code></pre></figure>
+
+<p>Returns all fields for the given blog post.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/blog/6543/post/827004614453058652 <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+<p>See Fields table. All fields for the blog post are returned.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"827004614453058652"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feeling the Burn"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Stayed in the sun too long&lt;\/div&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"allow_comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my-new-blog-post.html"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"require_approval"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http:\/\/mysite.weebly.com\/blog\/my-new-blog-post.html"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"share_message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Read my latest blog post!"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"seo_title"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"seo_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"health"</span><span class="p">:</span><span class="w"> </span><span class="s2">"health"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"food"</span><span class="p">:</span><span class="w"> </span><span class="s2">"food"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"commenting_system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1402964756</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updated_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1402964756</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"j/n/y"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">PUT</div>
+
+  Replace a Blog Post</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PUT /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/blog/<span class="o">{</span>BLOG_ID<span class="o">}</span>/post/<span class="o">{</span>POST_ID<span class="o">}</span></code></pre></figure>
+
+<p>Replaces the given blog post.</p>
+
+<p>These fields can be replaced:</p>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td><code>post_body</code></td>
+        <td>​​The content of the post, including the markup.</td>
+        <td>string</td>
+        <td>Required</td>
+    </tr>
+    <tr>
+        <td><code>post_title</code></td>
+        <td>The title of the post.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>post_tags</code></td>
+        <td>​An array of categories assigned to this post.</td>
+        <td>string</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>allow_comments</code></td>
+        <td>Whether or not comments are allowed for this post.<br />
+            Valid values are:
+            <ul>
+                <li><code>yes</code></li>
+                <li><code>no</code></li>
+            </ul></td>
+        <td>string</td>
+        <td>When you update from <code>no</code> to <code>yes</code>, then the value of <code>commenting_system</code> updates to <code>default</code> (which is Weebly).</td>
+    </tr>
+</table>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/blog/6543/post/827004614453058652 <span class="se">\</span>
+-X PUT <span class="se">\</span>
+-d <span class="s1">'{
+        "post_body": "Stayed in the sun too long, and now I am totally burned!"
+}'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"827004614453058652"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Feeling the Burn"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Stayed in the sun too long, and now I am totally burned!&lt;\/div&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"72773000"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"allow_comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"feeling-the-burn.html"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"require_approval"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http:\/\/example.com\/blog\/feeling-the-burn"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"share_message"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"seo_title"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"seo_description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="nt">"commenting_system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"created_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1468437625</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"updated_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">1468437625</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"date_format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"j/n/y"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_warning">PATCH</div>
+
+ Update a Blog Post</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">PATCH /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/blog/<span class="o">{</span>BLOG_ID<span class="o">}</span>/post/<span class="o">{</span>POST_ID<span class="o">}</span></code></pre></figure>
+
+<p>Updates the given blog post.</p>
+
+<p>These fields can be updated:</p>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Notes</th>
+</tr>
+<tr>
+    <td><code>post_body</code></td>
+    <td>​​The content of the post, including the markup.</td>
+    <td>string</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>post_title</code></td>
+    <td>The title of the post.</td>
+    <td>string</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>post_tags</code></td>
+    <td>​An array of categories assigned to this post.</td>
+    <td>string</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code>allow_comments</code></td>
+    <td>Whether or not comments are allowed for this post.<br />
+        Valid values are:
+        <ul>
+            <li><code>yes</code></li>
+            <li><code>no</code></li>
+        </ul></td>
+    <td>string</td>
+    <td>When you update from <code>no</code> to <code>yes</code>, then the value of <code>commenting_system</code> updates to <code>default</code> (which is Weebly).</td>
+</tr>
+</table>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/blog/6543/post/827004614453058652 <span class="se">\</span>
+-X PATCH <span class="se">\</span>
+-d <span class="s1">'{
+        "post_body": "Stayed in the sun too long, and now I am totally burned!"
+}'</span> <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p class="codeTitle">Example response:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"post_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"827004614453058652”,
+    "</span><span class="err">post_title</span><span class="s2">": "</span><span class="err">Feeling</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">Burn</span><span class="s2">",
+    "</span><span class="err">post_body</span><span class="s2">": "</span><span class="err">Stayed</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">sun</span><span class="w"> </span><span class="err">too</span><span class="w"> </span><span class="err">long</span><span class="p">,</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">now</span><span class="w"> </span><span class="err">I</span><span class="w"> </span><span class="err">am</span><span class="w"> </span><span class="err">totally</span><span class="w"> </span><span class="err">burned!&lt;\/div&gt;</span><span class="nt">",
+    "</span><span class="err">post_author</span><span class="nt">": "</span><span class="err">72773000</span><span class="nt">",
+    "</span><span class="err">allow_comments</span><span class="nt">": "</span><span class="err">yes</span><span class="nt">",
+    "</span><span class="err">post_link</span><span class="nt">": "</span><span class="err">feeling-the-burn.html</span><span class="nt">",
+    "</span><span class="err">require_approval</span><span class="nt">": false,
+    "</span><span class="err">post_url</span><span class="nt">": "</span><span class="err">http</span><span class="p">:</span><span class="err">\/\/example.com\/blog\/feeling-the-burn</span><span class="s2">",
+    "</span><span class="err">share_message</span><span class="s2">": null,
+    "</span><span class="err">seo_title</span><span class="s2">": null,
+    "</span><span class="err">seo_description</span><span class="s2">": null,
+    "</span><span class="err">tags</span><span class="s2">": [],
+    "</span><span class="err">commenting_system</span><span class="s2">": "</span><span class="err">default</span><span class="s2">",
+    "</span><span class="err">created_date</span><span class="s2">": 1468437625,
+    "</span><span class="err">updated_date</span><span class="s2">": 1468437625,
+    "</span><span class="err">date_format</span><span class="s2">": "</span><span class="err">j/n/y"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2>
+<div class="Tag type_error">DELETE</div>
+
+ Delete a Blog Post</h2>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">DELETE /user/USER_ID/site/<span class="o">{</span>SITE_ID<span class="o">}</span>/blog/<span class="o">{</span>BLOG_ID<span class="o">}</span>/post/<span class="o">{</span>POST_ID<span class="o">}</span></code></pre></figure>
+
+<p>Deletes the given blog post.</p>
+
+<p class="codeTitle">Example CURL request:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/123456/site/987654321/blog/6543/post/827004614453058652 <span class="se">\</span>
+-X DELETE <span class="se">\</span>
+-H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
+-H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
+-H <span class="s2">"X-Signed-Request-Hash: YOURSECRETHASH"</span></code></pre></figure>
+
+<p><strong>Response</strong>
+There is no response to a delete request.</p>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_sites.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">sites</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

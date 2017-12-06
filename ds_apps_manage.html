@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="You manage your app(s) using the Cloud Admin. From here, you can do a number of different things like access your development site, install the app to your d...">
+<meta name="keywords" content="apps,  manage, apps, custom, status, version, developer site,">
+<title>Manage Your App | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Manage Your App page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Apps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_gs.html" class="NavLink isSecondary">Get Started with Developing Apps</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_samples.html" class="NavLink isSecondary">Sample Applications</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_main.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_1.html" class="NavLink isSecondary">1. Design the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_2.html" class="NavLink isSecondary">2. Register the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_3.html" class="NavLink isSecondary">3. Create a Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_4.html" class="NavLink isSecondary">4. Create the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_5.html" class="NavLink isSecondary">5. Create the Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_6.html" class="NavLink isSecondary">6. Create the HTML Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_7.html" class="NavLink isSecondary">7. Create the Styles</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_8.html" class="NavLink isSecondary">8. Create the JavaScript</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_9.html" class="NavLink isSecondary">9. Package, Upload, and Test Your Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Develop an App</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_dev.html" class="NavLink isSecondary">Develop an App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_reg.html" class="NavLink isSecondary">Register Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_apps_manage.html" class="NavLink  isSecondary">Manage Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_files.html" class="NavLink isSecondary">Create the App File Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manifest.html" class="NavLink isSecondary">Create the App Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Backend Service</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_backend.html" class="NavLink isSecondary">Create a Backend Service</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_elements.html" class="NavLink isSecondary">What are Elements?</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_guides.html" class="NavLink isSecondary">Element Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_icon.html" class="NavLink isSecondary">Element Icon Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_create.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_folders.html" class="NavLink isSecondary">Add Element Folders</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_manifest.html" class="NavLink isSecondary">Add an Element to the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_settings.html" class="NavLink isSecondary">Create Element Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_man_ex.html" class="NavLink isSecondary">Element Manifest Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp.html" class="NavLink isSecondary">Create an Element Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp_ex.html" class="NavLink isSecondary">Element Template Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_style.html" class="NavLink isSecondary">Add Stylesheets to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_js.html" class="NavLink isSecondary">Add JavaScript to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Your App Ready to Publish</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_upload.html" class="NavLink isSecondary">Upload your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_test.html" class="NavLink isSecondary">Test Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_release.html" class="NavLink isSecondary">Release Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_update.html" class="NavLink isSecondary">Update Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Manage Your App</h1>
+    </div>
+    <div class="page-type">  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">You manage your app(s) using the Cloud Admin. From here, you can do a number of different things like access your development site, install the app to your development site, release the app to a plan, and upload new versions.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <h2 id="access-your-apps">Access Your Apps</h2>
+<p>All of your apps are accessed and managed from the <strong>APPS</strong> tab of the <a data-container="body" data-toggle="popover" data-content="The site used to manage your users, site owners and their accounts, as well as apps and billing. You access Cloud Admin at weeblycloud.com/admin">Cloud Admin</a>. Your current apps are listed along with the latest version and date last updated.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/cl_apps_list.png" alt="" />
+
+	
+
+	
+		<figcaption>A list of apps in the Cloud Admin</figcaption>
+	</figure>
+
+<p>Click an app to view its detail page.</p>
+
+<h2 id="view-detailed-app-information">View Detailed App Information</h2>
+<p>Clicking an app’s row on the main admin page takes you to its detail page where you can see the latest version of your app, the number of installs, and where you can <a href="ds_apps_element_upload.html">upload</a> and manage versions.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/cl_apps.png" alt="" />
+
+	
+
+	
+		<figcaption>App detail page in the Cloud Admin</figcaption>
+	</figure>
+
+<p>​​The top left card on this page displays your app’s information, including the information used for Weebly to programmatically recognize you: your client ID and your secret.</p>
+
+<p>We create a development user and site for you. The development site is the Weebly-hosted site you can use to <a href="ds_apps_element_test.html">test</a> your app. Click <strong>Edit Site</strong> to open the Weebly editor where you can set up your development site. Click <strong>Show Details</strong> to view the Site Details page for your developer site. Here, you can view the development user and site information. This site always publishes to <code class="highlighter-rouge">[some_random_id].weebly.com</code>. You can install as many versions of the app to this site as you need, and they can be in any status (see next section).</p>
+
+<p>The site is associated with the Developer Test plan, which is a Weebly plan used only for testing apps. It’s associated with the highest level Weebly plan, so all features are enabled. You can not delete or edit this plan.</p>
+
+<p>Once your app is fully tested, you can <a href="ds_apps_element_release.html">associate</a> your app to a different Weebly plan. Any site associated with that plan will have the app automatically installed.</p>
+
+<h2 id="set-app-status">Set App Status</h2>
+<p>When you first upload your app, the version’s status is automatically set to <code class="highlighter-rouge">Draft</code>, and it can only be installed to your development site. You can have as many draft versions as you need. You can set an app version that’s in <code class="highlighter-rouge">draft</code> status to either <code class="highlighter-rouge">active</code> or <code class="highlighter-rouge">archived</code>.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> App versions in <code class="highlighter-rouge">active</code> status are automatically moved to <code class="highlighter-rouge">archived</code> when a new version is made <code class="highlighter-rouge">active</code>. You don’t need to manually set the status. Versions in <code class="highlighter-rouge">archived</code> status can only remain as <code class="highlighter-rouge">archived.</code>
+</div>
+
+<p><strong>To set app status:</strong></p>
+
+<p>From the App Detail page of the Cloud Admin, click the ellipses for the version whose status you want to change.</p>
+<table width="100%">
+    <tr>
+     <th>If the current status is:</th>
+     <th>You can change it to:</th>
+     <th>Notes</th>
+    </tr>
+    <tr>
+        <td><code>Draft</code></td>
+        <td><code class="highlighter-rouge">Active (Published)</code></td>
+        <td>You can have only one version in the <code class="highlighter-rouge">Active</code> status. The previously active version is set to <code>Archived</code>.</td>
+    </tr>
+    <tr>
+        <td><code>Draft</code></td>
+        <td><code>Archived</code></td>
+        <td>If you set an <code class="highlighter-rouge">Active</code> version to <code>Draft</code> and then <code>Archived</code> and you don't set a different version to <code>Active</code>, then the app will be removed from the editor sidebar (if an element), but any elements already on a page will remain, and will use the last active version. All webhooks are immediately removed. Snippets are removed the next time the site is published.</td>
+    </tr>
+
+</table>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/cl_app_status.png" alt="" />
+
+	
+
+	
+		<figcaption>Set status for an app</figcaption>
+	</figure>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_apps.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">apps</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

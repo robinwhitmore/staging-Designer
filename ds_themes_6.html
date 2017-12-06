@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=",  ">
+<title>6. Edit the main.less File | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the 6. Edit the main.less File page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Customizing Themes</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_start.html" class="NavLink isSecondary">Customizing Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_sample.html" class="NavLink isSecondary">Download Sample Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_anatomy.html" class="NavLink isSecondary">Anatomy of a Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_directory.html" class="NavLink isSecondary">Theme Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_issues.html" class="NavLink isSecondary">Known Issues</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Customize a Theme</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_tutorial.html" class="NavLink isSecondary">Customize a Weebly Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_1.html" class="NavLink isSecondary">1. Download the Base Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_2.html" class="NavLink isSecondary">2. Apply YOur Theme to a Test Site</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_3.html" class="NavLink isSecondary">3. Add a Color Palette</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_4.html" class="NavLink isSecondary">4. Create Variations of the Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_5.html" class="NavLink isSecondary">5. Edit the Header Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_themes_6.html" class="NavLink  isSecondary">6. Edit the main.less File</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_7.html" class="NavLink isSecondary">7. Edit the Blog Post Partial</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_8.html" class="NavLink isSecondary">8. Add a Theme Option</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_9.html" class="NavLink isSecondary">9. Add a Screenshot</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_10.html" class="NavLink isSecondary">10. Deliver Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme Design</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_guidelines.html" class="NavLink isSecondary">Theme Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_page.html" class="NavLink isSecondary">Page Guidelines for Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_element_guidelines.html" class="NavLink isSecondary">Element Guidelines for Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Theme</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_create.html" class="NavLink isSecondary">How to Create a Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_import_export.html" class="NavLink isSecondary">Import and Export Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_implement_css.html" class="NavLink isSecondary">Implement the CSS</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_create_templates.html" class="NavLink isSecondary">Create HTML Layout Templates</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_partials.html" class="NavLink isSecondary">Use Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_manifest.html" class="NavLink isSecondary">Create the Theme Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_options.html" class="NavLink isSecondary">Add Options to Your Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_palette.html" class="NavLink isSecondary">Create a Color Palette</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_variations.html" class="NavLink isSecondary">Add Color Variations</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_screenshot.html" class="NavLink isSecondary">Create a Theme Screenshot</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_deliver.html" class="NavLink isSecondary">Deliver Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_update.html" class="NavLink isSecondary">Update Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme Resources</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_design_resources.html" class="NavLink isSecondary">Design Resources</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_LESS.html" class="NavLink isSecondary">About LESS</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_mustache.html" class="NavLink isSecondary">About Mustache</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Partial Maps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_blogPartials.html" class="NavLink isSecondary">Blog Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_comPartials.html" class="NavLink isSecondary">Commerce Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_membershipPartials.html" class="NavLink isSecondary">Membership Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_navPartials.html" class="NavLink isSecondary">Navigation Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_searchPartials.html" class="NavLink isSecondary">Search Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme FAQs</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_faqs.html" class="NavLink isSecondary">Theme FAQs</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div class="post-header">
+   <h1 class="post-title-main">6. Edit the main.less File</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   <div class="seriesContext">
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Theme Tutorial<span class="caret"></span></button>
+        <ol class="dropdown-menu">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_1.html"><!--1.--> 1. Download the Base Theme</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_2.html"><!--2.--> 2. Apply Your Theme to a Test Site</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_3.html"><!--3.--> 3. Add a Color Palette</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_4.html"><!--4.--> 4. Create Variations</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_5.html"><!--5.--> 5. Edit the Header Template</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li class="active"> → <!--6.--> 6. Edit the main.less File</li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_7.html"><!--7.--> 7. Edit the Blog Post Partial</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_8.html"><!--8.--> 8. Add a Theme Option</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_9.html"><!--9.--> 9. Add a Screenshot</a>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_10.html"><!--10.--> 10. Deliver Your Theme</a>
+            </li>
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="ds_themes_finish.html"><!--11.--> You Did It!</a>
+            </li>
+            
+            
+            
+        </ol>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+  <p>Let’s style the title and menu.​ We’ll use the accent color we added for the title and menu. And we’ll also use the <code class="highlighter-rouge">float</code> CSS property to move the title and menu.</p>
+
+<ol>
+  <li>
+    <p>If you’re not in the Code Editor, from the <strong>Theme</strong> tab, click <strong>Edit HTML/CSS</strong>.</p>
+  </li>
+  <li>Under the <strong>Styles</strong> area, click <code class="highlighter-rouge">main.less</code> to open it.​
+​</li>
+  <li>Scroll down to the <strong>Header</strong> area to find the <code class="highlighter-rouge">.wsite-logo</code> class. You’ll notice that there is styling for the link color (logos by default are a link to the home page), an image height (for when a user uploads a logo graphic to use instead of the title text), and styling for the title text. The link style uses the accent color we created:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="err"></span><span class="nc">.wsite-logo</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span> <span class="m">0</span><span class="p">;</span>
+
+    <span class="err">a</span> <span class="err">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="err">@</span><span class="n">accent_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">img</span> <span class="p">{</span>
+        <span class="nl">max-height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nf">#wsite-title</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Raleway"</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+        <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="err">}</span>
+    </code></pre></figure>
+
+<ol start="4">
+  <li>Let’s float the entire logo area to the left. Let’s also make the title bigger. ​​
+ For the <code class="highlighter-rouge">.wsite-logo</code> class, add a <code class="highlighter-rouge">float</code> property and set it to <code class="highlighter-rouge">left</code>.
+ For the <code class="highlighter-rouge">#wsite-title</code> element, change the <code class="highlighter-rouge">font-size</code> property to <code class="highlighter-rouge">5em</code>.</li>
+</ol>
+
+<p></p>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.wsite-logo</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">20px</span> <span class="nb">auto</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+
+    <span class="err">a</span> <span class="err">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="err">@</span><span class="n">accent_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">img</span> <span class="p">{</span>
+        <span class="nl">max-height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nf">#wsite-title</span> <span class="p">{</span>
+        <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Raleway"</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">5em</span><span class="p">;</span>
+        <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="err">}</span></code></pre></figure>
+
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_float_left.gif" alt="" />
+
+	
+
+	
+		<figcaption>Change the styles pf title to use our accent color and change the size to be larger</figcaption>
+	</figure>
+
+<ol start="5">
+  <li>Now let’s float the menu to the right. Scroll down to the <strong>Navigation</strong> area until you find the <code class="highlighter-rouge">.wsite-menu-default</code> class. Like the <code class="highlighter-rouge">.wsite-logo</code> class, this menu class includes styles for multiple aspects of the menu, including active and hover link styles, font styles and padding. Since the link color uses the <code class="highlighter-rouge">@text_color</code> variable, it will use the primary color set by the user (remember we set the <code class="highlighter-rouge">@text_color</code> variable to use the <code class="highlighter-rouge">@site-primary-color</code> variable in <a href="ds_themes_5.html">Step 5</a>). And the link hover style will use the accent color.</li>
+</ol>
+
+<p></p>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.wsite-menu-default</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+
+    <span class="err">li</span> <span class="err">{</span>
+        <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">a</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="m">10px</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="err">@</span><span class="n">text_color</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span>
+    <span class="nf">#active</span> <span class="nt">a</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="err">@</span><span class="n">accent_color</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="err">}</span></code></pre></figure>
+
+<ol start="6">
+  <li>Let’s float the menu to the right by adding the <code class="highlighter-rouge">float</code> property, and change the text so that it’s all uppercase by adding the <code class="highlighter-rouge">text-transform</code> property.</li>
+</ol>
+
+<p></p>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.wsite-menu-default</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+
+    <span class="err">li</span> <span class="err">{</span>
+        <span class="nl">list-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">a</span> <span class="p">{</span>
+        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+        <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="m">10px</span><span class="p">;</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="err">@</span><span class="n">text_color</span><span class="p">;</span>
+        <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">a</span><span class="nd">:hover</span><span class="o">,</span>
+    <span class="nf">#active</span> <span class="nt">a</span> <span class="p">{</span>
+        <span class="nl">color</span><span class="p">:</span> <span class="err">@</span><span class="n">accent_color</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="err">}</span></code></pre></figure>
+
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_float_right.gif" alt="" />
+
+	
+
+	
+		<figcaption>Float the menu to the right and change the text to uppercase</figcaption>
+	</figure>
+
+<ol start="7">
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<p>The layout of the header has changed. If the title doesn’t seem to be lining up correctly, it’s because the editor window is too small.
+​</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_header_new.png" alt="" />
+
+	
+
+	
+		<figcaption>Changed header layout</figcaption>
+	</figure>
+
+<p>Ok! We’re done changing the styling of the header template. Pages using the <code class="highlighter-rouge">Header</code> template reflect the changes we made. Now let’s change how blog pages look.</p>
+
+<h3 id="what-just-happened">What Just Happened?</h3>
+<p>You edited the <code class="highlighter-rouge">main.less</code> stylesheet and used CSS properties to change the display of the title and the menu.</p>
+
+
+
+
+<div class="next">
+<div class="series-nav">
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+  
+    
+      
+      
+
+      
+        <a href="ds_themes_5.html">
+          <button type="button" class="btn">← 5. Edit the Header Template</button>
+        </a>
+      
+
+      
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+        <a href="ds_themes_7.html">
+          <button type="button" class="btn btn-primary">7. Edit the Blog Post Partial→</button>
+        </a>
+      
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+    
+  
+    
+      
+      
+
+      
+
+      
+    
+  
+</div>
+
+</div>
+
+    <div class="tags">
+        
+        Tags:<br/>
+
+        
+        
+        
+    </div>
+
+    
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+destination: x_cloud_output/pdf
+url: "http://127.0.0.1:4010"
+baseurl: "/cloud-gs-pdf"
+port: 4010
+output: pdf
+product: cloud_apis
+print_title: Weebly Cloud
+print_subtitle: APIs
+output: pdf
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page_print"
+      comments: true
+      search: true

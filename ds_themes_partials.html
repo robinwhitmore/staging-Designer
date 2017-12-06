@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Weebly sites use partials as a way to easily organize and find different parts of the website. You can edit these partials to change how their contents display.">
+<meta name="keywords" content="themes,  partials, template, mustache, product, blog, commerce, membership">
+<title>Use Partials | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Use Partials page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Customizing Themes</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_start.html" class="NavLink isSecondary">Customizing Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_sample.html" class="NavLink isSecondary">Download Sample Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_anatomy.html" class="NavLink isSecondary">Anatomy of a Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_directory.html" class="NavLink isSecondary">Theme Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_issues.html" class="NavLink isSecondary">Known Issues</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Customize a Theme</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_tutorial.html" class="NavLink isSecondary">Customize a Weebly Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_1.html" class="NavLink isSecondary">1. Download the Base Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_2.html" class="NavLink isSecondary">2. Apply YOur Theme to a Test Site</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_3.html" class="NavLink isSecondary">3. Add a Color Palette</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_4.html" class="NavLink isSecondary">4. Create Variations of the Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_5.html" class="NavLink isSecondary">5. Edit the Header Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_6.html" class="NavLink isSecondary">6. Edit the main.less File</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_7.html" class="NavLink isSecondary">7. Edit the Blog Post Partial</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_8.html" class="NavLink isSecondary">8. Add a Theme Option</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_9.html" class="NavLink isSecondary">9. Add a Screenshot</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_10.html" class="NavLink isSecondary">10. Deliver Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme Design</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_guidelines.html" class="NavLink isSecondary">Theme Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_page.html" class="NavLink isSecondary">Page Guidelines for Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_element_guidelines.html" class="NavLink isSecondary">Element Guidelines for Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Theme</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_create.html" class="NavLink isSecondary">How to Create a Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_import_export.html" class="NavLink isSecondary">Import and Export Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_implement_css.html" class="NavLink isSecondary">Implement the CSS</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_create_templates.html" class="NavLink isSecondary">Create HTML Layout Templates</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_themes_partials.html" class="NavLink  isSecondary">Use Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_manifest.html" class="NavLink isSecondary">Create the Theme Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_options.html" class="NavLink isSecondary">Add Options to Your Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_palette.html" class="NavLink isSecondary">Create a Color Palette</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_variations.html" class="NavLink isSecondary">Add Color Variations</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_screenshot.html" class="NavLink isSecondary">Create a Theme Screenshot</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_deliver.html" class="NavLink isSecondary">Deliver Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_update.html" class="NavLink isSecondary">Update Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme Resources</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_design_resources.html" class="NavLink isSecondary">Design Resources</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_LESS.html" class="NavLink isSecondary">About LESS</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_mustache.html" class="NavLink isSecondary">About Mustache</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Partial Maps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_blogPartials.html" class="NavLink isSecondary">Blog Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_comPartials.html" class="NavLink isSecondary">Commerce Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_membershipPartials.html" class="NavLink isSecondary">Membership Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_navPartials.html" class="NavLink isSecondary">Navigation Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_searchPartials.html" class="NavLink isSecondary">Search Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme FAQs</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_faqs.html" class="NavLink isSecondary">Theme FAQs</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Use Partials</h1>
+    </div>
+    <div class="page-type">  concepts  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Weebly sites use partials as a way to easily organize and find different parts of the website. You can edit these partials to change how their contents display.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <p>Partials are <a href="ds_themes_mustache.html">Mustache</a> template files that are included in a page, similar to an include, import, or a nested template.</p>
+
+<p>You don’t determine where partials display in your templates. Your templates only determine the layout of the large blocks of content, like headers, banners, footer, and sections. Partials and their content automatically display based on the type of page being rendered, such as a product or a blog.</p>
+
+<p>Partials can render some variables and even render each other. For example, in addition to its own content, the blog post partial can reference the date (a variable) as well as render the blog comment section’s partial. You can change the order that sub-partials display on the parent page. For example, on the product page in some themes, the social icons display below the price. In other themes they display below the Add to Cart button.</p>
+
+<h2 id="editing-a-weebly-partial">Editing a Weebly Partial</h2>
+
+<p>Partials are written in a template engine called <a href="ds_themes_mustache.html">Mustache</a>. They are a mix of regular text or HTML plus some Mustache-specific markup. Here’s a simple example:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">Hello {{name}}
+You have just won <span class="nt">&lt;b&gt;</span>{{value}}<span class="nt">&lt;/b&gt;</span> dollars!</code></pre></figure>
+
+<p>Here, <code class="highlighter-rouge">and</code> are variables and at runtime are replaced by actual data (check out the <a href="ds_themes_mustache.html">About Mustache</a> topic for more info, or visit the <a href="https://mustache.github.io/mustache.5.html">Mustache site</a>). Partials only support the variables currently used on them. Also note that not all partials are available to edit.</p>
+
+<p>Weebly partials can be accessed from the Code Editor. There are partials for blogs, commerce, membership, navigation, and search. You can edit the partials directly and add HTML, styling, or even another partial.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> Do not change any classes or IDs used in a partial, as changes may affect the behavior of the site.
+</div>
+
+<p>​For example, say you want to change how the blog date is displayed. By default, the <code class="highlighter-rouge">blog/post.tpl</code> partial contains the blog date, as shown here:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"blog-date"</span><span class="nt">&gt;</span>
+    {{{date_html}}}
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<p>Say you want to change it so that it displays in red. You might add style=”color: red;” to the &lt;p&gt; tag that contains the date:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"blog-date"</span> <span class="na">style=</span><span class="s">"color:red;"</span><span class="nt">&gt;</span>
+    {{{date_html}}}
+<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<p>Now, wherever that partial is used, the blog date will display in red.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> All themes use the same default partials. Only customized partials are downloaded when you export a theme. So if you want to work in an external tool and want to change a partial, make a small change first in the Weebly editor, and then export the theme to work externally.
+</div>
+
+<h2 id="partial-maps">Partial Maps</h2>
+
+<p>Use these topics to understand where Weebly partials are used in a site. Each topic outlines the partial’s display area in blue, with a brief description of what that partial displays.</p>
+
+<p>Partials are used in these areas:​</p>
+<ul>
+  <li><a href="ds_themes_blogPartials.html">Blog</a></li>
+  <li><a href="ds_themes_comPartials.html">Commerce</a></li>
+  <li><a href="ds_themes_membershipPartials.html">Membership</a></li>
+  <li><a href="ds_themes_navPartials.html">Navigation</a></li>
+  <li><a href="ds_themes_searchPartials.html">Search</a></li>
+</ul>
+
+<h2 id="creating-a-custom-partial">Creating a Custom Partial</h2>
+
+<p>You can create a custom partial for inclusion in a Weebly partial. Create your custom partial using HTML. You can use the same variables that the parent partial uses.</p>
+
+<p>Save your partials using the <code class="highlighter-rouge">.tpl</code> extension. Once you create a custom partial, you include it in another partial using this syntax:
+<code class="highlighter-rouge"><span class="p">{</span><span class="err">{&gt;</span><span class="w"> </span><span class="err">example_partial</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code></p>
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_themes.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">themes</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

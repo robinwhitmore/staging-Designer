@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="If you're creating color palettes for your theme, then you may also want to create light and dark variations of each palette.">
+<meta name="keywords" content="themes,  color, color variations, light, dark, is_dark, LESS, css">
+<title>Add Color Variations | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Add Color Variations page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Customizing Themes</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_start.html" class="NavLink isSecondary">Customizing Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_sample.html" class="NavLink isSecondary">Download Sample Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_anatomy.html" class="NavLink isSecondary">Anatomy of a Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_directory.html" class="NavLink isSecondary">Theme Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_issues.html" class="NavLink isSecondary">Known Issues</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Customize a Theme</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_tutorial.html" class="NavLink isSecondary">Customize a Weebly Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_1.html" class="NavLink isSecondary">1. Download the Base Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_2.html" class="NavLink isSecondary">2. Apply YOur Theme to a Test Site</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_3.html" class="NavLink isSecondary">3. Add a Color Palette</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_4.html" class="NavLink isSecondary">4. Create Variations of the Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_5.html" class="NavLink isSecondary">5. Edit the Header Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_6.html" class="NavLink isSecondary">6. Edit the main.less File</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_7.html" class="NavLink isSecondary">7. Edit the Blog Post Partial</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_8.html" class="NavLink isSecondary">8. Add a Theme Option</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_9.html" class="NavLink isSecondary">9. Add a Screenshot</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_10.html" class="NavLink isSecondary">10. Deliver Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme Design</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_guidelines.html" class="NavLink isSecondary">Theme Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_page.html" class="NavLink isSecondary">Page Guidelines for Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_element_guidelines.html" class="NavLink isSecondary">Element Guidelines for Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Theme</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_create.html" class="NavLink isSecondary">How to Create a Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_import_export.html" class="NavLink isSecondary">Import and Export Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_implement_css.html" class="NavLink isSecondary">Implement the CSS</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_create_templates.html" class="NavLink isSecondary">Create HTML Layout Templates</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_partials.html" class="NavLink isSecondary">Use Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_manifest.html" class="NavLink isSecondary">Create the Theme Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_options.html" class="NavLink isSecondary">Add Options to Your Themes</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_palette.html" class="NavLink isSecondary">Create a Color Palette</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_themes_variations.html" class="NavLink  isSecondary">Add Color Variations</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_screenshot.html" class="NavLink isSecondary">Create a Theme Screenshot</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_deliver.html" class="NavLink isSecondary">Deliver Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_update.html" class="NavLink isSecondary">Update Your Theme</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme Resources</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_design_resources.html" class="NavLink isSecondary">Design Resources</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_LESS.html" class="NavLink isSecondary">About LESS</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_mustache.html" class="NavLink isSecondary">About Mustache</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Partial Maps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_blogPartials.html" class="NavLink isSecondary">Blog Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_comPartials.html" class="NavLink isSecondary">Commerce Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_membershipPartials.html" class="NavLink isSecondary">Membership Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_navPartials.html" class="NavLink isSecondary">Navigation Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_searchPartials.html" class="NavLink isSecondary">Search Partials</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Theme FAQs</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_themes_faqs.html" class="NavLink isSecondary">Theme FAQs</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Add Color Variations</h1>
+    </div>
+    <div class="page-type">  concepts  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">If you're creating color palettes for your theme, then you may also want to create light and dark variations of each palette.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <h2 id="about-color-variations">About Color Variations</h2>
+
+<p>Color Variations allow you to create different versions of a theme, like a light version and a dark version. The light version might use a white header and dark text, while the dark version might use a black header and light text. For example, this theme has both a light and dark version that can be applied to the selected palette:</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_paletteBlue.png" alt="" />
+
+	
+
+	
+		<figcaption>Theme with light and dark variations</figcaption>
+	</figure>
+
+<p>The light version uses a light navigation area, as shown above, while the dark version uses black instead:</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_paletteBlueDark.png" alt="" />
+
+	
+
+	
+		<figcaption>Dark version of the same theme</figcaption>
+	</figure>
+
+<p>​
+Additionally, some Weebly themes have color variations. However, unlike color palettes, the user can’t select the colors to be used. For example, the theme shown below has four color options. In this example, the blue version is selected.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_variations.png" alt="" />
+
+	
+
+	
+		<figcaption>Color variations in a theme</figcaption>
+	</figure>
+
+<p>And in this one, the dark red version is selected.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/theme_variationsRed.png" alt="" />
+
+	
+
+	
+		<figcaption>Red variation of the same theme</figcaption>
+	</figure>
+
+<p>​As a theme designer, you can create these variations and determine which parts of a site will change when the color is changed.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Check out our <a href="ds_themes_design_resources.html"> resources</a> for help with color decisions. </div>
+<p>​
+You configure variations in the manifest file and then implement styles for each variation. You can use either LESS or CSS.</p>
+
+<h2 id="create-color-variations-in-less">Create Color Variations in LESS</h2>
+
+<p>When using LESS, you configure the different color variations in the manifest file. The first one defined will be the one selected by default in the editor.
+Use the following properties in the manifest to define the color variation:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">value</code>: Name of the color. If you are creating light and dark versions for color palettes, then use <code class="highlighter-rouge">light</code> and <code class="highlighter-rouge">dark</code>, respectively.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">sample</code>: The hex value that you want to display as the choice circle in the Theme tab. If you are creating light and dark versions for color palettes, then use  <code class="highlighter-rouge">#fff</code> and <code class="highlighter-rouge">#000</code>, respectively.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">is dark</code>: ​Set to <code class="highlighter-rouge">true</code> if this variation is dark and needs the site to automatically adjust fonts and other styling where needed. See <a href="ds_themes_manifest.html">Create the Theme Manifest</a> for details. If you are creating light and dark versions for color palettes, then use <code class="highlighter-rouge">false</code> and <code class="highlighter-rouge">true</code>, respectively.</p>
+  </li>
+</ul>
+
+<p>Here’s what the manifest entries for a theme using light and dark variations for color palettes looks like:</p>
+
+<p></p>
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"variations"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"light"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"sample"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#fff"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is-dark"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dark"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"sample"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#000"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"is-dark"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="err">,</span></code></pre></figure>
+
+<p>​Here’s what the manifest entries for a theme that has a light blue and dark blue variation might look:</p>
+
+<p></p>
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="err"></span><span class="w">
+</span><span class="s2">"variations"</span><span class="err">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"value"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"ltBlue"</span><span class="err">;</span><span class="w">
+        </span><span class="s2">"sample"</span><span class="err">:</span><span class="w"> </span><span class="s2">"#E0F5FF"</span><span class="err">;</span><span class="w">
+        </span><span class="s2">"is-dark"</span><span class="err">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"value"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"dkBlue"</span><span class="err">;</span><span class="w">
+        </span><span class="s2">"sample"</span><span class="err">:</span><span class="w"> </span><span class="s2">"#336680"</span><span class="err">;</span><span class="w">
+        </span><span class="s2">"is-dark"</span><span class="err">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="err">,</span></code></pre></figure>
+
+<p>You then create a stylesheet separate from the <code class="highlighter-rouge">main.less</code> file named <code class="highlighter-rouge">variables.less</code>. This stylesheet holds the properties that change with each color variation. Each property is defined as a variable with a default style.</p>
+
+<p>For example, your default <code class="highlighter-rouge">variables.less</code> file might define these variables:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="err"></span>
+<span class="k">@bg_color</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+<span class="k">@text_color</span><span class="p">:</span> <span class="m">#888888</span><span class="p">;</span>
+<span class="k">@border_color</span><span class="p">:</span> <span class="m">#e1e1e1</span><span class="p">;</span></code></pre></figure>
+
+<p>Next, you edit the <code class="highlighter-rouge">main.less</code> file to use those values, like this:</p>
+
+<p></p>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="err">@</span><span class="n">bg_color</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#footer</span> <span class="p">{</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="err">@</span><span class="n">border_color</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>You then need to create a variation stylesheet for each color variation. Named the file <code class="highlighter-rouge">variables_&lt;variationName&gt;.less</code>, and add the values for that color.
+For example, the dark blue variation might have a file named <code class="highlighter-rouge">variables_dkBlue.less</code> that looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@bg_color</span><span class="p">:</span> <span class="m">#212121</span><span class="p">;</span>
+<span class="k">@text_color</span><span class="p">:</span> <span class="m">#b1b1b1</span><span class="p">;</span>
+<span class="k">@border_color</span><span class="p">:</span><span class="m">#55555</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> The file loading order for LESS files is first <code class="highlighter-rouge">variables.less</code>, then <code class="highlighter-rouge">variables_&lt;variationName&gt;.less</code> (which allows the color options to override the default), and lastly <code class="highlighter-rouge">main.less</code>. Make sure you do not define values for any variables in your <code class="highlighter-rouge">main.less</code> file, or they will overwrite values in the variable files.
+</div>
+
+<p>Also, if all your variable color files are overwriting <em>all</em> the variables in <code class="highlighter-rouge">variables.less</code>, then you don’t need to create <code class="highlighter-rouge">variables.less</code>. Simply create a variables file for each color.</p>
+
+<h2 id="create-the-variation-styles-in-css">Create the Variation Styles in CSS</h2>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> If your theme uses a color palette, then you must use LESS instead of CSS.
+</div>
+
+<p>If your theme uses CSS, then your variations can live at the top of the <code class="highlighter-rouge">main_style.css</code> file. Create commented-out JSON that contains the different values for CSS properties for each variation.</p>
+
+<p>You need to define at least the following properties, along with any style properties you want to override:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">value</code>: The name of variable that will be used to identify this color. This needs to be unique.</li>
+  <li><code class="highlighter-rouge">sample</code>: The hex value for the color variation’s main color. It is used for the circle in the Theme tab that the user clicks to select the variation.</li>
+</ul>
+
+<p>You can use as many properties as you want, but each color variation must contain the same properties.</p>
+
+<p>For example, the following example shows the color variations for a light variation and a dark variation.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="w">        </span><span class="err"></span><span class="w">
+</span><span class="err">/*</span><span class="w"> </span><span class="err">Variables</span><span class="w">
+</span><span class="p">{</span><span class="w">
+    </span><span class="err">Color:</span><span class="w"> </span><span class="err">[</span><span class="w">
+    </span><span class="err">{</span><span class="w">
+        </span><span class="err">value:</span><span class="w"> </span><span class="err">'ltblue',</span><span class="w">
+        </span><span class="err">sample:</span><span class="w"> </span><span class="err">'#E0F5FF',</span><span class="w">
+        </span><span class="err">bg_color:</span><span class="w"> </span><span class="err">'#E0F5FF',</span><span class="w">
+        </span><span class="err">text_color:</span><span class="w"> </span><span class="err">'#888888',</span><span class="w">
+        </span><span class="err">accent_color:</span><span class="w"> </span><span class="err">'#555555',</span><span class="w">
+        </span><span class="err">border_color:</span><span class="w"> </span><span class="err">'#e1e1e1',</span><span class="w">
+        </span><span class="err">button_bg:</span><span class="w"> </span><span class="err">'#888888',</span><span class="w">
+        </span><span class="err">button_hover:</span><span class="w"> </span><span class="err">'#cccccc',</span><span class="w">
+        </span><span class="err">alt_button_bg:</span><span class="w"> </span><span class="err">'#333333',</span><span class="w">
+        </span><span class="err">alt_button_hover:</span><span class="w"> </span><span class="err">'#555555'</span><span class="w">
+    </span><span class="p">}</span><span class="err">,</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="err">value:</span><span class="w"> </span><span class="err">'dkBlue',</span><span class="w">
+        </span><span class="err">sample:</span><span class="w"> </span><span class="err">'#336680',</span><span class="w">
+        </span><span class="err">bg_color:</span><span class="w"> </span><span class="err">'#336680',</span><span class="w">
+        </span><span class="err">text_color:</span><span class="w"> </span><span class="err">'#b1b1b1',</span><span class="w">
+        </span><span class="err">accent_color:</span><span class="w"> </span><span class="err">'#ffffff',</span><span class="w">
+        </span><span class="err">border_color:'#55555',</span><span class="w">
+        </span><span class="err">button_bg:</span><span class="w"> </span><span class="err">'#b1b1b1',</span><span class="w">
+        </span><span class="err">button_hover:</span><span class="w"> </span><span class="err">'#cccccc',</span><span class="w">
+        </span><span class="err">alt_button_bg:</span><span class="w"> </span><span class="err">'#f1f1f1',</span><span class="w">
+        </span><span class="err">alt_button_hover:</span><span class="w"> </span><span class="err">'#ffffff'</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+    </span><span class="err">]</span><span class="w">
+</span><span class="err">}</span><span class="w">
+</span><span class="err">----------------------------------------------*/</span><span class="w">
+</span><span class="err">/*</span><span class="w"> </span><span class="err">Resets</span><span class="w">
+</span><span class="err">----------------------------------------------*/</span><span class="w">
+</span><span class="err">.</span><span class="w"> </span><span class="err">.</span><span class="w"> </span><span class="err">.</span></code></pre></figure>
+
+<p>You can now refer to these in your stylesheet using a $, like this:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="err"></span>
+<span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="err">$</span><span class="n">bg_color</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#footer</span> <span class="p">{</span>
+    <span class="nl">border-top</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="err">$</span><span class="n">border_color</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The correct color will be applied to the variable based on the color selected on the Theme Tab.</p>
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_themes.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">themes</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

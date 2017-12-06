@@ -1,0 +1,20 @@
+<html>
+<body>
+<div style="padding: 30px;">
+<div id="text">
+<h1 style="margin-top: 32px;
+	font-size: 24px;
+	font-weight: 500; color: #0073ff; font-family: sans-serif">This website has moved. You'll be redirected to the new site in 5 seconds...</h1></div><div id="counter" style="font-size: 24px; font-family: sans-serif">5</div>
+</div>
+<script>
+  setInterval(function() {
+    var div = document.querySelector("#counter");
+    var count = div.textContent * 1 - 1;
+    div.textContent = count;
+    if (count <= 0) {
+      window.location.href="http://cloud-designer.weebly.com/home.html";
+    }
+  }, 1000);
+</script>
+</body>
+</html>

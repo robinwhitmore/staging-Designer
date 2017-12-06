@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="This topic shows how to create and manage sites in the Cloud Admin.">
+<meta name="keywords" content="clientssites,  migration, sites">
+<title>Working with Sites | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Working with Sites page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Migrating from Designer Platform to Weebly Cloud</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_about.html" class="NavLink isSecondary">Migrating to Weebly Cloud for Designers</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_clients.html" class="NavLink isSecondary">Working with Clients</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_mg_sites.html" class="NavLink  isSecondary">Working with Sites</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_control.html" class="NavLink isSecondary">Controlling Access to a Site</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_staff.html" class="NavLink isSecondary">Working with Staff</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_portal.html" class="NavLink isSecondary">Configuring the Company Portal</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_account.html" class="NavLink isSecondary">Setting Up Your Account</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_support.html" class="NavLink isSecondary">Getting Support</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_mg_retired.html" class="NavLink isSecondary">Retired Features</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Working with Sites</h1>
+    </div>
+    <div class="page-type">  reference </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">This topic shows how to create and manage sites in the Cloud Admin.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <h2 id="add-a-site">Add a Site</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_addSite.png" alt="" />
+
+	
+
+	
+		<figcaption>Add a site in the Designer Platform</figcaption>
+	</figure>
+
+<p>In the Cloud Admin, you add a site from the client’s detail page.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteAdd.png" alt="" />
+
+	
+
+	
+		<figcaption>Add a site from the client's detail page.</figcaption>
+	</figure>
+
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteAdd2.png" alt="" />
+
+	
+
+	
+		<figcaption>Add a site from the client's detail page.</figcaption>
+	</figure>
+
+<p>You can create the site from scratch, or you can copy an existing site or use a template.
+More about creating sites <a href="ds_gs_cr_sites.html">here</a>.
+<a name="site_detail"></a>
+When you create a site, you’re taken to the site’s detail page where you can further manage it.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteDetail.png" alt="" />
+
+	
+
+	
+		<figcaption>Site's detail page</figcaption>
+	</figure>
+
+<h2 id="edit-a-site">Edit a Site</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_editSite.png" alt="" />
+
+	
+
+	
+		<figcaption>Edit a site in the Designer Platform</figcaption>
+	</figure>
+
+<p>You can edit a site from the site’s detail page in Cloud Admin.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteEdit.png" alt="" />
+
+	
+
+	
+		<figcaption>Edit a site in the Cloud Admin</figcaption>
+	</figure>
+
+<p>As previously, clicking Edit Site takes  you to the Weebly editor.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/cl_editor2.png" alt="" />
+
+	
+
+	
+		<figcaption>Weebly Editor</figcaption>
+	</figure>
+
+<h2 id="preview-a-site">Preview a Site</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_previewSite.png" alt="" />
+
+	
+
+	
+		<figcaption>Preview a site in Designer Platform</figcaption>
+	</figure>
+
+<p>You now preview a site directly from the Editor.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_sitePreview.png" alt="" />
+
+	
+
+	
+		<figcaption>Preview a site from the Weebly Editor</figcaption>
+	</figure>
+
+<p>You can also preview a site from the site’s detail page.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_sitePreview2.png" alt="" />
+
+	
+
+	
+		<figcaption>Preview a site from the details page</figcaption>
+	</figure>
+
+<p>More about previewing a site, and sending a preview link to your client, <a href="ds_gs_cr_sites.html#preview-a-site-before-publishing">here</a>.</p>
+
+<h2 id="delete-a-site">Delete a Site</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_siteDelete.png" alt="" />
+
+	
+
+	
+		<figcaption>Delete a site in Designer Platform</figcaption>
+	</figure>
+
+<p>You delete a site from the site’s detail page.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteDelete.png" alt="" />
+
+	
+
+	
+		<figcaption>Delete a site</figcaption>
+	</figure>
+
+<p>You can view all deleted sites from the client’s detail page.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteDeletedList.png" alt="" />
+
+	
+
+	
+		<figcaption>List deleted sites</figcaption>
+	</figure>
+
+<h2>
+<div class="Tag type_info">new!</div>
+
+Restore a Site</h2>
+<p>You can restore a deleted site from the Deleted Sites dialog accessed from the <a href="#delete-a-site">Deleted Sites</a> link on the client detail page.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_restoreSite.png" alt="" />
+
+	
+
+	
+		<figcaption>Restore sites</figcaption>
+	</figure>
+
+<h2>
+<div class="Tag type_info">new!</div>
+
+Restore Text Elements to a Page on a Site</h2>
+<p>You can restore deleted text elements back to a page from the site’s detail page in the Cloud Admin. In the Pages section, click the gear icon for the page with the deleted elements and choose <strong>Restore Elements</strong>.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_elementRestore.png" alt="" />
+
+	
+
+	
+		<figcaption>Restore elements to a page</figcaption>
+	</figure>
+
+<p>Select the text element to restore and click <strong>Restore Elements</strong>.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_restoreElement2.png" alt="" />
+
+	
+
+	
+		<figcaption>Restore elements to a page</figcaption>
+	</figure>
+
+<h2 id="view-site-statistics">View Site Statistics</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_siteStats.png" alt="" />
+
+	
+
+	
+		<figcaption>View statistics in the Designer Portal</figcaption>
+	</figure>
+
+<p>You now access site stats from the User Portal. You access that portal from <code class="highlighter-rouge">your_domain.com/portal</code>. When your clients log in, they see a list of any sites they have access to.</p>
+
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_userPortal.png" alt="" />
+
+	
+
+	
+		<figcaption>User Portal</figcaption>
+	</figure>
+
+<p>Click the <strong>Stats</strong> link to view stats for the site.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_siteStats.png" alt="" />
+
+	
+
+	
+		<figcaption>Site statistics in User Portal</figcaption>
+	</figure>
+
+<h2 id="view-blog-comments">View Blog Comments</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_comments.png" alt="" />
+
+	
+
+	
+		<figcaption>Blog Comments in Designer Portal</figcaption>
+	</figure>
+
+<p>Now you access blog comments directly from the blog’s page in the editor.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_blogComments.png" alt="" />
+
+	
+
+	
+		<figcaption>Blog comments in the Weebly Editor</figcaption>
+	</figure>
+
+<p>And you manage the comments from the resulting dialog.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_blogCommentsMge.png" alt="" />
+
+	
+
+	
+		<figcaption>Blog comments dialog</figcaption>
+	</figure>
+
+<h2 id="view-form-entries">View Form Entries</h2>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/old_forms.png" alt="" />
+
+	
+
+	
+		<figcaption>Form entries in Designer Portal</figcaption>
+	</figure>
+
+<p>Like blog comments, you access form entries directly from the editor by clicking on the form.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_form.png" alt="" />
+
+	
+
+	
+		<figcaption>Form entries in the editor</figcaption>
+	</figure>
+
+<p>And you manage the entries from the resulting dialog.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_formEntry.png" alt="" />
+
+	
+
+	
+		<figcaption>Form entries</figcaption>
+	</figure>
+
+<h2>
+<div class="Tag type_info">new!</div>
+
+Change a Site's Plan</h2>
+<p>You can change the plan a site is on from the bottom of the site’s detail page.</p>
+<figure class="post-content__figure">
+	
+
+	<img class="post-content__image" src="images/new_sitePlan.png" alt="" />
+
+	
+
+	
+		<figcaption>Site plans can be changed</figcaption>
+	</figure>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_clients.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">clients</a>
+		        
+
+	        
+
+                
+		        	<a href="tag_sites.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">sites</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

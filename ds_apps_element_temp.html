@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Templates are the core component of an element. The template is the actual HTML content that will be rendered on a users page.">
+<meta name="keywords" content="elements,  template, element, mustache, content fields,">
+<title>Create an Element Template | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the Create an Element Template page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Apps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_gs.html" class="NavLink isSecondary">Get Started with Developing Apps</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_samples.html" class="NavLink isSecondary">Sample Applications</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_main.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_1.html" class="NavLink isSecondary">1. Design the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_2.html" class="NavLink isSecondary">2. Register the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_3.html" class="NavLink isSecondary">3. Create a Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_4.html" class="NavLink isSecondary">4. Create the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_5.html" class="NavLink isSecondary">5. Create the Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_6.html" class="NavLink isSecondary">6. Create the HTML Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_7.html" class="NavLink isSecondary">7. Create the Styles</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_8.html" class="NavLink isSecondary">8. Create the JavaScript</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_9.html" class="NavLink isSecondary">9. Package, Upload, and Test Your Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Develop an App</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_dev.html" class="NavLink isSecondary">Develop an App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_reg.html" class="NavLink isSecondary">Register Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manage.html" class="NavLink isSecondary">Manage Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_files.html" class="NavLink isSecondary">Create the App File Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manifest.html" class="NavLink isSecondary">Create the App Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Backend Service</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_backend.html" class="NavLink isSecondary">Create a Backend Service</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_elements.html" class="NavLink isSecondary">What are Elements?</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_guides.html" class="NavLink isSecondary">Element Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_icon.html" class="NavLink isSecondary">Element Icon Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_create.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_folders.html" class="NavLink isSecondary">Add Element Folders</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_manifest.html" class="NavLink isSecondary">Add an Element to the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_settings.html" class="NavLink isSecondary">Create Element Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_man_ex.html" class="NavLink isSecondary">Element Manifest Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_apps_element_temp.html" class="NavLink  isSecondary">Create an Element Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp_ex.html" class="NavLink isSecondary">Element Template Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_style.html" class="NavLink isSecondary">Add Stylesheets to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_js.html" class="NavLink isSecondary">Add JavaScript to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Your App Ready to Publish</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_upload.html" class="NavLink isSecondary">Upload your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_test.html" class="NavLink isSecondary">Test Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_release.html" class="NavLink isSecondary">Release Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_update.html" class="NavLink isSecondary">Update Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div>
+    <div class="post-header">
+        <h1 class="post-title-main display-1">Create an Element Template</h1>
+    </div>
+    <div class="page-type">  task </div>
+</div>
+
+
+
+
+<div class="post-content">
+
+   
+    <div class="summary">Templates are the core component of an element. The template is the actual HTML content that will be rendered on a users page.</div>
+   
+
+    
+    <!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+
+	$('#toc').toc({
+		minimumHeaders: 2, // Don't show ToC if there is only one header
+		listType: 'ul',
+		showSpeed: 0,
+		headers: 'h2'
+	});
+
+	/* this offset helps account for the space taken up by the floating toolbar. */
+	$('#toc').on('click', 'a', function() {
+	  var target = $(this.getAttribute('href'))
+	    , scroll_target = target.offset().top
+
+	  $(window).scrollTop(scroll_target - 50);
+	  return false
+	})
+
+});
+</script>
+
+<div id="toc" class="toc"></div>
+
+    
+
+    
+
+  <p>All templates make use of <a href="http://mustache.github.io/mustache.5.html">Mustache</a> for the templating language. Your template can include static HTML and the following dynamic content:</p>
+<ul>
+  <li><strong>Content fields</strong>: You can insert text, button, and image components that the user can edit.</li>
+  <li><strong>Settings</strong>: You can access values for <a href="ds_apps_element_settings.html">settings</a>  that the user has set on the element (you create settings in the manifest file).</li>
+  <li><strong>Data</strong>: Your template can include the values for the element, user, and site IDs, as well as the path to the element assets.</li>
+</ul>
+
+<h2 id="editor-vs-published-templates">Editor vs. Published Templates</h2>
+
+<p>Templates (<code class="highlighter-rouge">.tpl</code> files) are located in an <a href="ds_apps_element_folders.html">html folder</a> in the root of your element.  You need to create at least one template named <code class="highlighter-rouge">element.tpl</code>, which will be used for both the editor and the published site.  You can also provide an <code class="highlighter-rouge">editor_element.tpl</code> file to be used only within the editor.  This allows you to specify a different UI (or an augmented UI) within the editor. This may be necessary when your element requires major interactivity with the user on a published site, as the element placeholder in the editor can handle only basic interaction, such as direct editing.</p>
+
+<h2 id="add-content-fields">Add Content Fields</h2>
+
+<p>​Content fields are small sections of your element that are directly editable by the user.  They make use of existing Weebly components, providing a consistent UI between your element and the Weebly ecosystem. ​Weebly supports four types of content fields:</p>
+<ul>
+  <li>text</li>
+  <li>image</li>
+  <li>button</li>
+  <li>content (which allows the user to drag elements into this element).</li>
+</ul>
+
+<p>This example shows the syntax for defining a field:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+    {unique_name:field_type default="Default Text Here"}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>For example:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+    {name:text default="Put your name here"}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Every content field must have a unique name. If two content fields share a name, only the first one will act as an editable content field, with the other remaining as text within the element.
+​</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> The DOM structure generated for the element differs between the editor and published sites.  You need to account for both DOM structures when styling your element.
+</div>
+
+<p>If you want to be able to hide/display different areas of content at a time, then use CSS to set visibility and any content set to visible will be displayed. You can also set a width on the content area, for example, <code class="highlighter-rouge"><span class="p">{</span><span class="err">myContentArea:content</span><span class="w"> </span><span class="err">width=</span><span class="nt">"50%"</span><span class="err">}</span></code>. If a user moves or copies a <code class="highlighter-rouge"><span class="p">{</span><span class="err">content</span><span class="p">}</span></code> field, all child elements will get moved/copied as well.</p>
+
+<h2 id="access-settings">Access Settings</h2>
+
+<p>Within your template(s), you can access element settings using Mustache tags.  Each setting is represented by the <code class="highlighter-rouge">name</code> attribute specified in the manifest.json.</p>
+
+<p>When accessing settings, you can generate unique names for the content fields by using element settings as part of the name. For example, <code class="highlighter-rouge"><span class="p">{</span><span class="err">name_:text</span><span class="p">}</span></code> and <code class="highlighter-rouge"><span class="p">{</span><span class="err">name_:text</span><span class="p">}</span><span class="w"> </span></code>are unique.</p>
+
+<p>For example, the Price Chart allows the user to set Plan names. Plans have manifest entry like this:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">"properties"</span><span class="err">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+</span><span class="err">{</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"plans"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plans"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"int"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"step"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tooltip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Select the number of plans to display."</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="err">.</span><span class="w"> </span><span class="err">.</span><span class="w"> </span><span class="err">.</span><span class="w">
+</span><span class="err">}</span><span class="p">]</span></code></pre></figure>
+
+<p>The template for the Price Chart uses this to create that text field:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+    {name_{{plans}}:text default="Plan Name"}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>You need to be careful when using a setting value within a Content Field. <code>&#123;&#123;&#123;setting_name&#125;&#125;_field:text&#125;</code> is an invalid field!  This is because the template system can’t discern whether you’re trying to use an unescaped <a href="http://mustache.github.io/mustache.5.html#TAG-TYPES">Mustache tag</a>, or using a standard tag within one of our content fields.  To mitigate this, always start content field names with a static sting: <code>&#123;some_prefix_&#123;&#123;setting_name&#125;&#125;:text&#125;</code>.</p>
+
+<p>​For any integer settings, we generate a iterable value for you, allowing you to perform loops within your templates. For any integer setting with a value less than 100, we generate an iterable setting item with the same name as your setting, appended with _each.  Within your loop, you can access the current index with the setting name appended with _index.</p>
+
+<p>For example, using the above manifest entry for plans, you can iterate over the instances like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+    {{#plans_each}}
+    {name_{{plans_index}}:text default="Plan Name"}
+    {{/plans_each}}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> There is potential for name collisions here! If you have a setting named <code class="highlighter-rouge">plans</code>, and also a setting named <code class="highlighter-rouge">plans_each</code>, we will not generate the iterable value for you!
+</div>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> We will not generate loops for values that are greater than 100, for performance reasons.  If you have a setting that you intend to use as a loop, be sure to set appropriate minimums and maximums!
+</div>
+
+<h2 id="access-additional-data">Access Additional Data</h2>
+
+<p>Within your template, you also have access to additional data.  Every piece of data is accessed in a similar way to settings, using mustache tags.  You can access the following:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">assets_path</code>: This is the HTTP accessible root path to your elements’ <code class="highlighter-rouge">assets</code> folder, in protocol-agnostic form. The path contains the trailing slash.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"your_image.png"</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> If you provide a setting named <code class="highlighter-rouge">assets_path</code> in your manifest, it will be overridden with this value.
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">element_id</code>, <code class="highlighter-rouge">user_id</code>, <code class="highlighter-rouge">site_id</code>: These are the respective ID’s for the current user, site, and element instance.  You can access these in your templates using standard Mustache syntax:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"example"</span><span class="nt">&gt;</span>
+    {{user_id}} - {{site_id}} - {{element_id}}
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> We can not guarantee that <code class="highlighter-rouge">element_id</code> and <code class="highlighter-rouge">site_id</code> will be universally unique.  We recommend that you use a composite key for any storage you may be doing on your servers or services!
+</div>
+
+<h2 id="use-iframes">Use IFrames</h2>
+
+<p>If your element contains an iframe, we will automatically add an additional invisible overlay <code class="highlighter-rouge">div</code> for your element. This <code class="highlighter-rouge">div</code> ensures that Weebly users will have a clickable target for accessing settings. Once the settings panel is opened, the overlay is removed so that users can interact with your iframe.</p>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> If you dynamically add an iframe after page load, our system may not properly add an overlay <code class="highlighter-rouge">div</code>.  This will cause users to be unable to access your element settings!  Please try to avoid dynamically creating iframes during the lifecycle of your element.
+</div>
+
+
+
+    <div class="tags">
+        
+            Tags:<br/>
+	        
+
+            
+
+                
+		        	<a href="tag_elements.html" class="btn btn-default navbar-btn cursorNorm tags-link" role="button">elements</a>
+		        
+
+	        
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

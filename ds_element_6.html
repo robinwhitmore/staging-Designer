@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=",  ">
+<title>6. Create the HTML Template | Weebly Cloud for Designers Documentation</title>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- Third-Party CSS -->
+<link rel="stylesheet" href="css/syntax.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" media="screen" href="css/orbit-external.css">
+<link rel="stylesheet" media="screen" href="css/orbit.css">
+<link rel="stylesheet" media="screen" href="css/theme-weebly.css">
+
+<!-- Third-Party JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jekyll-search.js" type="text/javascript"></script>
+<script src="js/toc.js"></script>
+
+<!-- Custom JS -->
+<script src="js/customscripts.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Navigation -->
+
+<div class="top-nav">
+
+	<div class="top-nav-item">
+		<img src="images/weebly_cloud_logo.svg" alt="Weebly Cloud" class="cloud-logo" role="button" tabindex="0" alt="menu"/>
+	</div>
+
+	<div class="top-nav-item">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+	</div>
+
+	<nav class="top-nav-item">
+		<div class="nav-group">
+			<ul class="NavList nav-group-list horizontal">
+				<!-- entries without drop-downs appear here -->
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="home.html" class="NavLink nav-group-list-link">Get Started</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_apps_gs.html" class="NavLink nav-group-list-link">Apps</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_themes_start.html" class="NavLink nav-group-list-link">Themes</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_api_about.html" class="NavLink nav-group-list-link">APIs</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_tags_about.html" class="NavLink nav-group-list-link">Topics</a>
+				</li>
+				
+				
+				
+				<li class="NavLinkLi">
+					<a href="ds_mg_about.html" class="NavLink nav-group-list-link">Migrated Designer?</a>
+				</li>
+				
+				
+				
+				<!-- entries with drop-downs appear here -->
+				<!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+				
+				<!--
+			<li class="NavLinkLi">
+
+
+
+  <a class="email NavLink nav-group-list-link" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Cloud for Designers Docs feedback&body=I have some feedback about the 6. Create the HTML Template page: ' + window.location.href;">Feedback</a>
+
+</li>
+
+-->
+        <li class="NavLinkLi">
+
+  <a href="https://weeblycloud.com/admin" target="_blank">Cloud Admin</a>
+</li>
+
+
+		
+
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+	</nav>
+</div>
+
+
+
+
+
+
+<div class="page has-sidebar">
+    
+      <div class="col-sidebar">
+       	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav NavList">
+    
+	    
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Started with Apps</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_gs.html" class="NavLink isSecondary">Get Started with Developing Apps</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_samples.html" class="NavLink isSecondary">Sample Applications</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Tutorial&#58; Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_main.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_1.html" class="NavLink isSecondary">1. Design the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_2.html" class="NavLink isSecondary">2. Register the Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_3.html" class="NavLink isSecondary">3. Create a Directory Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_4.html" class="NavLink isSecondary">4. Create the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_5.html" class="NavLink isSecondary">5. Create the Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="active isActive NavLinkLi">
+					            	<a href="ds_element_6.html" class="NavLink  isSecondary">6. Create the HTML Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_7.html" class="NavLink isSecondary">7. Create the Styles</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_8.html" class="NavLink isSecondary">8. Create the JavaScript</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_9.html" class="NavLink isSecondary">9. Package, Upload, and Test Your Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_element_finish.html" class="NavLink isSecondary">Finish</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Develop an App</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_dev.html" class="NavLink isSecondary">Develop an App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_reg.html" class="NavLink isSecondary">Register Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manage.html" class="NavLink isSecondary">Manage Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_files.html" class="NavLink isSecondary">Create the App File Structure</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_manifest.html" class="NavLink isSecondary">Create the App Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create a Backend Service</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_backend.html" class="NavLink isSecondary">Create a Backend Service</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Create an Element</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_elements.html" class="NavLink isSecondary">What are Elements?</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_guides.html" class="NavLink isSecondary">Element Design Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_icon.html" class="NavLink isSecondary">Element Icon Guidelines</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_create.html" class="NavLink isSecondary">Create an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_folders.html" class="NavLink isSecondary">Add Element Folders</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_manifest.html" class="NavLink isSecondary">Add an Element to the Manifest</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_settings.html" class="NavLink isSecondary">Create Element Settings</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_man_ex.html" class="NavLink isSecondary">Element Manifest Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp.html" class="NavLink isSecondary">Create an Element Template</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_temp_ex.html" class="NavLink isSecondary">Element Template Example</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_style.html" class="NavLink isSecondary">Add Stylesheets to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_js.html" class="NavLink isSecondary">Add JavaScript to an Element</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+		    
+
+			    <li class="NavLinkLi">
+			        <a href="#" class="NavLink isSecondary">Get Your App Ready to Publish</a>
+			        <ul class="NavList Children">
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_upload.html" class="NavLink isSecondary">Upload your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_test.html" class="NavLink isSecondary">Test Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_release.html" class="NavLink isSecondary">Release Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			            
+
+				            
+					            <li class="NavLinkLi">
+					            	<a href="ds_apps_element_update.html" class="NavLink isSecondary">Update Your App</a>
+					            </li>
+				            
+
+				            
+			            
+			            
+			        </ul>
+			    </li>
+		    
+	    
+    
+
+</ul>
+
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>
+$("li.active").parents('li').toggleClass("active");
+</script>
+
+      </div>
+    
+
+    <div class="col-content">
+        <div class="post-header">
+   <h1 class="post-title-main">6. Create the HTML Template</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   <div class="seriesContext">
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Element Tutorial Steps<span class="caret"></span></button>
+        <ol class="dropdown-menu">
+            
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_1.html">1. Design the Element</a>
+                </li>
+                
+              
+            
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_2.html">2. Register the App</a>
+                </li>
+                
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_3.html">3. Create the Directory Structure</a>
+                </li>
+                
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_4.html">4. Create the Manifest</a>
+                </li>
+                
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_5.html">5. Create the Settings</a>
+                </li>
+                
+              
+            
+              
+            
+              
+                
+                <li class="active"> → 6. Create the HTML Template</li>
+                
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_7.html">7. Create the Styles</a>
+                </li>
+                
+              
+            
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_8.html">8. Create the JavaScript</a>
+                </li>
+                
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_9.html">9. Package, Upload, and Test Your Element</a>
+                </li>
+                
+              
+            
+              
+            
+              
+            
+              
+                
+                <li>
+                    <a href="ds_element_finish.html">Finish!</a>
+                </li>
+                
+              
+            
+              
+            
+        </ol>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+  <p>The template provides the HTML to display the element in both the editor and on a published page (if needed, you can create a separate HTML template for the editor and the published site. You can do that for the CSS and JavaScript as well). Templates use Mustache tags to access the settings.</p>
+
+<p>In our template, we need to create a table that creates the right number of columns for the plans (using the <code class="highlighter-rouge">columns</code> setting) and the right number of metric rows (using the <code class="highlighter-rouge">rows</code> setting). We also need to add the button and the rows for heading and the price.</p>
+
+<ol>
+  <li>Create an HTML page, name it <code class="highlighter-rouge">element.tpl</code> and save it to the <code class="highlighter-rouge">PriceChart/files/html</code> directory.</li>
+  <li>
+    <p>Let’s create a div for the whole element:</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"price-chart-wrapper"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Next, let’s create a table to hold the chart, and set the theme color and button location based on the value of those settings. You access settings using mustache tags, like this: <code class="highlighter-rouge"><span class="p">{</span><span class="err">{setting</span><span class="p">}</span><span class="err">}</span></code>.
+Add the following code:</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"price-chart {{theme}} buttonLocation-{{location}}"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre>
+    </div>
+
+    <p>​​In a future step, we’ll provide CSS for the button location classes with styles for the possible alignment values. For example, we’ll style a class named <code class="highlighter-rouge">buttons-bottom</code>.</p>
+  </li>
+  <li>
+    <p>​Now let’s add a table row for the name. First, we need to determine the number of columns to display. To do that we’ll access the plans setting to find that number and then render a column that many number of times.</p>
+
+    <p>When a setting’s value is an integer, you can use <code class="highlighter-rouge"><span class="p">{</span><span class="err">{#settings_each</span><span class="p">}</span><span class="err">}</span></code> to iterate over all instances and <code class="highlighter-rouge"><span class="p">{</span><span class="err">{settings_index</span><span class="p">}</span><span class="err">}</span></code> to access each individual instance. So we’ll use <code class="highlighter-rouge"><span class="p">{</span><span class="err">{#plans_each</span><span class="p">}</span><span class="err">}</span></code> to render the right number of columns, and the we’ll use <code class="highlighter-rouge"><span class="p">{</span><span class="err">{plans_index</span><span class="p">}</span><span class="err">}</span></code> to stamp out a name for each column. The name will be used for the text field.</p>
+
+    <p>We’ll use the text tag to create a text field with a default value. This is the syntax for the text field:</p>
+
+    <p><code class="highlighter-rouge"><span class="p">{</span><span class="err">*field_name*:text</span><span class="w"> </span><span class="err">default=</span><span class="nt">"some default text to display"</span><span class="err">}</span></code>.
+​</p>
+
+    <p>We’ll use the index of each plan column to give each text field a unique name and default text. In other words, the name in the first column will be <code class="highlighter-rouge">Name #0.</code></p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>
+   {{#plans_each}}
+   <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>{name_{{plans_index}}:text default="Name #{{plans_index}}"}<span class="nt">&lt;/td&gt;</span>
+   {{/plans_each}}
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>​Now let’s create a row for the price, repeating the loop over the <code class="highlighter-rouge">plans</code> setting. We’ll set <code class="highlighter-rouge">10</code> as the default value. The pricing prefix will be handled by CSS.</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"price"</span><span class="nt">&gt;</span>
+   {{#plans_each}}
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>{price_{{plans_index}}:text default="10"}<span class="nt">&lt;/td&gt;</span>
+   {{/plans_each}}
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Go ahead and do the same thing for the rate row, using <code class="highlighter-rouge">per unit</code> as the default text.</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"rate"</span><span class="nt">&gt;</span>
+   {{#plans_each}}
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>{rate_{{plans_index}}:text default="per unit"}<span class="nt">&lt;/td&gt;</span>
+   {{/plans_each}}
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>We need to add code for the button when the corresponding setting is set to top (we’ll have CSS determine whether to display this button or one at the bottom).</p>
+
+    <p>Let’s have it display right under the rate. You create a button using the <code class="highlighter-rouge"><span class="p">{</span><span class="err">name:button</span><span class="p">}</span></code> tag.</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"buttons-top"</span><span class="nt">&gt;</span>
+   {{#plans_each}}
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>{buttonText_top_{{plans_index}}:button align="center"}<span class="nt">&lt;/td&gt;</span>
+   {{/plans_each}}
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Like the <code class="highlighter-rouge">plans</code> setting (which determines the number of columns), we need to loop over the <code class="highlighter-rouge">features</code> setting, to return the right number of feature rows. Let’s add the loop which will render the correct number of rows based on the value of the features setting.</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code>{{#features_each}}
+<span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"metric"</span><span class="nt">&gt;</span>
+   {{#plans_each}}
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>{metric_{{plans_index}}_{{features_index}}:text default="Metric #{{features_index}}"}<span class="nt">&lt;/td&gt;</span>
+   {{/plans_each}}
+<span class="nt">&lt;/tr&gt;</span>
+{{/features_each}}
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Now let’s add the code for when the button should be on the bottom.</p>
+
+    <div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"buttons-bottom"</span><span class="nt">&gt;</span>
+   {{#plans_each}}
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>{buttonText_bottom_{{plans_index}}:button align="center"}<span class="nt">&lt;/td&gt;</span>
+   {{/plans_each}}
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<p>​You can see the complete template code <a href="ds_apps_element_temp_ex.html">here</a>.</p>
+
+<p>​We now have the template for our Price Chart! Let’s create the styles next.</p>
+
+
+
+
+<div class="next">
+<div class="series-nav">
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+        <a href="ds_element_5.html"><button type="button" class="btn">← 5. Create the Settings</button></a>
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      
+          <a href="ds_element_7.html"><button type="button" class="btn btn-primary">7. Create the Styles →</button></a>
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+  
+    
+  
+    
+      
+      
+      
+      
+    
+  
+    
+  
+</div>
+
+</div>
+
+    <div class="tags">
+        
+        Tags:<br/>
+
+        
+        
+        
+    </div>
+
+    
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer class="footer">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="footer__fineprint">
+				&copy;2017 Weebly. All rights reserved. <br />
+				 Site last generated: Dec 4, 2017
+			</div>
+			<div class="footer__logo">
+				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
