@@ -430,7 +430,7 @@ $( document ).ready(function() {
   <!--currently not included in site, since will likely handle upgrades manually-->
 <p>When a user encounters a feature in the Weebly Editor that is part of a plan they do not currently have, they will be prompted to upgrade. This triggers a popup window which loads a URL showing the plans they can upgrade to. You need to create this content, and then handle the upgrade.</p>
 
-<p>You set the upgrade URL in the Cloud Admin (or via the API) on either the Weebly Cloud Account or the Site level (in the event a different URL is set at the site and account level, the site level has the higher precedence).</p>
+<p>You set the upgrade URL in the Cloud Admin (or via the API) on either the Weebly Cloud Account or on the Site (in the event a different upgrade URL is set for the site and account, the URL set for the site is used).</p>
 <figure class="post-content__figure">
 	
 
@@ -442,7 +442,7 @@ $( document ).ready(function() {
 		<figcaption>Upgrade settings in the Cloud Admin</figcaption>
 	</figure>
 
-<p>​When the user tries to access something requiring an upgrade, the following parameters are passed in the upgrade URL:</p>
+<p>​When the user tries to access functionality that requires an upgrade, the following parameters are passed in the upgrade URL:</p>
 <ul>
   <li><code class="highlighter-rouge">user_id</code>: The user identification number.</li>
   <li><code class="highlighter-rouge">site</code>: The site the user is modifying.</li>
@@ -473,7 +473,7 @@ Example hash: <code class="highlighter-rouge">"1234567|1234567891011234|fp16iw6b
 
 <p>This hash is a way for the upgrade window to verify the request is coming from the Weebly editor. You need to verify the hash by comparing it to the hash set the Settings section of Cloud Admin. Once verified, you then need to handle the purchase of the upgrade.</p>
 
-<p>Once a client has successfully purchased a new plan, you must call the Plan API to change the plan for the site. You then should display confirmation content in the popup notifying the client that their account has been upgraded. Once the popup is closed, the Weebly Editor will be refreshed and the new plan loaded.</p>
+<p>Once a client has successfully purchased a new plan, you must call the <a href="ds_apis_plan.html">Plan API</a> to change the plan for the site. You then should display confirmation content in the popup notifying the client that their account has been upgraded. Once the popup is closed, the Weebly Editor is refreshed and the new plan is loaded.</p>
 
 
     <div class="tags">
@@ -508,7 +508,7 @@ Example hash: <code class="highlighter-rouge">"1234567|1234567891011234|fp16iw6b
 		<div class="col-lg-12">
 			<div class="footer__fineprint">
 				&copy;2017 Weebly. All rights reserved. <br />
-				 Site last generated: Dec 12, 2017
+				 Site last generated: Dec 13, 2017
 			</div>
 			<div class="footer__logo">
 				<img src="images/weebly_logo.svg" alt="Weebly logo"/>

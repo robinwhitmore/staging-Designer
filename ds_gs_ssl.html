@@ -443,14 +443,15 @@ $( document ).ready(function() {
 	<b>Note:</b> If the site contains a store, the checkout flow always uses HTTPs, regardless of how SSL is configured for the site. If the SSL option is not selected for the site or for checkout, the URL for the checkout flow is <code class="highlighter-rouge">checkout.weebly.com</code>. If the SSL option is selected, the site’s own domain is used.
 </div>
 
-<p>However, by default the SSL option does not display on the General settings page. You need to make a call to the <a href="ds_api_site.html">Site</a> API and update a site’s record to enable the SSL option. You use the <code class="highlighter-rouge">PATCH</code> endpoint and set <code class="highlighter-rouge">allow_ssl</code> to <code class="highlighter-rouge">true</code>.
-​Here’s an example:</p>
+<p>However, by default the SSL option does not display on the General settings page. You need to make a call to the <a href="ds_api_site.html">Site</a> API and update a site’s record to enable the SSL option. You use the <code class="highlighter-rouge">PATCH</code> endpoint and set <code class="highlighter-rouge">allow_ssl</code> to <code class="highlighter-rouge">true</code>.</p>
+
+<p>​Here’s an example:</p>
 <p class="codeTitle">Enable the SSL Option in the Editor:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl https://api.weeblycloud.com/user/USER_ID/site/SITE_ID <span class="se">\</span>
 -X PATCH <span class="se">\</span>
 -d <span class="s1">'{
-"allow_ssl": true
+        "allow_ssl": true
 }'</span> <span class="se">\</span>
 -H <span class="s2">"Content-type: application/json"</span> <span class="se">\</span>
 -H <span class="s2">"X-Public-Key: YOURAPIKEY"</span> <span class="se">\</span>
@@ -491,7 +492,7 @@ $( document ).ready(function() {
 		<div class="col-lg-12">
 			<div class="footer__fineprint">
 				&copy;2017 Weebly. All rights reserved. <br />
-				 Site last generated: Dec 12, 2017
+				 Site last generated: Dec 13, 2017
 			</div>
 			<div class="footer__logo">
 				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
