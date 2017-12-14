@@ -234,6 +234,14 @@
 		}, 
 	
 		{
+			"title": "Weebly API Terms of Use",
+			"tags": "getting_startedapis",
+			"keywords": "terms, legal, api",
+			"url": "ds_api_terms.html",
+			"summary": "By accessing and using the Weebly APIs, including using the Weebly APIs through a third-party product that accesses Weebly, you agree to Weebly’s API Terms of Use below (the “API Terms”)."
+		}, 
+	
+		{
 			"title": "Themes (Custom) APIs",
 			"tags": "themes",
 			"keywords": "themes",

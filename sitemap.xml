@@ -182,6 +182,12 @@
   
   
   <url>
+    <loc>http://localhost:4008/ds_api_terms.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4008/ds_api_themes_cloud.html</loc>
   </url>
   
