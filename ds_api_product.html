@@ -696,19 +696,23 @@ $( document ).ready(function() {
 
 <p>While merchants can always create products, only stores whose sites are on the Starter plan or better can actually sell products. And some plans have restrictions on the quantity and type of products that can be sold. More info on plans <a href="ds_gs_plans.html">here</a>. ​</p>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>Use <code>plan_level</code> on the <a href="ds_api_site.html">Site API</a> to determine the site's current plan. </div>
+<div class="Notice type_success" role="alert">
+	<b>Tip:</b> 
+Use <code>plan_level</code> on the  <a href="ds_api_plan.html">Site API</a> to determine the site’s current plan.
 
-<p>Products can be assigned to <a href="ds_api_category.html">categories</a> in order to group similar items together. And like categories, products can have one or more <a href="ds_api_product_image.html">images</a>images used for display in the store. Products can be taxable (by default they are) and can have a sale price and a regular price.</p>
+</div>
 
-<p>Products are made up of an array of <a href="ds_api_product_sku.html">SKUs</a>. A SKU is the combination of a <a href="ds_api_product_option.html">product option</a> and a <a href="ds_api_product_sku_option_choice.html">product option choice</a> (more about how merchants create options in the Weebly UI <a href="https://hc.weebly.com/hc/en-us/articles/227067887-Add-Selectable-Options-Like-Size-or-Color-to-a-Physical-Product">here</a>). Options are things like <code class="highlighter-rouge">Color</code> and have an array of option choices, like <code class="highlighter-rouge">red</code>, <code class="highlighter-rouge">green</code>, and <code class="highlighter-rouge">blue</code>. For example, a T-shirt might have the options <code class="highlighter-rouge">Color</code> and <code class="highlighter-rouge">Size</code>. The option <code class="highlighter-rouge">Color</code> might have an array of choices like <code class="highlighter-rouge">red</code> and <code class="highlighter-rouge">yellow</code>, while the option <code class="highlighter-rouge">Size</code> might have choices of <code class="highlighter-rouge">small</code>, <code class="highlighter-rouge">medium</code>, and <code class="highlighter-rouge">large</code>. So one SKU might have the option choices of <code class="highlighter-rouge">red</code> and <code class="highlighter-rouge">medium</code>. Another SKU might have <code class="highlighter-rouge">red</code> and <code class="highlighter-rouge">large</code> as option choices.</p>
+<p>Products can be assigned to <a href="ds_api_category.html">categories</a> in order to group similar items together. And like categories, products can have one or more <a href="ds_api_product_image.html">images</a> used for display in the store. Products can be taxable (by default they are) and can have a sale price and a regular price.</p>
+
+<p>Products are made up of an array of <a href="ds_api_product_sku.html">SKUs</a>. A SKU is the combination of a <a href="ds_api_product_option.html">product option</a> and a <a href="ds_api_product_sku_option_choice.html">product option choice</a> (more about how merchants create options in Weebly <a href="https://hc.weebly.com/hc/en-us/articles/227067887-Add-Selectable-Options-Like-Size-or-Color-to-a-Physical-Product">here</a>).</p>
+
+<p>Product options are things like <code class="highlighter-rouge">Color</code> and have an array of option choices, like <code class="highlighter-rouge">red</code>, <code class="highlighter-rouge">green</code>, and <code class="highlighter-rouge">blue</code>. For example, a T-shirt might have the options <code class="highlighter-rouge">Color</code> and <code class="highlighter-rouge">Size</code>. The option <code class="highlighter-rouge">Color</code> might have an array of choices like <code class="highlighter-rouge">red</code> and <code class="highlighter-rouge">yellow</code>, while the option <code class="highlighter-rouge">Size</code> might have choices of <code class="highlighter-rouge">small</code>, <code class="highlighter-rouge">medium</code>, and <code class="highlighter-rouge">large</code>. So one SKU might have the option choices of <code class="highlighter-rouge">red</code> and <code class="highlighter-rouge">medium</code>. Another SKU might have <code class="highlighter-rouge">red</code> and <code class="highlighter-rouge">large</code> as option choices.</p>
 
 <p>Each SKU can have a different price, a different image, etc. When you create a product, you must provide an array of SKU objects, even if there is only one in the array.</p>
 
 <p>Any changes to products that have more than one option choice must be done at the <code class="highlighter-rouge">Product</code> level. You can’t change an option to add a new choice. You need to change the <code class="highlighter-rouge">product</code> to add a new <code class="highlighter-rouge">option_choice</code> and new array of <code class="highlighter-rouge">SKU</code> objects that includes that new choice. For example, if you wanted to add <code class="highlighter-rouge">yellow</code> as an option for the T-shirt, you’d need to do a <code class="highlighter-rouge">PUT</code> with the new <code class="highlighter-rouge">option_choice</code> of <code class="highlighter-rouge">yellow</code>, and an array of all the <code class="highlighter-rouge">SKU</code>s available, which would now be all the size and color combinations, <em>including</em> <code class="highlighter-rouge">yellow</code>. After you update the product with the new SKUs, you can then update choices on the <code class="highlighter-rouge">Product Option</code> to change the order of the colors, so that maybe yellow comes first.
 ​
 Once created, you can change the individual product SKUs. For example, you might change the price.</p>
-
-<p>Use the Products API to manage the product catalog for a site’s store and to change the options and skus available for a product.</p>
 
 <p>Use the following APIs to manage different aspects of a product:</p>
 <ul>
@@ -1972,7 +1976,7 @@ Once created, you can change the individual product SKUs. For example, you might
 		<div class="col-lg-12">
 			<div class="footer__fineprint">
 				&copy;2017 Weebly. All rights reserved. <br />
-				 Site last generated: Dec 14, 2017
+				 Site last generated: Dec 15, 2017
 			</div>
 			<div class="footer__logo">
 				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
