@@ -1396,14 +1396,12 @@ $( document ).ready(function() {
         <td><strong>Name</strong></td>
         <td><strong>Description</strong></td>
         <td><strong>Type</strong></td>
-        <td><strong>Notes</strong></td>
     </tr>
     <tr>
         <td><code>code</code></td>
         <td>​​The coupon code that the customer must enter to redeem the coupon
         </td>
         <td>string</td>
-        <td>Required</td>
     </tr>
     <tr>
         <td><code>type</code></td>
@@ -1416,7 +1414,6 @@ $( document ).ready(function() {
             </ul>
         </td>
         <td>string</td>
-        <td>Required</td>
     </tr>
     <tr>
         <td><code>criteria</code></td>
@@ -1430,53 +1427,44 @@ $( document ).ready(function() {
             </ul>
         </td>
         <td>string</td>
-        <td>Required</td>
     </tr>
     <tr>
         <td><code>amount</code></td>
         <td>The amount of the coupon, for example <code>5.00</code> for an absolute amount of <code>$5.00</code>. For percent types, use a percentage amount, for example <code>20.00</code> for <code>20%</code>.
         </td>
         <td>decimal</td>
-        <td>Required if <code>type=absolute</code></td>
     </tr>
     <tr>
         <td><code>criteria_amount</code></td>
         <td>​​For <code>total_over</code> criteria, the threshold amount an order must meet in order for the coupon to be valid.
         </td>
         <td>decimal</td>
-        <td>Required if <code>criteria=total_over</code>
-        </td>
     </tr>
     <tr>
         <td><code>category_ids</code></td>
         <td>For <code>categories</code> criteria, an array of <a href="ds_api_category.html">category IDs</a> that the coupon is valid for.</td>
         <td>array of strings</td>
-        <td>Required if <code>criteria=categories</code></td>
     </tr>
     <tr>
         <td><code>product_ids</code></td>
         <td>For <code>products</code> criteria, an array of <a href="ds_api_product.html">product IDs</a> that the coupon is valid for.
         </td>
         <td>array of strings</td>
-        <td>Required if <code>criteria=products</code></td>
     </tr>
     <tr>
         <td><code>shipping_method_ids</code></td>
         <td>For free shipping coupons, an array of <code>shipping_method_ids</code> that provide free shipping. This must already be configured in the store.</td>
         <td>array of strings</td>
-        <td>Required if <code>type=shipping</code></td>
     </tr>
     <tr>
         <td><code>shipping_rate_ids</code></td>
         <td>For free shipping coupons, an array of <code>shipping_rate_ids</code> that provide free shipping. This must already be configured in the store.</td>
         <td>array of strings</td>
-        <td>Required if <code>type=shipping</code></td>
     </tr>
     <tr>
         <td><code>num_available</code></td>
         <td>Total number of coupons available.</td>
         <td>integer</td>
-        <td></td>
     </tr>
     <tr>
         <td><code>start_date</code></td>
@@ -1484,7 +1472,6 @@ $( document ).ready(function() {
         </td>
         <td>​Unix timestamp in GMT
         </td>
-        <td></td>
     </tr>
     <tr>
         <td><code>end_date</code></td>
@@ -1492,7 +1479,6 @@ $( document ).ready(function() {
         </td>
         <td>​​Unix timestamp in GMT
         </td>
-        <td></td>
     </tr>
 </table>
 
