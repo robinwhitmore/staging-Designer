@@ -1,0 +1,297 @@
+Running ["LinkCheck", "ImageCheck", "ScriptCheck"] on ["./x_cloud_output"] on *.html... 
+
+
+Checking 88 external links...
+Ran on 178 files!
+
+
+- ./x_cloud_output/cl_api_account.html
+  *  linking to cl_api_site.html#patchupdate-a-site, but patchupdate-a-site does not exist (line 728)
+     <a href="cl_api_site.html#patchupdate-a-site">Site API </a>
+- ./x_cloud_output/cl_api_category.html
+  *  image images/api_categories.png does not have an alt attribute (line 677)
+- ./x_cloud_output/cl_api_category_image.html
+  *  image images/api_cat_image.png does not have an alt attribute (line 677)
+- ./x_cloud_output/cl_api_member.html
+  *  linking to cl_api_about.html#pagination.html, but pagination.html does not exist (line 841)
+     <a href="cl_api_about.html#pagination.html">paginated</a>
+- ./x_cloud_output/cl_api_order.html
+  *  linking to cl_api_about.html#pagination.html, but pagination.html does not exist (line 883)
+     <a href="cl_api_about.html#pagination.html">paginated</a>
+- ./x_cloud_output/cl_api_page.html
+  *  linking to cl_api_about.html#pagination.html, but pagination.html does not exist (line 805)
+     <a href="cl_api_about.html#pagination.html">paginated</a>
+- ./x_cloud_output/cl_api_product.html
+  *  linking to cl_api_about.html#pagination.html, but pagination.html does not exist (line 944)
+     <a href="cl_api_about.html#pagination.html">paginated</a>
+- ./x_cloud_output/cl_api_product_image.html
+  *  image images/sh_productImages.png does not have an alt attribute (line 677)
+- ./x_cloud_output/cl_api_site.html
+  *  linking to cl_api_about.html#pagination.html, but pagination.html does not exist (line 950)
+     <a href="cl_api_about.html#pagination.html">paginated</a>
+- ./x_cloud_output/cl_apps_element_release.html
+  *  image images/cl_app_publish.png does not have an alt attribute (line 692)
+  *  image images/cl_apps_autoInstall.png does not have an alt attribute (line 674)
+- ./x_cloud_output/cl_apps_element_settings.html
+  *  image images/externalButton2.png does not have an alt attribute (line 858)
+  *  image images/priceChartSettings.png does not have an alt attribute (line 694)
+  *  image images/priceChartSettingsAdv.png does not have an alt attribute (line 703)
+  *  image images/settings.png does not have an alt attribute (line 664)
+- ./x_cloud_output/cl_apps_element_test.html
+  *  image images/cl_apps_install.png does not have an alt attribute (line 664)
+- ./x_cloud_output/cl_apps_element_upload.html
+  *  image images/cl_cloudAdmin_newApp.png does not have an alt attribute (line 677)
+- ./x_cloud_output/cl_apps_elements.html
+  *  image images/elementDropMap2.png does not have an alt attribute (line 770)
+  *  image images/sh_priceChart.png does not have an alt attribute (line 756)
+  *  image images/tutorialModal.png does not have an alt attribute (line 792)
+  *  image images/tutorialNested.png does not have an alt attribute (line 830)
+  *  image images/tutorialSteps.png does not have an alt attribute (line 806)
+  *  image images/tutorialVideo.png does not have an alt attribute (line 818)
+- ./x_cloud_output/cl_apps_gs.html
+  *  image images/cl_apps.png does not have an alt attribute (line 682)
+- ./x_cloud_output/cl_apps_icon.html
+  *  image images/ElementIconVO.png does not have an alt attribute (line 689)
+  *  image images/element_icon.png does not have an alt attribute (line 663)
+- ./x_cloud_output/cl_apps_manage.html
+  *  image images/cl_app_status.png does not have an alt attribute (line 726)
+  *  image images/cl_apps.png does not have an alt attribute (line 679)
+  *  image images/cl_apps_list.png does not have an alt attribute (line 664)
+- ./x_cloud_output/cl_apps_reg.html
+  *  image images/cl_apps.png does not have an alt attribute (line 674)
+- ./x_cloud_output/cl_apps_samples.html
+  *  image images/sh_priceChart.png does not have an alt attribute (line 670)
+- ./x_cloud_output/cl_element_2.html
+  *  image images/cl_apps.png does not have an alt attribute (line 1075)
+- ./x_cloud_output/cl_gs_access_sites.html
+  *  image images/cl_contributorNew.png does not have an alt attribute (line 521)
+  *  image images/cl_contributor_perms.png does not have an alt attribute (line 535)
+  *  image images/cl_contributor_site.png does not have an alt attribute (line 547)
+- ./x_cloud_output/cl_gs_admin.html
+  *  image images/cl_cloudAdmin1.png does not have an alt attribute (line 507)
+  *  image images/cl_teamDetail.png does not have an alt attribute (line 577)
+- ./x_cloud_output/cl_gs_admin_users.html
+  *  image images/cl_memberCreate.png does not have an alt attribute (line 561)
+  *  image images/cl_members.png does not have an alt attribute (line 503)
+- ./x_cloud_output/cl_gs_apps.html
+  *  image images/appCenter.png does not have an alt attribute (line 515)
+  *  image images/appCenter_editor.png does not have an alt attribute (line 539)
+  *  image images/appDetails_long.png does not have an alt attribute (line 527)
+  *  image images/myApps_support.png does not have an alt attribute (line 551)
+- ./x_cloud_output/cl_gs_client_ui.html
+  *  image images/cl_editor_restricted.png does not have an alt attribute (line 519)
+  *  image images/cl_site_preview.png does not have an alt attribute (line 531)
+  *  image images/cl_userPortal.png does not have an alt attribute (line 505)
+- ./x_cloud_output/cl_gs_configure.html
+  *  image images/cl_settings_URL.png does not have an alt attribute (line 614)
+  *  image images/cl_settings_api.png does not have an alt attribute (line 742)
+  *  image images/cl_settings_contact.png does not have an alt attribute (line 719)
+  *  image images/cl_settings_customDomain.png does not have an alt attribute (line 579)
+  *  image images/cl_settings_domain.png does not have an alt attribute (line 569)
+  *  image images/cl_settings_footerName.png does not have an alt attribute (line 595)
+  *  image images/cl_settings_footerName.png does not have an alt attribute (line 503)
+  *  image images/cl_settings_hash.png does not have an alt attribute (line 665)
+  *  image images/cl_settings_logo.png does not have an alt attribute (line 526)
+  *  image images/cl_settings_mail.png does not have an alt attribute (line 513)
+  *  image images/cl_settings_message.png does not have an alt attribute (line 682)
+  *  image images/cl_settings_support.png does not have an alt attribute (line 696)
+  *  image images/cl_settings_uploadLogo.png does not have an alt attribute (line 545)
+- ./x_cloud_output/cl_gs_cr_sites.html
+  *  image images/cl_addTemplate.png does not have an alt attribute (line 577)
+  *  image images/cl_copysite.png does not have an alt attribute (line 628)
+  *  image images/cl_copysite.png does not have an alt attribute (line 652)
+  *  image images/cl_createfromtemplate.png does not have an alt attribute (line 641)
+  *  image images/cl_odin_createsite.png does not have an alt attribute (line 717)
+  *  image images/cl_remove_template.png does not have an alt attribute (line 593)
+  *  image images/sh_reconnect.png does not have an alt attribute (line 611)
+- ./x_cloud_output/cl_gs_editSites.html
+  *  image images/cl_editor2.png does not have an alt attribute (line 595)
+  *  image images/cl_editor2.png does not have an alt attribute (line 528)
+  *  image images/cl_editor2.png does not have an alt attribute (line 551)
+  *  image images/cl_site_detail_domain.png does not have an alt attribute (line 613)
+  *  image images/cl_site_detail_edit.png does not have an alt attribute (line 518)
+  *  image images/cl_site_preview.png does not have an alt attribute (line 573)
+  *  image images/cl_site_previewlink.png does not have an alt attribute (line 563)
+  *  image images/cl_userPortal.png does not have an alt attribute (line 506)
+- ./x_cloud_output/cl_gs_hosting.html
+  *  linking to cl_api_site.html#postset-publish-credentials, but postset-publish-credentials does not exist (line 501)
+     <a href="cl_api_site.html#postset-publish-credentials">site</a>
+- ./x_cloud_output/cl_gs_market.html
+  *  image images/cl_promoModal.png does not have an alt attribute (line 502)
+- ./x_cloud_output/cl_gs_plans.html
+  *  image images/cl_plan_whmcs.png does not have an alt attribute (line 566)
+  *  image images/cl_plans.png does not have an alt attribute (line 545)
+  *  image images/cl_plans_compare.png does not have an alt attribute (line 517)
+- ./x_cloud_output/cl_gs_removeSites.html
+  *  image images/cl_site_detail_delete.png does not have an alt attribute (line 514)
+  *  linking to cl_api_site.html#deletedelete-a-site, but deletedelete-a-site does not exist (line 522)
+     <a href="cl_api_site.html#deletedelete-a-site">DELETE /site API</a>
+  *  linking to cl_api_site.html#getretrieve-details-for-a-site, but getretrieve-details-for-a-site does not exist (line 501)
+     <a href="cl_api_site.html#getretrieve-details-for-a-site"></a>
+  *  linking to cl_api_site.html#postdisable-a-site, but postdisable-a-site does not exist (line 497)
+     <a href="cl_api_site.html#postdisable-a-site"></a>
+  *  linking to cl_api_site.html#postenable-a-site, but postenable-a-site does not exist (line 501)
+     <a href="cl_api_site.html#postenable-a-site"></a>
+  *  linking to cl_api_site.html#postunpublish-a-site, but postunpublish-a-site does not exist (line 506)
+     <a href="cl_api_site.html#postunpublish-a-site"></a>
+- ./x_cloud_output/cl_gs_restore.html
+  *  image images/cl_recoverElement.png does not have an alt attribute (line 530)
+  *  image images/cl_recoverPage.png does not have an alt attribute (line 516)
+- ./x_cloud_output/cl_gs_sites.html
+  *  image images/cl_addTemplate.png does not have an alt attribute (line 577)
+  *  image images/cl_copysite.png does not have an alt attribute (line 628)
+  *  image images/cl_copysite.png does not have an alt attribute (line 652)
+  *  image images/cl_createfromtemplate.png does not have an alt attribute (line 641)
+  *  image images/cl_odin_createsite.png does not have an alt attribute (line 717)
+  *  image images/cl_remove_template.png does not have an alt attribute (line 593)
+  *  image images/sh_reconnect.png does not have an alt attribute (line 611)
+- ./x_cloud_output/cl_gs_ssl.html
+  *  image images/cl_ssl.png does not have an alt attribute (line 500)
+- ./x_cloud_output/cl_gs_team_members.html
+  *  image images/cl_memberCreate.png does not have an alt attribute (line 561)
+  *  image images/cl_members.png does not have an alt attribute (line 503)
+- ./x_cloud_output/cl_gs_upgrades.html
+  *  image images/cl_upgrade.png does not have an alt attribute (line 502)
+- ./x_cloud_output/cl_plugins_cp_billing.html
+  *  linking to cl_api_plan.html#postassign-a-plan-to-a-site, but postassign-a-plan-to-a-site does not exist (line 476)
+     <a href="cl_api_plan.html#postassign-a-plan-to-a-site">Change the plan</a>
+  *  linking to cl_api_site.html#postcreate-or-copy-a-site, but postcreate-or-copy-a-site does not exist (line 475)
+     <a href="cl_api_site.html#postcreate-or-copy-a-site">Create</a>
+  *  linking to cl_api_site.html#postgenerate-a-login-link, but postgenerate-a-login-link does not exist (line 478)
+     <a href="cl_api_site.html#postgenerate-a-login-link">single sign on link</a>
+  *  linking to cl_api_site.html#postset-publish-credentials, but postset-publish-credentials does not exist (line 477)
+     <a href="cl_api_site.html#postset-publish-credentials"> set the publish credentials</a>
+- ./x_cloud_output/cl_tags.html
+  *  internally linking to tag_pages.html, which does not exist (line 431)
+     <a href="tag_pages.html">pages</a>
+- ./x_cloud_output/cl_themes_10.html
+  *  image images/theme_export.png does not have an alt attribute (line 1148)
+- ./x_cloud_output/cl_themes_2.html
+  *  image images/importTheme.gif does not have an alt attribute (line 1173)
+- ./x_cloud_output/cl_themes_3.html
+  *  image images/theme_color_support.gif does not have an alt attribute (line 1179)
+  *  image images/theme_palette.png does not have an alt attribute (line 1224)
+  *  image images/themes_colorpresets.gif does not have an alt attribute (line 1201)
+- ./x_cloud_output/cl_themes_4.html
+  *  image images/themeLightDark.png does not have an alt attribute (line 1142)
+  *  image images/theme_variables.gif does not have an alt attribute (line 1201)
+- ./x_cloud_output/cl_themes_5.html
+  *  image images/theme_header_choice.png does not have an alt attribute (line 1143)
+  *  image images/theme_header_edit.gif does not have an alt attribute (line 1183)
+- ./x_cloud_output/cl_themes_6.html
+  *  image images/theme_float_left.gif does not have an alt attribute (line 1199)
+  *  image images/theme_float_right.gif does not have an alt attribute (line 1264)
+  *  image images/theme_header_new.png does not have an alt attribute (line 1281)
+- ./x_cloud_output/cl_themes_7.html
+  *  image images/theme_blogDefault.png does not have an alt attribute (line 1145)
+  *  image images/theme_blog_edit.gif does not have an alt attribute (line 1177)
+- ./x_cloud_output/cl_themes_8.html
+  *  image images/theme_option_onoff.gif does not have an alt attribute (line 1193)
+- ./x_cloud_output/cl_themes_anatomy.html
+  *  image images/themeHeader.png does not have an alt attribute (line 748)
+  *  image images/themeLayout1.png does not have an alt attribute (line 836)
+  *  image images/themeLayout2.png does not have an alt attribute (line 849)
+  *  image images/themePartial.png does not have an alt attribute (line 865)
+  *  image images/theme_header.png does not have an alt attribute (line 795)
+  *  image images/theme_noheader.png does not have an alt attribute (line 809)
+  *  image images/theme_optionNav.png does not have an alt attribute (line 941)
+  *  image images/theme_paletteBlue.png does not have an alt attribute (line 887)
+  *  image images/theme_paletteBlueDark.png does not have an alt attribute (line 899)
+  *  image images/theme_splash.png does not have an alt attribute (line 823)
+  *  image images/theme_variations.png does not have an alt attribute (line 911)
+  *  image images/theme_variationsRed.png does not have an alt attribute (line 923)
+  *  image images/themesSectionChange.png does not have an alt attribute (line 776)
+- ./x_cloud_output/cl_themes_blogPartials.html
+  *  image images/partial_blog_comments.png does not have an alt attribute (line 761)
+  *  image images/partial_blog_layout.png does not have an alt attribute (line 741)
+  *  image images/partial_blog_modules.png does not have an alt attribute (line 781)
+  *  image images/partial_blog_more.png does not have an alt attribute (line 795)
+  *  image images/partial_blog_page.png does not have an alt attribute (line 809)
+  *  image images/partial_blog_post.png does not have an alt attribute (line 823)
+- ./x_cloud_output/cl_themes_comPartials.html
+  *  image images/partial_commerce_empty.png does not have an alt attribute (line 822)
+  *  image images/partial_commerce_footer.png does not have an alt attribute (line 836)
+  *  image images/partial_commerce_hierarchy.png does not have an alt attribute (line 761)
+  *  image images/partial_commerce_item.png does not have an alt attribute (line 850)
+  *  image images/partial_commerce_main.png does not have an alt attribute (line 745)
+  *  image images/partial_commerce_mainProd.png does not have an alt attribute (line 867)
+  *  image images/partial_commerce_mainProd2.png does not have an alt attribute (line 890)
+  *  image images/partial_commerce_page.png does not have an alt attribute (line 776)
+  *  image images/partial_commerce_product.png does not have an alt attribute (line 790)
+  *  image images/partial_commerce_social.png does not have an alt attribute (line 912)
+  *  image images/partial_commerce_subcat.png does not have an alt attribute (line 804)
+- ./x_cloud_output/cl_themes_create_templates.html
+  *  image images/themeHeader.png does not have an alt attribute (line 968)
+  *  image images/theme_header.png does not have an alt attribute (line 748)
+  *  image images/theme_noheader.png does not have an alt attribute (line 762)
+  *  image images/theme_splash.png does not have an alt attribute (line 776)
+  *  image images/themesHTML.png does not have an alt attribute (line 836)
+  *  image images/themesSectionChange.png does not have an alt attribute (line 1003)
+  *  image images/themesSocial.png does not have an alt attribute (line 896)
+- ./x_cloud_output/cl_themes_deliver.html
+  *  image images/theme_gallery.png does not have an alt attribute (line 741)
+  *  image images/theme_gallery.png does not have an alt attribute (line 785)
+  *  image images/themes_adminCreate.png does not have an alt attribute (line 773)
+- ./x_cloud_output/cl_themes_directory.html
+  *  image images/themeDirectory.png does not have an alt attribute (line 776)
+- ./x_cloud_output/cl_themes_guidelines.html
+  *  image images/themeHeader.png does not have an alt attribute (line 797)
+  *  image images/theme_header.png does not have an alt attribute (line 757)
+  *  image images/theme_lightDark.png does not have an alt attribute (line 882)
+  *  image images/theme_noheader.png does not have an alt attribute (line 771)
+  *  image images/theme_palette.png does not have an alt attribute (line 854)
+  *  image images/theme_splash.png does not have an alt attribute (line 785)
+  *  image images/theme_variations.png does not have an alt attribute (line 896)
+  *  image images/themesSectionChange.png does not have an alt attribute (line 809)
+  *  image images/themes_palettePrimary.png does not have an alt attribute (line 869)
+- ./x_cloud_output/cl_themes_import_export.html
+  *  image images/theme_export.png does not have an alt attribute (line 772)
+- ./x_cloud_output/cl_themes_membershipPartials.html
+  *  image images/partial_membershipAccount.png does not have an alt attribute (line 741)
+  *  image images/partial_membershipDenied.png does not have an alt attribute (line 755)
+  *  image images/partial_membershipLogin.png does not have an alt attribute (line 769)
+  *  image images/partial_membershipReset.png does not have an alt attribute (line 783)
+  *  image images/partial_membershipSet.png does not have an alt attribute (line 797)
+- ./x_cloud_output/cl_themes_navPartials.html
+  *  image images/partial_nav.png does not have an alt attribute (line 740)
+- ./x_cloud_output/cl_themes_options.html
+  *  image images/theme_optionNav.png does not have an alt attribute (line 832)
+  *  image images/theme_options.png does not have an alt attribute (line 741)
+- ./x_cloud_output/cl_themes_palette.html
+  *  image images/theme_paletteBlue.png does not have an alt attribute (line 743)
+  *  image images/theme_palettePrimary.png does not have an alt attribute (line 797)
+  *  image images/theme_palettePrimaryAccent.png does not have an alt attribute (line 767)
+  *  image images/theme_palettePrimaryAccent.png does not have an alt attribute (line 809)
+  *  image images/theme_paletteRose.png does not have an alt attribute (line 755)
+- ./x_cloud_output/cl_themes_screenshot.html
+  *  image images/themeGallery.png does not have an alt attribute (line 740)
+- ./x_cloud_output/cl_themes_searchPartials.html
+  *  image images/partial_searchEmpty.png does not have an alt attribute (line 773)
+  *  image images/partial_searchHeader.png does not have an alt attribute (line 741)
+  *  image images/partial_searchNormal.png does not have an alt attribute (line 791)
+  *  image images/partial_searchPage.png does not have an alt attribute (line 755)
+  *  image images/partial_searchProduct.png does not have an alt attribute (line 805)
+- ./x_cloud_output/cl_themes_start.html
+  *  image images/cl_theme_gallery.png does not have an alt attribute (line 813)
+  *  image images/cl_themes_admin.png does not have an alt attribute (line 785)
+  *  image images/theme_codeEditor.png does not have an alt attribute (line 770)
+  *  image images/theme_lightHeader.png does not have an alt attribute (line 748)
+- ./x_cloud_output/cl_themes_variations.html
+  *  image images/theme_paletteBlue.png does not have an alt attribute (line 741)
+  *  image images/theme_paletteBlueDark.png does not have an alt attribute (line 753)
+  *  image images/theme_variations.png does not have an alt attribute (line 766)
+  *  image images/theme_variationsRed.png does not have an alt attribute (line 778)
+- ./x_cloud_output/glossary.html
+  *  anchor has no href attribute (line 1)
+     <a data-container="body" data-toggle="popover" data-content="{{site.data.glossary.OAuth}}"></a>
+- ./x_cloud_output/home.html
+  *  image images/appCenter.png does not have an alt attribute (line 580)
+  *  image images/cl_adminPortal_support.png does not have an alt attribute (line 638)
+  *  image images/cl_cloudAdmin1.png does not have an alt attribute (line 531)
+  *  image images/cl_editorBranded.png does not have an alt attribute (line 567)
+  *  image images/cl_theme_gallery.png does not have an alt attribute (line 621)
+  *  image images/cl_userPortal.png does not have an alt attribute (line 551)
+  *  image images/theme_codeEditor.png does not have an alt attribute (line 607)
+- ./x_cloud_output/titlepage.html
+  *  image http://localhost:4000//images/company_logo.svg does not have an alt attribute (line 502)
+htmlproofer 3.6.0 | Error:  HTML-Proofer found 205 failures!

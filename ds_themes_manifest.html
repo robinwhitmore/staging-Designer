@@ -43,7 +43,7 @@
 	</div>
 
 	<div class="top-nav-item">
-		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="">
+		<img class="mobile-nav-btn" src="images/icons/mobile-menu.svg" alt="Mobile menu">
 	</div>
 
 	<nav class="top-nav-item">
@@ -743,10 +743,14 @@ $( document ).ready(function() {
   </li>
   <li><code class="highlighter-rouge">version</code>: The version of your theme.  Provided as a string, following <a href="http://semver.org/">Semantic Versioning</a> guidelines (Major.Minor.Patch: for example 1.5.13).
 ​</li>
-  <li><code class="highlighter-rouge">enableEditorJS</code>: Set to <code class="highlighter-rouge">true</code> if you want your theme to use JavaScript.
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Please be aware of the current <a href="ds_themes_issues.html">known issues</a> when enabling JavaScript.</div>
-  </li>
+  <li><code class="highlighter-rouge">enableEditorJS</code>: Set to <code class="highlighter-rouge">true</code> if you want your theme to use JavaScript.</li>
 </ul>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> 
+Please be aware of the current <a href="ds_themes_issues.html">known issues</a> when enabling JavaScript.
+
+</div>
 
 <div class="Notice type_info" role="alert">
 	<b>Note:</b> All URLs must use the HTTPS protocol.
@@ -759,17 +763,28 @@ $( document ).ready(function() {
   <li>
     <p><code class="highlighter-rouge">​glyph-icons</code>: Always set to <code class="highlighter-rouge">true</code> to use the <code class="highlighter-rouge">Glyphicons</code> social icons. (<code class="highlighter-rouge">False</code> uses the deprecated <code class="highlighter-rouge">tmpSocialIconFont</code> and should be avoided.)</p>
   </li>
-  <li><code class="highlighter-rouge">is-dark</code>: Set to <code class="highlighter-rouge">true</code> if your theme has a dark background.
-  If your theme has a dark background, certain portions of a site may not display correctly unless you specifically style those areas to account for it. By setting this property to <code class="highlighter-rouge">true</code>, this styling will be handled for you. ​For example, the Blog Comments area by default uses dark font on a light background. If your theme has a dark background, the font cannot be easily read. By setting this property to true, the font changes to a light color automatically.
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you’re creating <a href="ds_themes_variations.html">color variations</a>, set this within the variation and not for the theme.</div>
+  <li>
+    <p><code class="highlighter-rouge">is-dark</code>: Set to <code class="highlighter-rouge">true</code> if your theme has a dark background.
+  If your theme has a dark background, certain portions of a site may not display correctly unless you specifically style those areas to account for it. By setting this property to <code class="highlighter-rouge">true</code>, this styling will be handled for you. ​For example, the Blog Comments area by default uses dark font on a light background. If your theme has a dark background, the font cannot be easily read. By setting this property to true, the font changes to a light color automatically.</p>
   </li>
+</ul>
+
+<div class="Notice type_info" role="alert">
+	<b>Note:</b> 
+If you’re creating <a href="ds_themes_variations.html">color variations</a>, set this within the variation and not for the theme.
+
+</div>
+
+<ul>
   <li>
     <p><code class="highlighter-rouge">color-support</code> and <code class="highlighter-rouge">color-presets</code>: You can create color palettes that provide a default primary and accent color that the user can then override, allowing them to personalize and brand their site. See <a href="ds_themes_palette.html">Create a Color Palette</a> for more info on these manifest elements.</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">variations</code>: You can create different color versions of your theme. For example, you might create a light version and a dark version. You configure the available versions in the manifest. See <a href="ds_themes_variations.html">Add Color Variations</a> for more info about configuring these elements.</p>
   </li>
-  <li><code class="highlighter-rouge">custom-options</code>: You can create configurable options to your theme using our Options framework. For example, you might want to allow the user to turn off social icons or search, or display a phone number. The user sets these options on the Theme Tab. You configure options in the manifest. See <a href="ds_themes_options.html">Add Options to Your Themes</a> for details.</li>
+  <li>
+    <p><code class="highlighter-rouge">custom-options</code>: You can create configurable options to your theme using our Options framework. For example, you might want to allow the user to turn off social icons or search, or display a phone number. The user sets these options on the Theme Tab. You configure options in the manifest. See <a href="ds_themes_options.html">Add Options to Your Themes</a> for details.</p>
+  </li>
 </ul>
 
 <h2 id="sample-manifest">Sample Manifest</h2>
@@ -851,7 +866,7 @@ $( document ).ready(function() {
 		<div class="col-lg-12">
 			<div class="footer__fineprint">
 				&copy;2018 Weebly. All rights reserved. <br />
-				 Site last generated: Jan 10, 2018
+				 Site last generated: Jan 18, 2018
 			</div>
 			<div class="footer__logo">
 				<img src="images/weebly_logo.svg" alt="Weebly logo"/>
