@@ -746,11 +746,11 @@
 		}, 
 	
 		{
-			"title": "Topics",
+			"title": "Tags",
 			"tags": "",
 			"keywords": "",
 			"url": "ds_tags_about.html",
-			"summary": "Click a topic card to find articles based on subject matter."
+			"summary": "Click a Tag card to find articles based on a subject matter."
 		}, 
 	
 		{
