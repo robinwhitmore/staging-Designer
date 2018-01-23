@@ -315,6 +315,8 @@ a.nav-group-list-link { font-weight: 400; color: #000b2e; font-size: 16px; }
 
 .NavLink { /* Reduce font-size font by 1. System fonts tend to be bigger than Effra. */ font-size: 15px; }
 
+.NavLinkLi a:hover { color: #0073ff; }
+
 .NavLinkLi { margin: 8px 0; line-height: 1.4; }
 
 /* When a nested Nav Link is active, Orbit does not highlight the parent. */
