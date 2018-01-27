@@ -610,6 +610,14 @@
 		}, 
 	
 		{
+			"title": "Set Up Hosting on Weebly",
+			"tags": "getting_startedconfiguration",
+			"keywords": "domain, domains, hosting, IP, ssl",
+			"url": "ds_gs_hosting.html",
+			"summary": "All your clients&#39; sites are hosted on Weebly. You don&#39;t need to provide a hosting environment"
+		}, 
+	
+		{
 			"title": "View and Pay Weebly Invoices",
 			"tags": "clients",
 			"keywords": "invoices, clients, bills, billing",

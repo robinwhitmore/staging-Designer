@@ -464,6 +464,12 @@
   
   
   <url>
+    <loc>http://localhost:4008/ds_gs_hosting.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4008/ds_gs_invoice.html</loc>
   </url>
   
