@@ -1098,6 +1098,14 @@
 		}, 
 	
 		{
+			"title": "App Webhooks",
+			"tags": "sitesappselements",
+			"keywords": "apps, install, delete, copy",
+			"url": "ds_wh_app.html",
+			"summary": "App webhooks notify you when something about an app instance on a site changes."
+		}, 
+	
+		{
 			"title": "Blog Webhooks",
 			"tags": "sitesappselements",
 			"keywords": "blog, blog post",
